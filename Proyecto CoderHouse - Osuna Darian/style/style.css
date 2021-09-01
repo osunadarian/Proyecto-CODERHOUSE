@@ -1,0 +1,1030 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+
+    width: 100%;
+    text-align: center;
+
+}
+
+body{
+
+    font-family: 'Lato', sans-serif;
+    background-image: url(../image/background2.png);
+    font-size: 20px;
+    
+}
+
+.navMenu{
+
+    margin-top: 30px;
+    width: 100%;
+    position: sticky;
+    display: flex;
+
+}
+
+.secciones{
+
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    
+}
+
+.secciones li{
+
+    width: 150px;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    
+
+    border: none;
+
+    transition: font-size 0.2s ease-in-out;
+    
+}
+
+.secciones li a{
+
+    text-decoration: none;
+    color: rgb(206, 203, 203);
+    font-family: 'Lato', sans-serif;
+
+}
+
+.secciones li:hover{
+
+    font-size: 2rem;
+
+}
+
+.containerIndex{
+
+    width: 100%;
+    margin-top: 50px;
+    text-align: left;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+.subtitle{
+
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.box{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.foto{
+
+    width: 180px;
+    height: 220px;
+    margin: 20px auto auto 30px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5px;
+
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.foto:hover{
+
+    border: 2px solid green;
+    transform: scale(1.15);
+
+}
+
+.barraBusqueda{
+
+    width: 50%;
+    margin: 20px auto 20px auto;
+    text-align: center;
+
+}
+
+.campoBusqueda{
+
+    width: 30%;
+    margin-right: 10px;
+    border: none;
+    border-radius: 20px;
+    border-style: none;
+    outline: none;
+    padding: 6px;
+
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.campoBusqueda:focus{
+
+    background-color: #5fcf81;
+    font-weight: bold;
+    padding-left: 10px;
+
+}
+
+.buttonSearch{
+
+    padding: 5px 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: none;
+
+}
+
+.buttonSearch:hover{
+
+    background-color: #5fcf81;
+
+}
+
+.buttonSearch:focus{
+
+    background-color: #4a9e63;
+
+}
+
+.boxDestacados{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.fotoDestacada{
+
+    width: 360px;
+    height: 440px;
+    cursor: pointer;
+    position: relative;
+
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.fotoDestacada:hover{
+
+    transform: scale(1.15);
+
+}
+
+.footerF{
+
+    margin-top: 20px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    border-top: 2px solid white;
+    background-color: white;
+    display: flex;
+    flex-direction: column;    
+    background-color: black;
+
+}
+
+.footerF span{
+
+    margin: 10px;
+
+}
+
+
+/**********login.HTML**************/
+
+.containerLogin{
+
+    width: 100%;
+    margin: auto auto 100px auto;
+    text-align: center;
+
+}
+
+.containerLogin h1{
+
+    margin-top: 150px;
+    font-size: 2rem;
+    color: white;
+
+}
+
+.containerLogin fieldset{
+
+    width: 300px;
+    margin: auto;
+    border: none;
+
+}
+
+.containerLogin input{
+
+    width: 350px;
+    height: 60px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    border-radius: 30px;
+    border: 2px solid #22b14c;
+    font-size: 1.5rem;
+    outline: none;
+    margin-top: 20px;
+
+}
+
+#send{
+
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    color: black;
+    margin: 30px auto 30px auto;
+    background-color: #22b14c;
+    border: none;
+
+    transition: background-color 0.3s ease-in-out;
+    
+
+}
+
+#send:hover{
+
+    background-color: #91caa2;
+
+}
+
+.containerLogin a{
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.notLogin{
+
+    font-size: 1.5rem;
+
+}
+
+/**********new-user.HTML**************/
+
+.recuadroDatos{
+
+    width: 100%;
+    margin: 30px auto auto auto;
+    color: #22b14c;
+    font-size: 1.5rem;
+
+}
+
+.recuadroDatos h1{
+
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+
+}
+
+.campoDatos{
+
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.campoDatos input{
+
+    margin-left: 15px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.campoDatos select{
+
+    margin-left: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+
+}
+
+.termsConditions{
+
+    width: 100%;
+    margin: auto;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.termsConditions div{
+
+    margin: 20px auto 30px auto;
+
+}
+
+.term{
+
+    margin: 20px;
+
+}
+
+.cuadroBotones{
+
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.botonNewUser{
+
+    width: 200px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.botonNewUser:hover{
+
+    background-color: rgb(71, 179, 71);
+
+}
+
+.campoDatos div{
+
+    padding: auto;
+
+}
+
+/**********ayuda.HTML**************/
+
+.containerHelp{
+
+    margin: auto;
+    text-align: center;
+
+}
+
+.containerHelp h1{
+
+    padding: 50px;
+    color: white;
+    font-size: 3rem;
+
+}
+
+.itemsHelp{
+
+    width: 300px;
+    margin: 10px auto 10px auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+}
+
+.itemsHelp li{
+
+    margin: 30px auto 30px auto;
+
+}
+
+.itemsHelp li a{
+
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+
+    transition: color 0.3s ease-in-out;
+
+}
+
+.containerButtons{
+
+    margin: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.buttonsHelp{
+
+    padding: 20px;
+    background-color: white;
+    margin: 20px 20px 40px 20px;
+    border-radius: 20px;
+    border: 1px solid green;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(63, 63, 63);
+
+}
+
+
+
+.itemsHelp li a:hover{
+
+    color:#22b14c;
+
+}
+
+/**********series.HTML y peliculas.HTML**************/
+
+.containerSeriesMovies{
+
+    width: 100%;
+    margin-top: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 1.5rem;
+
+}
+
+
+
+.containerSeriesMovies h1 h2{
+
+    
+    margin: 30px auto 20px auto;
+
+}
+/***************Reestablecer pw***************/
+
+.recuadroForgot{
+
+    width: 50%;
+    margin: 100px auto 300px auto;
+    color: #22b14c;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.recuadroForgot div{
+
+    margin: 20px;
+    font-size: 1.5rem;
+
+}
+
+.recuadroForgot legend{
+
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+
+.recuadroForgot h1{
+
+    margin-bottom: 15px;
+    color: white;
+
+}
+
+.recuadroForgot label{
+
+    color: white;
+
+}
+
+.sendCode{
+
+
+    margin: 15px auto 20px 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-style: none;
+    font-weight: bold;
+
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.sendCode:hover{
+
+    background-color: #22b14c;
+
+}
+
+.fieldMail{
+
+    margin-left: 15px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/********************* planes.html ********************/
+
+.boxPlanes h1{
+
+    font-size: 2rem;
+    color: white;
+    margin: 30px;
+
+}
+
+.boxPlanes{
+
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+}
+
+
+.container-planes{
+
+    margin: auto auto 30px auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.boxPlan{
+
+    margin: 20px;
+    width: 300px;
+    height: 450px;
+    border: 2px solid #22b14c;
+    border-radius: 10px;
+    background-color: black;
+
+}
+
+.boxPlan ul{
+
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    letter-spacing: 1px;
+
+}
+
+.boxPlan ul li{
+
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.boxPlan h2{
+
+    color: #22b14c;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.getPlan{
+
+    width: 100px;
+    margin: 20px auto auto auto;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.getPlan:hover{
+
+    background-color: #5fcf81;
+
+}
+
+/***************appcoder.html**************/
+
+.recuadroApps h1{
+
+    text-align: center;
+    margin-top: 50px;
+    color: #22b14c;
+    animation-name: sizeSubtitle;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes sizeSubtitle{
+
+    from{
+        letter-spacing: 0.5px;
+    }
+    to{
+        letter-spacing: 1px;
+    }
+
+}
+
+.accordionNews{
+
+    margin: 10px auto 180px auto;
+
+}
+
+.systemApp{
+
+    margin-left: 5px;
+    font-weight: bold;
+
+}
+
+/***************MEDIA QUERIES**************/
+
+@media (max-width:576px){
+
+    /*GENERALES*/
+
+    .fotoDestacada{
+
+        width: 45%;
+        height: 45%;
+        cursor: pointer;
+        margin: 10px;
+        border: 1px solid white;
+    
+    }
+
+    .boxDestacados{
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+    }
+
+    header{
+
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid white;
+
+    }
+
+    .subtitle{
+
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+
+    }
+
+    .foto{
+
+        border-radius: 10px;
+    }
+    
+    .navMenu{
+
+        margin: auto;
+        width: 50%;
+
+    }
+
+        
+    .barraBusqueda{
+
+        width: 100%;
+        margin: 20px auto 20px auto;
+        text-align: center;
+
+    }
+
+    .campoBusqueda{
+
+        width: 80%;
+        display: block;
+        margin: 40px auto auto auto;
+        border: none;
+        border-radius: 5px;
+        border-style: none;
+        outline: none;
+        padding: 6px;
+
+        transition: background-color 0.3s ease-in-out;
+
+    }
+
+    .campoBusqueda:focus{
+
+        background-color: #5fcf81;
+        font-weight: bold;
+        padding-left: 10px;
+
+    }
+
+    .buttonSearch{
+
+        margin: 20px auto;
+        padding: 5px 30px;
+        border-radius: 15px;
+        font-weight: bold;
+        border: none;
+
+    }
+
+    .secciones{
+
+        font-size: 1.5rem;
+        margin: auto;
+        letter-spacing: 10px;
+        
+    }
+
+    .secciones li{
+
+        font-size: 1.5rem;
+        
+    }
+
+    .secciones li a{
+
+        text-decoration: none;
+        color: rgb(206, 203, 203);
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 10px;
+
+        transition: color 0.2s ease-in-out;
+        transition: font-size 0.2s ease-in-out;
+
+    }
+
+    .secciones li a:hover{
+
+        color: #22b14c;
+        font-size: 1.7rem;
+
+    }
+
+    .footerF span{
+
+        font-size: 1.8rem;
+
+    }
+
+    /****************reestablecer-pw.html*************/
+
+    .recuadroForgot{
+
+        width: 100%;
+        margin: 75px auto 50px auto;
+        color: #22b14c;
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+    .recuadroForgot fieldset{
+
+        border: 0 none;
+
+    }
+
+    .recuadroForgot div{
+
+        margin: 20px;
+
+    }
+
+    .recuadroForgot legend{
+
+        font-weight: bold;
+        margin-bottom: 30px;
+
+    }
+
+    .recuadroForgot h1{
+
+        margin-bottom: 15px;
+        color: white;
+        font-size: 1.8rem;
+
+
+    }
+
+    .recuadroForgot label{
+
+        color: white;
+
+    }
+
+    .sendCode{
+
+        margin: 40px auto;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px;
+        font-weight: bold;
+        display: block;
+        font-size: 1.8rem;
+        
+        transition: background-color 0.3s ease-in-out;
+
+    }
+
+    .sendCode:hover{
+
+        background-color: #22b14c;
+
+    }
+
+    .fieldMail{
+
+        margin-left: 15px;
+        border: none;
+        border-radius: 15px;
+        outline: none;
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    
+    /****************** ayuda.html ******************/
+
+    .containerHelp{
+
+        text-align: center;
+
+    }
+
+    .containerHelp h1{
+
+        color: #22b14c;
+        font-size: 1.8rem;
+
+    }
+
+    .itemsHelp{
+
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+
+    }
+
+    .itemsHelp li{
+
+        margin: 30px auto 30px auto;
+        
+
+    }
+
+    .itemsHelp li a{
+
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        border: 2px solid white;
+        padding: 20px;
+        border-radius: 15px;
+
+        transition: color 0.3s ease-in-out;
+
+    }
+
+    .containerButtons{
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: block;
+
+    }
+
+    .buttonsHelp{
+
+        width: 100%;
+        margin: auto;
+        background-color: white;
+        border-radius: 0px;
+        border: 1px solid green;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(63, 63, 63);
+
+    }
+
+    .itemsHelp li a:hover{
+
+        color:#22b14c;
+
+    }
+
+}
+
+
+@media (min-width:577px) and (max-width:998px){
+
+
+    .box{
+
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    
+    }
+
+    .navMenu{
+
+        margin: auto;
+        width: 50%;
+
+    }
+
+    
+    .campoBusqueda{
+
+        width: 60%;
+        display: block;
+        margin: 40px auto 20px auto;
+        border: none;
+        border-radius: 5px;
+        border-style: none;
+        outline: none;
+        padding: 6px;
+
+        transition: background-color 0.3s ease-in-out;
+
+    }
+
+
+}
