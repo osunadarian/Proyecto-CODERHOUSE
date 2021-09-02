@@ -6,6 +6,7 @@
     <meta name="keywords" content="Coderflix, login">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="shortcut icon" href="../image/icon.png">
+    <script src="https://kit.fontawesome.com/15784ea8d5.js" crossorigin="anonymous"></script>
     <title>Login - CODERFLIX</title>
 
 </head>
@@ -26,22 +27,31 @@
 
     <section class="containerLogin">
 
-        <h1>Iniciar sesion</h1>
+        <div class="titleLogin">
+            <h1>Login</h1>
+        </div>
 
-        <form action="">
-            <fieldset>
-                <input type="email" name="email" placeholder="E m a i l"> <br>
-                <input type="password" name="password" placeholder="P a s s w o r d"><br><br><br>
+        <div class="boxUserPw">
 
+            <div class="recuadroDatosUser">
+                <i class="far fa-user"></i>
+                <input type="email" name="email"  class="boxDatosUser">
+            </div>
+            <div class="recuadroDatosUser">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" class="boxDatosUser">
+            </div>
+            <div class="recuadroDatosUser">
                 <input type="submit" value="Iniciar sesion" id="send">
-            </fieldset>
-        </form>
+            </div>
+
+        </div>
 
         <div class="notLogin"> 
 
-            <a href="new-user.html">No tengo cuenta, deseo registrarme</a><br><br>
+            <a href="new-user.html">No tengo cuenta, deseo registrarme</a>
             <a href="reestablecer-pw.html">Olvide mis datos</a>
-        
+
         </div>   
 
     </section>
