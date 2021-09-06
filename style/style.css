@@ -400,7 +400,6 @@ body{
 
 }
 
-
 .footerInc{
 
     margin-top: 20px;
@@ -843,6 +842,96 @@ body{
 
 }
 
+/***************preguntasFrecuentes.html**************/
+
+.seccion{
+
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+
+
+}
+
+.seccion__preguntas{
+
+    background-color: rgba(0, 0, 0, 0);
+    width: 30%;
+    text-align: center;
+    border-right: 5px solid #1c8e3e;
+    
+
+}
+
+.seccion__preguntas ul{
+
+    list-style: none;
+    text-align: left;
+    
+
+}
+
+.seccion__preguntas li{
+
+    padding: 10px 30px;
+
+}
+
+.seccion__preguntas a{
+
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 20px auto;
+
+}
+
+.seccion__respuestas{
+
+    width: 70%;
+    text-align: center;
+    overflow: auto;
+
+}
+
+.seccion__respuestas h1{
+
+    margin: 30px auto;
+    letter-spacing: 3px;
+    color: #fff;
+
+}
+
+.seccion__respuestas h2{
+
+    margin: 20px auto;
+    letter-spacing: 2px;
+    color: #1c8e3e;
+
+}
+
+.seccion__respuestas p{
+
+    width: 60%;
+    margin: auto;
+
+}
+
+.seccion__respuestas span{
+
+    font-weight: bold;
+}
+
+.seccion__respuestas a{
+
+    text-decoration: none;
+    color: #1c8e3e;
+
+}
+
+
 /***************MEDIA QUERIES***************************************************************************************/
 
 @media (max-width: 575px) {
@@ -975,6 +1064,7 @@ body{
 
     .footerF{
 
+        position: relative;
         font-size: 1rem;
     
     }
@@ -983,6 +1073,13 @@ body{
     
         margin: 10px;
     
+    }
+
+    .footerInc{
+
+        position: relative;
+        font-size: 1rem;
+
     }
 
     /************************AYUDA.HTML****************************************/
