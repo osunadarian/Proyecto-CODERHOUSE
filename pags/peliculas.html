@@ -10,28 +10,30 @@
 </head>
 <body>
 
-    <header>
-        <a href="../index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>
+    <header class="header">
+        <a href="../index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>  
+
+        <nav id="barraNavegacion">
+            <ul class="secciones">
+                <li class="listItem"><a href="../index.html">HOME</a></li>
+                <li class="listItem"><a href="series.html">SERIES</a></li>
+                <li class="listItem"><a href="peliculas.html">PELICULAS</a></li>
+                <li class="listItem"><a href="ayuda.html">AYUDA</a></li>
+                <li class="listItem"><a href="login.html">LOGIN</a></li>
+                <li>
+                    <div class="barraBusqueda">
+                        <input type="text" name="search" class="campoBusqueda">
+                        <button class="buttonSearch">BUSCAR</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="buttonNav">
+            <a href="#barraNavegacion"><i class="fas fa-arrow-up"></i></a>
+        </button>
+
     </header>
-
-    <nav class="navMenu">
-        <ul class="secciones">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="series.html">SERIES</a></li>
-            <li><a href="peliculas.html">PELICULAS</a></li>
-            <li><a href="ayuda.html">AYUDA</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-        </ul>
-    </nav>
-
-    <section class="barraBusqueda">
-
-        <div>
-            <input type="text" name="search" class="campoBusqueda">
-            <button class="buttonSearch">BUSCAR</button>
-        </div>
-
-    </section>
 
     <section class="containerSeriesMovies">
 
@@ -82,6 +84,8 @@
         <span>Todos los derechos reservados</span>
         <span>Coderflix ya disponible en PlayStore y AppStore</span>
     </footer>
+
+    <script src="https://kit.fontawesome.com/15784ea8d5.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

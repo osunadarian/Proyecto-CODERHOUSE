@@ -9,63 +9,87 @@
     <link rel="shortcut icon" href="../image/icon.png">
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>
+    <header class="header">
+        <a href="../index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>  
+
+        <nav id="barraNavegacion">
+            <ul class="secciones">
+                <li class="listItem"><a href="../index.html">HOME</a></li>
+                <li class="listItem"><a href="series.html">SERIES</a></li>
+                <li class="listItem"><a href="peliculas.html">PELICULAS</a></li>
+                <li class="listItem"><a href="ayuda.html">AYUDA</a></li>
+                <li class="listItem"><a href="login.html">LOGIN</a></li>
+                <li>
+                    <div class="barraBusqueda">
+                        <input type="text" name="search" class="campoBusqueda">
+                        <button class="buttonSearch">BUSCAR</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="buttonNav">
+            <a href="#barraNavegacion"><i class="fas fa-arrow-up"></i></a>
+        </button>
+
     </header>
 
-    <nav class="navMenu">
-        <ul class="secciones">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="series.html">SERIES</a></li>
-            <li><a href="peliculas.html">PELICULAS</a></li>
-            <li><a href="ayuda.html">AYUDA</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-        </ul>
-    </nav>
-
     <section class="recuadroDatos">
-        <h1>Completa los siguientes datos para registrarte en<br><span>CODERFLIX</span></h1>
+        <h1>Completa los siguientes datos para registrarte en CODERFLIX</h1>
         <form action="">
 
             <fieldset class="campoDatos">
                 <legend><strong>Datos Personales</strong></legend><br>
 
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre"><br><br>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre">
+                </div>
 
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido"><br><br>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido">
+                </div>
 
+                <div>
                 <label for="edad">Edad</label>
-                <input type="number" name="edad"><br><br>
+                <input type="number" name="edad">
+                </div>
 
-                <label>Nacionalidad</label>
-                <select name="pais">
-                <option value="Argentina">Argentina</option>
-                <option value="Peru">Peru</option>
-                <option value="Colombia">Colombia</option>
-                <option value="Chile">Chile</option>
-                <option value="Venezuela">Venezuela</option>
-                <option value="Ecuador">Ecuador</option>
-                <option value="Bolivia">Bolivia</option>
-                <option value="Brasil">Brasil</option>
-                <option value="Uruguay">Uruguay</option>
-                <option value="Paraguay">Paraguay</option>
-                </select><br><br>
+                <div>
+                    <label>Nacionalidad</label>
+                    <select name="pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Paraguay">Paraguay</option>
+                    </select>
+                </div>
 
-                <label for="email">Correo electronico</label>
-                <input type="email" name="email"><br><br>
+                <div>
+                    <label for="email">Correo electronico</label>
+                    <input type="email" name="email">
+                </div>
 
-                <label for="password">Introduzca un password</label>
-                <input type="password" name="password"><br><br>
+                <div>
+                    <label for="password">Introduzca un password</label>
+                    <input type="password" name="password">
+                </div>
 
-                <label for="password">Re-introduzca su password</label>
-                <input type="password" name="password"><br><br>
-
-            </fieldset><br><br>
+                <div>
+                    <label for="password">Re-introduzca su password</label>
+                    <input type="password" name="password">
+                </div>
+            </fieldset>
 
             <fieldset class="campoDatos">
-                <legend><strong>Datos Complementarios</strong></legend><br>
+                <legend>Datos Complementarios</legend>
 
                 <label>¿Como nos conociste?</label>
                 <select name="conocer">
@@ -75,51 +99,58 @@
                 <option value="Google">Google</option>
                 <option value="Amigo">Por un conocido</option>
                 <option value="Otro">Otro</option>
-                </select><br><br>
+                </select>
 
-                <div>
+                <div class="cuadroDeDatos">
                     <label>Selecciona tus estilos de peliculas y/o series favoritos</label><br><br>
         
-                    <input type="checkbox" name="favourite-movies" id="option-suspenso">
-                    <label for="option-suspenso"
-                    >Suspenso</label>
-        
-                    <input type="checkbox" name="favourite-movies" id="option-drama">
-                    <label for="option-drama"
-                    >Drama</label>
-        
-                    <input type="checkbox" name="favourite-movies" id="option-animadas">
-                    <label for="option-animadas"
-                    >Animadas</label>
+                    <div>
+                        <input type="checkbox" name="favourite-movies" id="option-suspenso">
+                        <label for="option-suspenso"
+                        >Suspenso</label>
+                    </div>
 
-                    <input type="checkbox" name="favourite-movies" id="option-comicas">
-                    <label for="option-comicas"
-                    >Comicas</label>
-
-                    <input type="checkbox" name="favourite-movies" id="option-thriller">
-                    <label for="option-Thriller"
-                    >Thriller</label>
-
-                    <input type="checkbox" name="favourite-movies" id="option-documentales">
-                    <label for="option-documentales"
-                    >Documentales</label>
-
+                    <div>
+                        <input type="checkbox" name="favourite-movies" id="option-drama">
+                        <label for="option-drama"
+                        >Drama</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favourite-movies" id="option-animadas">
+                        <label for="option-animadas"
+                        >Animadas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favourite-movies" id="option-comicas">
+                        <label for="option-comicas"
+                        >Comicas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favourite-movies" id="option-thriller">
+                        <label for="option-Thriller"
+                        >Thriller</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favourite-movies" id="option-documentales">
+                        <label for="option-documentales"
+                        >Documentales</label>
+                    </div>
                 </div>
 
             </fieldset>
 
             <fieldset class="termsConditions">
                 <div>
-                    <div>Acepto terminos y condiciones de CODERFLIX</div>
+                    <h2>Acepto terminos y condiciones de CODERFLIX</h2>
 
                     <span class="term">
                         <input type="radio" name="Terminos" id="option-yes">
-                        <label for="option-yes">Si</label>
+                        <label for="option-yes">SI</label>
                     </span>
 
                     <span class="term">
                         <input type="radio" name="Terminos" id="option-no">
-                        <label for="option-no">No</label>
+                        <label for="option-no">NO</label>
                     </span>
                 </div>
             </fieldset>
@@ -142,5 +173,6 @@
         <span>Coderflix ya disponible en PlayStore y AppStore</span>
     </footer>
     
+    <script src="https://kit.fontawesome.com/15784ea8d5.js" crossorigin="anonymous"></script>
 </body>
 </html>
