@@ -1404,4 +1404,90 @@ body{
         
     }
 
+    /*************preguntas-frecuentes.html***************/
+
+    
+    .seccion{
+
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .seccion__preguntas{
+
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;/**/
+        border-right: none;/**/
+        margin-top: 40px;/**/
+        border-bottom: 3px solid #1c8e3e;
+        
+
+    }
+
+    .seccion__preguntas li{
+
+        padding: 10px 0px;/**/
+
+    }
+
+    .seccion__preguntas a{
+
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        padding: 20px auto;
+
+    }
+
+    .seccion__respuestas{
+
+        width: 100%;/**/
+        text-align: center;
+        overflow: auto;
+
+    }
+
+    .seccion__respuestas h1{
+
+        margin: 30px auto;
+        letter-spacing: 1px;/**/
+        color: #fff;
+        display: none;
+
+    }
+
+    .seccion__respuestas h2{
+
+        margin: 20px auto;
+        letter-spacing: 1px;/**/
+        color: #1c8e3e;/**/
+
+    }
+
+    .seccion__respuestas p{
+
+        width: 100%;
+        margin: auto;
+        height: auto;
+        font-size: 1rem;
+
+    }
+
+    .seccion__respuestas span{
+
+        font-weight: bold;
+    }
+
+    .seccion__respuestas a{
+
+        text-decoration: none;
+        color: #1c8e3e;
+
+    }
+
 }
