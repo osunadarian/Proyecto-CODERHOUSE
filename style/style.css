@@ -239,7 +239,7 @@ body{
 
     width: 180px;
     height: 220px;
-    margin: 20px auto auto 30px;
+    margin: 20px auto;
     cursor: pointer;
     border: 2px solid white;
     border-radius: 5px;
@@ -1070,7 +1070,7 @@ body{
 
         width: 90px;
         height: 110px;
-        margin: 20px auto auto 20px;
+        margin: 20px auto;
     
     
     }
@@ -1079,7 +1079,7 @@ body{
 
         width: 40%;
         height: 40%;
-        margin:10px;
+        margin: 10px;
 
     }
 
@@ -1509,6 +1509,36 @@ body{
         text-decoration: none;
         color: #1c8e3e;
 
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .box{
+
+        justify-content: center;
+    
+    }
+    
+    .foto{
+    
+        width: 60px;
+        height: 73px;
+        margin: 20px auto;
+    
+    }
+
+}
+
+@media screen and (max-width: 1366px) {
+    
+    .foto{
+    
+        width: 160px;
+        height: 190px;
+        margin: 20px auto;
+    
     }
 
 }
