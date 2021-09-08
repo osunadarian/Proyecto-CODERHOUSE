@@ -537,9 +537,6 @@ body {
       color: #1c8e3e; }
 
 @media (max-width: 576px) {
-  body {
-    font-family: 'Lato', sans-serif;
-    background-image: url(../image/background2.png); }
   .header {
     display: flex;
     flex-direction: column;
@@ -567,269 +564,268 @@ body {
       .header .secciones li {
         margin: auto;
         list-style: none; }
-      .header .secciones .barraBusqueda {
-        display: flex;
-        flex-direction: row;
-        padding: 2px;
-        justify-content: center; }
-        .header .secciones .barraBusqueda .campoBusqueda {
-          border: none;
-          background-color: rgba(100, 99, 99, 0.835);
-          border-radius: 20px;
-          width: 40%;
-          margin-left: 20px;
-          padding-left: 8px;
-          outline: none;
-          color: white;
-          font-weight: bold;
-          letter-spacing: 1px; }
-        .header .secciones .barraBusqueda .buttonSearch {
-          border: none;
-          margin-left: 5px;
-          margin-right: 8px;
-          font-size: 1rem;
-          padding: 5px;
-          background-color: rgba(0, 0, 0, 0);
-          color: white; }
+        .header .secciones li .barraBusqueda {
+          display: flex;
+          flex-direction: row;
+          padding: 2px;
+          justify-content: center; }
+          .header .secciones li .barraBusqueda .campoBusqueda {
+            border: none;
+            background-color: rgba(100, 99, 99, 0.835);
+            border-radius: 20px;
+            width: 40%;
+            margin-left: 20px;
+            padding-left: 8px;
+            outline: none;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 1px; }
+          .header .secciones li .barraBusqueda .buttonSearch {
+            border: none;
+            margin-left: 5px;
+            margin-right: 8px;
+            font-size: 1rem;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0);
+            color: white; }
   .img-principal .descripcionMovie {
     max-width: 100%; }
-  .subtitle {
-    font-size: 1.2rem;
-    letter-spacing: 0px;
-    margin-top: 15px; }
-  .box {
-    justify-content: center; }
-    .box .foto {
-      width: 50px;
-      height: 50px;
-      margin: 20px auto; }
-  .boxDestacados {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .containerIndex,
+  .containerSeriesMovies {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; }
-    .boxDestacados .fotoDestacada {
-      width: 20%;
-      height: 20%;
-      border-radius: 50px;
-      margin: 10px; }
-  .footerF {
-    position: relative;
-    font-size: 1rem; }
-  .footerF span {
-    margin: 10px; }
-  .footerInc {
-    position: relative;
-    font-size: 1rem; }
+    margin-top: 25px; }
+    .containerIndex .subtitle,
+    .containerSeriesMovies .subtitle {
+      font-size: 1.5rem; }
+    .containerIndex .box,
+    .containerSeriesMovies .box {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 0px; }
+      .containerIndex .box .foto,
+      .containerSeriesMovies .box .foto {
+        width: 30%;
+        height: 30%;
+        margin: auto;
+        border: none; }
+    .containerIndex .boxDestacados .fotoDestacada,
+    .containerSeriesMovies .boxDestacados .fotoDestacada {
+      width: 40%;
+      height: 40%;
+      margin: 20px; }
   /************************AYUDA.HTML****************************************/
   .containerHelp {
     margin: auto;
-    text-align: center; }
-  .containerHelp h1 {
-    padding: 20px;
-    margin: 30px auto auto auto;
-    color: #fff;
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: #1c8e3e; }
-  .itemsHelp {
-    width: 50%; }
-  .itemsHelp li a {
-    font-size: 1rem; }
-  .containerButtons {
-    margin: auto;
-    display: flex;
-    margin: auto;
-    justify-content: center; }
-  .buttonsHelp {
-    padding: 10px;
-    border-radius: 2px;
-    border: none;
-    font-size: 1rem;
-    color: black; }
-  /************************appcoder.HTML****************************************/
-  .recuadroApps h1 {
-    margin-bottom: 20px;
-    color: #22b14c; }
-  @keyframes sizeSubtitle {
-    from {
-      letter-spacing: 0.5px; }
-    to {
-      letter-spacing: 0.5px; } }
+    text-align: center;
+    padding: 30px; }
+    .containerHelp h1 {
+      padding-top: 30px;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #1c8e3e; }
+    .containerHelp .boxHelp .itemsHelp {
+      width: 80%; }
+      .containerHelp .boxHelp .itemsHelp li a {
+        font-size: 1.5rem;
+        text-transform: uppercase; }
+    .containerHelp .containerButtons {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center; }
+      .containerHelp .containerButtons div {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        background-color: #1c8e3e;
+        border: 3px solid #fff;
+        border-radius: 10px; }
+        .containerHelp .containerButtons div .buttonsHelp {
+          margin: 0px;
+          padding: 0px 10px 10px 10px;
+          border: none;
+          font-size: 1rem;
+          color: #fff;
+          background-color: #1c8e3e;
+          font-weight: normal;
+          letter-spacing: 2px; }
+        .containerHelp .containerButtons div i {
+          padding: 10px;
+          color: white;
+          border: none; }
   /************************planes.HTML****************************************/
   .boxPlanes h1 {
-    font-size: 1.5rem;
-    color: white;
-    margin: 30px; }
-  .boxPlanes {
-    margin: auto;
-    text-align: center; }
-  .container-planes {
+    font-size: 1.7rem;
+    text-transform: uppercase; }
+  .boxPlanes .container-planes {
     margin: 0px;
     display: block;
     flex-direction: column;
     justify-content: center; }
-  .boxPlan {
-    margin: 20px;
-    border: 2px solid #22b14c;
-    border-radius: 10px;
-    background-color: black; }
-  .boxPlan ul {
-    text-align: center;
-    margin: auto;
-    letter-spacing: 1px; }
-  .boxPlan ul li {
-    padding: 15px;
-    text-align: center;
-    color: white;
-    font-size: 1.5rem; }
-  .boxPlan h2 {
-    color: #22b14c;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 2rem; }
-  .getPlan {
-    margin: 20px auto 20px auto;
-    padding: 10px 20px 10px 20px;
-    cursor: pointer;
-    border-radius: 0px;
-    transition: background-color 0.3s ease-in-out; }
-  .getPlan:hover {
-    background-color: #22b14c; }
+    .boxPlanes .container-planes .boxPlan {
+      margin: 20px;
+      border: none;
+      border-bottom: 2px solid #1c8e3e;
+      border-radius: 0px;
+      background-color: black; }
+      .boxPlanes .container-planes .boxPlan h2 {
+        color: #22b14c;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5rem; }
+      .boxPlanes .container-planes .boxPlan ul {
+        text-align: center;
+        margin: auto;
+        letter-spacing: 1px; }
+        .boxPlanes .container-planes .boxPlan ul li {
+          padding: 15px;
+          text-align: center;
+          color: white;
+          font-size: 1.2rem; }
+      .boxPlanes .container-planes .boxPlan .getPlan {
+        margin: 20px auto 20px auto;
+        padding: 10px 30px 10px 30px;
+        cursor: pointer;
+        border-radius: 0px;
+        letter-spacing: 2px;
+        font-weight: bold; }
   /*************login.html***************/
   .containerLogin {
     width: 100%;
     margin: 40px auto 30px auto;
     display: flex;
     flex-direction: column; }
-  .containerLogin .titleLogin {
-    width: 30%;
-    font-size: 1.5rem;
-    border-bottom: 3px solid green; }
-  .containerLogin .recuadroDatosUser {
-    margin: 5px; }
-  .containerLogin .recuadroDatosUser i {
-    color: white;
-    margin-right: 10px; }
-  .recuadroDatosUser .boxDatosUser {
-    padding: 10px;
-    border-bottom: 1px solid green; }
-  #send {
-    font-size: 1rem; }
-  .notLogin {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0);
-    align-items: center;
-    font-size: 1rem;
-    margin-top: 15px; }
+    .containerLogin .titleLogin {
+      width: 30%;
+      font-size: 1.5rem;
+      border-bottom: 3px solid green; }
+    .containerLogin .recuadroDatosUser {
+      margin: 5px; }
+      .containerLogin .recuadroDatosUser i {
+        color: white;
+        margin-right: 10px; }
+      .containerLogin .recuadroDatosUser .boxDatosUser {
+        padding: 10px;
+        border-bottom: 1px solid green; }
+      .containerLogin .recuadroDatosUser #send {
+        font-size: 1rem; }
+    .containerLogin .notLogin {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0);
+      align-items: center;
+      font-size: 1rem;
+      margin-top: 15px; }
   /**********************new-user.html******************/
   .recuadroDatos {
     width: 100%;
     margin: 30px auto auto auto;
     color: #22b14c;
     font-size: 1rem; }
-  .recuadroDatos h1 {
-    margin: auto;
-    text-align: center;
-    color: white;
-    width: 80%; }
-  .campoDatos {
-    text-align: center;
-    margin-top: 30px;
-    padding-bottom: 30px; }
-  .campoDatos legend {
-    margin-bottom: 20px; }
-  .campoDatos div {
-    margin: 10px; }
-  .campoDatos input {
-    border-radius: 0px;
-    font-size: 1.2rem; }
-  .campoDatos select {
-    font-size: 1rem;
-    border-radius: 0px;
-    padding-left: 5px; }
-  .cuadroDeDatos div {
-    display: inline; }
-  .termsConditions {
-    width: 100%;
-    font-size: 1.2rem; }
-  .termsConditions h2 {
-    font-size: 1.2rem;
-    margin-bottom: 20px; }
-  .botonNewUser {
-    border-radius: 0px;
-    padding: 10px 20px 10px 20px; }
+    .recuadroDatos h1 {
+      margin: auto;
+      text-align: center;
+      color: white;
+      width: 80%; }
+    .recuadroDatos .campoDatos {
+      text-align: center;
+      margin-top: 30px;
+      padding-bottom: 30px; }
+      .recuadroDatos .campoDatos legend {
+        margin-bottom: 20px;
+        font-size: 1.5rem; }
+      .recuadroDatos .campoDatos div {
+        margin: 10px; }
+      .recuadroDatos .campoDatos input {
+        border-radius: 0px;
+        font-size: 1.2rem; }
+      .recuadroDatos .campoDatos select {
+        font-size: 1rem;
+        border-radius: 0px;
+        padding-left: 5px; }
+      .recuadroDatos .campoDatos .cuadroDeDatos div {
+        display: inline; }
+    .recuadroDatos .termsConditions {
+      width: 100%;
+      font-size: 1.2rem; }
+      .recuadroDatos .termsConditions h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px; }
+    .recuadroDatos .cuadroBotones .botonNewUser {
+      border-radius: 0px;
+      padding: 10px 20px 10px 20px; }
   /*********************reestablecerpw**************/
   .recuadroForgot {
     width: 100%;
-    margin: 100px auto 50px auto;
+    margin: 100px auto 100px auto;
     color: #22b14c;
     font-size: 1rem;
     text-align: center; }
-  .recuadroForgot div {
-    font-size: 1.2rem; }
-  .sendCode {
-    border-radius: 5px; }
-  .fieldMail {
-    border-radius: 0px;
-    padding: 5px 0px 5px 5px;
-    text-align: left;
-    font-size: 1.2rem; }
+    .recuadroForgot div {
+      font-size: 1.2rem; }
+    .recuadroForgot .sendCode {
+      border-radius: 5px; }
+    .recuadroForgot .fieldMail {
+      border-radius: 0px;
+      padding: 5px 0px 5px 5px;
+      text-align: left;
+      font-size: 1.2rem; }
   /*************preguntas-frecuentes.html***************/
   .seccion {
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column; }
-  .seccion__preguntas {
-    background-color: rgba(0, 0, 0, 0);
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-    /**/
-    border-right: none;
-    /**/
-    margin-top: 40px;
-    /**/
-    border-bottom: 3px solid #1c8e3e; }
-  .seccion__preguntas li {
-    padding: 10px 0px;
-    /**/ }
-  .seccion__preguntas a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    padding: 20px auto; }
-  .seccion__respuestas {
-    width: 100%;
-    /**/
-    text-align: center;
-    overflow: auto; }
-  .seccion__respuestas h1 {
-    margin: 30px auto;
-    letter-spacing: 1px;
-    /**/
-    color: #fff;
-    display: none; }
-  .seccion__respuestas h2 {
-    margin: 20px auto;
-    letter-spacing: 1px;
-    /**/
-    color: #1c8e3e;
-    /**/ }
-  .seccion__respuestas p {
-    width: 100%;
-    margin: auto;
-    height: auto;
-    font-size: 1rem; }
-  .seccion__respuestas span {
-    font-weight: bold; }
-  .seccion__respuestas a {
-    text-decoration: none;
-    color: #1c8e3e; } }
+    .seccion .seccion__preguntas {
+      background-color: rgba(0, 0, 0, 0);
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+      /**/
+      border-right: none;
+      /**/
+      margin-top: 40px;
+      /**/
+      border-bottom: 3px solid #1c8e3e; }
+      .seccion .seccion__preguntas li {
+        padding: 0px;
+        /**/ }
+      .seccion .seccion__preguntas a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        padding: 20px auto; }
+    .seccion .seccion__respuestas {
+      width: 100%;
+      /**/
+      text-align: center;
+      overflow: auto; }
+      .seccion .seccion__respuestas h1 {
+        margin: 30px auto;
+        letter-spacing: 1px;
+        /**/
+        color: #fff;
+        display: none; }
+      .seccion .seccion__respuestas h2 {
+        margin: 20px auto;
+        letter-spacing: 1px;
+        /**/
+        color: #1c8e3e;
+        /**/ }
+      .seccion .seccion__respuestas p {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        font-size: 1rem; }
+      .seccion .seccion__respuestas span {
+        font-weight: bold; }
+      .seccion .seccion__respuestas a {
+        text-decoration: none;
+        color: #1c8e3e; } }
 
 /************************************************************************************************************/
