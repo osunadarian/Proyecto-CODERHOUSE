@@ -7,6 +7,8 @@ $blancoCoder: rgba(255, 255, 255, 0.9);
 $trasparente: rgba(0,0,0,0.0);
 $negroCoder: rgb(20, 20, 20);
 $grisClaro: rgb(206, 203, 203);
+$verdeClaroCoder: #22b14c;
+$grisOscuro: rgba(100, 100, 100, 0.8);
 
 /* SCSS */
 
@@ -131,7 +133,7 @@ body{
 
     .buttonNav:hover{
 
-        background-color: rgb(0, 0, 0);
+        background-color: $negroCoder;
         color: $verdeCoder;
         font-size: 1.5rem;
         
@@ -183,7 +185,7 @@ body{
 
     .boton{
 
-        background: rgba(0,0,0, 0.5);
+        background: $trasparente;
         border: none;
         border-radius: 5px;
         padding: 12px 20px;
@@ -393,7 +395,7 @@ body{
 
         #send{
 
-            border: 4px solid #4f7068;
+            border: 4px solid $blancoCoder;
             font-size: 1.5rem;
             background-color: $trasparente;
             color: $blancoCoder;
@@ -427,7 +429,7 @@ body{
 
     width: 50%;
     margin: 30px auto auto auto;
-    color: #22b14c;
+    color: $verdeClaroCoder;
     font-size: 1.5rem;
 
     h1{
@@ -535,7 +537,7 @@ body{
 
         .botonNewUser:hover{
 
-            background-color: rgb(71, 179, 71);
+            background-color: $grisClaro;
         
         }
     }
@@ -588,7 +590,7 @@ body{
 
         .itemsHelp li a:hover{
 
-            color:#22b14c;
+            color:$verdeClaroCoder;
         
         }
     }
@@ -665,7 +667,7 @@ body{
 
     width: 50%;
     margin: 100px auto 150px auto;
-    color: #22b14c;
+    color: $verdeClaroCoder;
     font-size: 1.5rem;
     text-align: center;
 
@@ -723,7 +725,7 @@ body{
 
     .sendCode:hover{
 
-        background-color: #22b14c;
+        background-color: $verdeClaroCoder;
     
     }
 }
@@ -753,7 +755,7 @@ body{
         .boxPlan{
 
             margin: 20px;
-            border: 2px solid #22b14c;
+            border: 2px solid $verdeClaroCoder;
             border-radius: 10px;
             background-color: $negroCoder;
         
@@ -776,7 +778,7 @@ body{
 
             h2{
 
-                color: #22b14c;
+                color: $verdeClaroCoder;
                 margin-top: 30px;
                 margin-bottom: 30px;
             
@@ -798,7 +800,7 @@ body{
 
             .getPlan:hover{
 
-                background-color: #22b14c;
+                background-color: $verdeClaroCoder;
             
             }
         }
@@ -813,7 +815,7 @@ body{
 
         text-align: center;
         margin-top: 50px;
-        color: #22b14c;
+        color: $verdeClaroCoder;
         animation-name: sizeSubtitle;
         animation-duration: 2s;
         animation-direction: alternate-reverse;
@@ -858,7 +860,7 @@ body{
 
     .seccion__preguntas{
 
-        background-color: rgba(0, 0, 0, 0);
+        background-color: $negroCoder;
         width: 30%;
         text-align: center;
         border-right: 5px solid $verdeCoder;
@@ -980,7 +982,7 @@ body{
 
                 a:hover{
 
-                    color: #1c8e3e;
+                    color: $verdeCoder;
             
                 }
             }
@@ -1000,7 +1002,7 @@ body{
                     .campoBusqueda{
     
                         border: none;
-                        background-color: rgba(100, 99, 99, 0.835);
+                        background-color: $grisOscuro;
                         border-radius: 20px;
                         width: 40%;
                         margin-left: 20px;
@@ -1177,7 +1179,7 @@ body{
 
                 h2{
 
-                    color: #22b14c;
+                    color: $verdeClaroCoder;
                     margin-top: 30px;
                     margin-bottom: 30px;
                     font-size: 1.5rem;
@@ -1279,7 +1281,7 @@ body{
 
         width: 100%;
         margin: 30px auto auto auto;
-        color: #22b14c;
+        color: $verdeClaroCoder;
         font-size: 1rem;
 
         h1{
@@ -1363,7 +1365,7 @@ body{
 
         width: 100%;
         margin: 100px auto 100px auto;
-        color: #22b14c;
+        color: $verdeClaroCoder;
         font-size: 1rem;
         text-align: center;
 
@@ -1402,13 +1404,13 @@ body{
 
         .seccion__preguntas{
 
-            background-color: rgba(0, 0, 0, 0);
+            background-color: $negroCoder;
             width: 100%;
             text-align: center;
             font-size: 1rem;/**/
             border-right: none;/**/
             margin-top: 40px;/**/
-            border-bottom: 3px solid #1c8e3e;
+            border-bottom: 3px solid $verdeCoder;
 
             li{
 
@@ -1447,7 +1449,7 @@ body{
 
                 margin: 20px auto;
                 letter-spacing: 1px;/**/
-                color: #1c8e3e;/**/
+                color: $verdeCoder;/**/
         
             }
 
@@ -1468,7 +1470,7 @@ body{
             a{
 
                 text-decoration: none;
-                color: #1c8e3e;
+                color: $verdeCoder;
         
             }
         }
@@ -1524,7 +1526,7 @@ body{
 
                 a:hover{
 
-                    color: #1c8e3e;
+                    color: $verdeCoder;
             
                 }
             }
@@ -1544,7 +1546,7 @@ body{
                     .campoBusqueda{
     
                         border: none;
-                        background-color: rgba(100, 99, 99, 0.835);
+                        background-color: $grisOscuro;
                         border-radius: 20px;
                         width: 40%;
                         margin-left: 20px;
@@ -1723,7 +1725,7 @@ body{
 
                 h2{
 
-                    color: #22b14c;
+                    color: $verdeClaroCoder;
                     margin-top: 30px;
                     margin-bottom: 30px;
                     font-size: 1.5rem;
@@ -1825,7 +1827,7 @@ body{
 
         width: 100%;
         margin: 30px auto auto auto;
-        color: #22b14c;
+        color: $verdeClaroCoder;
         font-size: 1rem;
 
         h1{
@@ -1909,7 +1911,7 @@ body{
 
         width: 100%;
         margin: 100px auto 100px auto;
-        color: #22b14c;
+        color: $verdeClaroCoder;
         font-size: 1rem;
         text-align: center;
 
@@ -1948,13 +1950,13 @@ body{
 
         .seccion__preguntas{
 
-            background-color: rgba(0, 0, 0, 0);
+            background-color: $negroCoder;
             width: 100%;
             text-align: center;
             font-size: 1rem;/**/
             border-right: none;/**/
             margin-top: 40px;/**/
-            border-bottom: 3px solid #1c8e3e;
+            border-bottom: 3px solid $verdeCoder;
 
             li{
 
@@ -1993,7 +1995,7 @@ body{
 
                 margin: 20px auto;
                 letter-spacing: 1px;/**/
-                color: #1c8e3e;/**/
+                color: $verdeCoder;/**/
         
             }
 
@@ -2014,7 +2016,7 @@ body{
             a{
 
                 text-decoration: none;
-                color: #1c8e3e;
+                color: $verdeCoder;
         
             }
         }
@@ -2073,7 +2075,7 @@ body{
 
                 a:hover{
 
-                    color: #1c8e3e;
+                    color: $verdeCoder;
             
                 }
             }
@@ -2093,7 +2095,7 @@ body{
                     .campoBusqueda{
     
                         border: none;
-                        background-color: rgba(100, 99, 99, 0.835);
+                        background-color: $grisOscuro;
                         border-radius: 20px;
                         width: 40%;
                         margin-left: 20px;
@@ -2272,7 +2274,7 @@ body{
 
                 h2{
 
-                    color: #22b14c;
+                    color: $verdeClaroCoder;
                     margin-top: 30px;
                     margin-bottom: 30px;
                     font-size: 1.5rem;
@@ -2374,7 +2376,7 @@ body{
 
         width: 100%;
         margin: 30px auto auto auto;
-        color: #22b14c;
+        color: $verdeClaroCoder;
         font-size: 1rem;
 
         h1{
@@ -2458,7 +2460,7 @@ body{
 
         width: 100%;
         margin: 100px auto 100px auto;
-        color: #22b14c;
+        color: $verdeClaroCoder;
         font-size: 1rem;
         text-align: center;
 
@@ -2497,13 +2499,13 @@ body{
 
         .seccion__preguntas{
 
-            background-color: rgba(0, 0, 0, 0);
+            background-color: $negroCoder;
             width: 100%;
             text-align: center;
             font-size: 1rem;/**/
             border-right: none;/**/
             margin-top: 40px;/**/
-            border-bottom: 3px solid #1c8e3e;
+            border-bottom: 3px solid $verdeCoder;
 
             li{
 
@@ -2542,7 +2544,7 @@ body{
 
                 margin: 20px auto;
                 letter-spacing: 1px;/**/
-                color: #1c8e3e;/**/
+                color: $verdeCoder;/**/
         
             }
 
@@ -2563,7 +2565,7 @@ body{
             a{
 
                 text-decoration: none;
-                color: #1c8e3e;
+                color: $verdeCoder;
         
             }
         }

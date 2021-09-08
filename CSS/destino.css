@@ -78,7 +78,7 @@ body {
       color: rgba(255, 255, 255, 0.9);
       text-decoration: none; }
   .header .buttonNav:hover {
-    background-color: black;
+    background-color: #141414;
     color: #1c8e3e;
     font-size: 1.5rem; }
 
@@ -111,7 +111,7 @@ body {
     max-width: 50%;
     margin-bottom: 20px; }
   .img-principal .boton {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0);
     border: none;
     border-radius: 5px;
     padding: 12px 20px;
@@ -250,7 +250,7 @@ body {
       color: rgba(255, 255, 255, 0.9);
       outline: none; }
     .containerLogin .recuadroDatosUser #send {
-      border: 4px solid #4f7068;
+      border: 4px solid rgba(255, 255, 255, 0.9);
       font-size: 1.5rem;
       background-color: rgba(0, 0, 0, 0);
       color: rgba(255, 255, 255, 0.9);
@@ -333,7 +333,7 @@ body {
       font-weight: bold;
       transition: background-color 0.3s ease-in-out; }
     .recuadroDatos .cuadroBotones .botonNewUser:hover {
-      background-color: #47b347; }
+      background-color: #cecbcb; }
 
 /* ayuda.HTML */
 .containerHelp {
@@ -514,7 +514,7 @@ body {
   flex-direction: row;
   height: 700px; }
   .seccion .seccion__preguntas {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #141414;
     width: 30%;
     text-align: center;
     border-right: 5px solid #1c8e3e; }
@@ -584,7 +584,7 @@ body {
           justify-content: center; }
           .header .secciones li .barraBusqueda .campoBusqueda {
             border: none;
-            background-color: rgba(100, 99, 99, 0.835);
+            background-color: rgba(100, 100, 100, 0.8);
             border-radius: 20px;
             width: 40%;
             margin-left: 20px;
@@ -795,7 +795,7 @@ body {
     display: flex;
     flex-direction: column; }
     .seccion .seccion__preguntas {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: #141414;
       width: 100%;
       text-align: center;
       font-size: 1rem;
@@ -884,7 +884,7 @@ body {
           justify-content: center; }
           .header .secciones li .barraBusqueda .campoBusqueda {
             border: none;
-            background-color: rgba(100, 99, 99, 0.835);
+            background-color: rgba(100, 100, 100, 0.8);
             border-radius: 20px;
             width: 40%;
             margin-left: 20px;
@@ -1095,7 +1095,7 @@ body {
     display: flex;
     flex-direction: column; }
     .seccion .seccion__preguntas {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: #141414;
       width: 100%;
       text-align: center;
       font-size: 1rem;
@@ -1186,7 +1186,7 @@ body {
           justify-content: center; }
           .header .secciones li .barraBusqueda .campoBusqueda {
             border: none;
-            background-color: rgba(100, 99, 99, 0.835);
+            background-color: rgba(100, 100, 100, 0.8);
             border-radius: 20px;
             width: 40%;
             margin-left: 20px;
@@ -1397,7 +1397,7 @@ body {
     display: flex;
     flex-direction: column; }
     .seccion .seccion__preguntas {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: #141414;
       width: 100%;
       text-align: center;
       font-size: 1rem;
