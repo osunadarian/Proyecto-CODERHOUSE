@@ -25,113 +25,102 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
 
-    #barraNavegacion{
+    .containerLogo{
 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    
+        width: 50%;
+        background-color: blueviolet;
+
     }
 
-    .secciones{
+    .containerSecciones{
 
-        display: flex;
-        font-size: 1rem;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 100%;
+        background-color: brown;
+        width: 50%;
 
-        .listItem{
+        .secciones{
 
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            flex-wrap: wrap;
+            font-size: 1rem;
+            background-color:darkblue;
+            width: auto;
+
+            .listItem{
+
+                list-style: none;
+
+                a{
+
+                    text-decoration: none;
+                    color: $grisClaro;
+                    font-family: 'Lato', sans-serif;
+                    padding: 0 10px;
+                    background-color: darkgoldenrod;
+
+                    transition: font-size 0.3s ease;
+
+                }
+
+                a:hover{
+
+                    font-size: 1.2rem;
+
+                }
+            }
+            
+            .campoBusqueda{
+
+                border: none;
+                background-color: rgba(100, 99, 99, 0.835); /*gris intermedio*/
+                border-radius: 20px;
+                margin-left: 15px;
+                outline: none;
+                color: $blancoCoder;
+                font-weight: bold;
+                letter-spacing: 1px;
+                
+            }
+        }
+
+        .buttonNav{
+
+            width: 50px;
+            height: 50px;
+            background-color: $verdeCoder;
+            border-top: 3px solid $blancoCoder;
+            border-bottom: 3px solid $blancoCoder;
+            border-left: 3px solid $blancoCoder;
+            border-right: 1px solid $blancoCoder;
+            position: fixed;
+            right: 0px;
+            bottom: 100px;
             list-style: none;
-            padding: 20px;
+
+            z-index: 999;
+
+            transition: 0.3s all;
+
 
             a{
 
+                color: $blancoCoder;
                 text-decoration: none;
-                color: $grisClaro; /*gris claro*/
-                font-family: 'Lato', sans-serif;
-
+            
             }
+
         }
 
-        li{
+        .buttonNav:hover{
 
-            list-style: none;
-
-            .barraBusqueda{
-
-                display: flex;
-                flex-direction: row;
-                padding: 2px;
-
-                .campoBusqueda{
-
-                    border: none;
-                    background-color: rgba(100, 99, 99, 0.835); /*gris intermedio*/
-                    border-radius: 20px;
-                    width: 40%;
-                    margin-left: 20px;
-                    padding-left: 8px;
-                    outline: none;
-                    color: $blancoCoder;
-                    font-weight: bold;
-                    letter-spacing: 1px;
-                    
-                }
-
-                .buttonSearch{
-
-                    border: none;
-                    margin-left: 5px;
-                    margin-right: 8px;
-                    padding: 5px;
-                    background-color: $trasparente; /*trasparente*/
-                    color: $blancoCoder;
-                    font-family: 'Lato', sans-serif;
-                    
-                }
-            }
-        }
-    }
-
-    .buttonNav{
-
-        width: 50px;
-        height: 50px;
-        background-color: $verdeCoder;
-        border-top: 3px solid $blancoCoder;
-        border-bottom: 3px solid $blancoCoder;
-        border-left: 3px solid $blancoCoder;
-        border-right: 1px solid $blancoCoder;
-        position: fixed;
-        right: 0px;
-        bottom: 100px;
-        list-style: none;
-
-        z-index: 999;
-
-        transition: 0.3s all;
-
-
-        a{
-
-            color: $blancoCoder;
-            text-decoration: none;
-        
+            background-color: $negroCoder;
+            color: $verdeCoder;
+            font-size: 1.5rem;
+            
         }
 
-    }
-
-    .buttonNav:hover{
-
-        background-color: $negroCoder;
-        color: $verdeCoder;
-        font-size: 1.5rem;
-        
     }
 
 }

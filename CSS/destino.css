@@ -11,75 +11,63 @@ body {
 .header {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end; }
-  .header #barraNavegacion {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .header .secciones {
-    display: flex;
-    font-size: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%; }
-    .header .secciones .listItem {
+  flex-direction: row; }
+  .header .containerLogo {
+    width: 50%;
+    background-color: blueviolet; }
+  .header .containerSecciones {
+    background-color: brown;
+    width: 50%; }
+    .header .containerSecciones .secciones {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      flex-wrap: wrap;
+      font-size: 1rem;
+      background-color: darkblue;
+      width: auto; }
+      .header .containerSecciones .secciones .listItem {
+        list-style: none; }
+        .header .containerSecciones .secciones .listItem a {
+          text-decoration: none;
+          color: #cecbcb;
+          font-family: 'Lato', sans-serif;
+          padding: 0 10px;
+          background-color: darkgoldenrod;
+          transition: font-size 0.3s ease; }
+        .header .containerSecciones .secciones .listItem a:hover {
+          font-size: 1.2rem; }
+      .header .containerSecciones .secciones .campoBusqueda {
+        border: none;
+        background-color: rgba(100, 99, 99, 0.835);
+        /*gris intermedio*/
+        border-radius: 20px;
+        margin-left: 15px;
+        outline: none;
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: bold;
+        letter-spacing: 1px; }
+    .header .containerSecciones .buttonNav {
+      width: 50px;
+      height: 50px;
+      background-color: #1c8e3e;
+      border-top: 3px solid rgba(255, 255, 255, 0.9);
+      border-bottom: 3px solid rgba(255, 255, 255, 0.9);
+      border-left: 3px solid rgba(255, 255, 255, 0.9);
+      border-right: 1px solid rgba(255, 255, 255, 0.9);
+      position: fixed;
+      right: 0px;
+      bottom: 100px;
       list-style: none;
-      padding: 20px; }
-      .header .secciones .listItem a {
-        text-decoration: none;
-        color: #cecbcb;
-        /*gris claro*/
-        font-family: 'Lato', sans-serif; }
-    .header .secciones li {
-      list-style: none; }
-      .header .secciones li .barraBusqueda {
-        display: flex;
-        flex-direction: row;
-        padding: 2px; }
-        .header .secciones li .barraBusqueda .campoBusqueda {
-          border: none;
-          background-color: rgba(100, 99, 99, 0.835);
-          /*gris intermedio*/
-          border-radius: 20px;
-          width: 40%;
-          margin-left: 20px;
-          padding-left: 8px;
-          outline: none;
-          color: rgba(255, 255, 255, 0.9);
-          font-weight: bold;
-          letter-spacing: 1px; }
-        .header .secciones li .barraBusqueda .buttonSearch {
-          border: none;
-          margin-left: 5px;
-          margin-right: 8px;
-          padding: 5px;
-          background-color: rgba(0, 0, 0, 0);
-          /*trasparente*/
-          color: rgba(255, 255, 255, 0.9);
-          font-family: 'Lato', sans-serif; }
-  .header .buttonNav {
-    width: 50px;
-    height: 50px;
-    background-color: #1c8e3e;
-    border-top: 3px solid rgba(255, 255, 255, 0.9);
-    border-bottom: 3px solid rgba(255, 255, 255, 0.9);
-    border-left: 3px solid rgba(255, 255, 255, 0.9);
-    border-right: 1px solid rgba(255, 255, 255, 0.9);
-    position: fixed;
-    right: 0px;
-    bottom: 100px;
-    list-style: none;
-    z-index: 999;
-    transition: 0.3s all; }
-    .header .buttonNav a {
-      color: rgba(255, 255, 255, 0.9);
-      text-decoration: none; }
-  .header .buttonNav:hover {
-    background-color: #141414;
-    color: #1c8e3e;
-    font-size: 1.5rem; }
+      z-index: 999;
+      transition: 0.3s all; }
+      .header .containerSecciones .buttonNav a {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none; }
+    .header .containerSecciones .buttonNav:hover {
+      background-color: #141414;
+      color: #1c8e3e;
+      font-size: 1.5rem; }
 
 .img-principal {
   font-size: 16px;
