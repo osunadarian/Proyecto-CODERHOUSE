@@ -60,13 +60,13 @@
                     .campoBusqueda{
     
                         border: none;
-                        background-color: $grisOscuro;
-                        border-radius: 20px;
+                        background-color: #fff;
+                        border-radius: 2px;
                         width: 40%;
                         margin-left: 20px;
                         padding-left: 8px;
                         outline: none;
-                        color: $blancoCoder;
+                        color: #000;
                         font-weight: bold;
                         letter-spacing: 1px;
                         
@@ -86,7 +86,6 @@
                 }
             }
         }
-    
     }
 
     .img-principal .descripcionMovie{
@@ -103,7 +102,10 @@
 
         .subtitle{
 
-            font-size: 1.5rem;
+            font-size: 2rem;
+            margin-top: 20px;
+            border-top: 3px solid $verdeCoder;
+            padding-top: 15px;
         }
 
         .box{
@@ -116,9 +118,9 @@
 
             .foto{
 
-                width: 30%;
-                height: 30%;
-                margin: auto;
+                width: 40%;
+                height: 40%;
+                margin: 30px;
                 border: none;
             }        
         }
@@ -604,13 +606,13 @@
                     .campoBusqueda{
     
                         border: none;
-                        background-color: $grisOscuro;
-                        border-radius: 20px;
+                        background-color: #fff;
+                        border-radius: 2px;
                         width: 40%;
                         margin-left: 20px;
                         padding-left: 8px;
                         outline: none;
-                        color: $blancoCoder;
+                        color: #000;
                         font-weight: bold;
                         letter-spacing: 1px;
                         
@@ -1153,13 +1155,13 @@
                     .campoBusqueda{
     
                         border: none;
-                        background-color: $grisOscuro;
-                        border-radius: 20px;
+                        background-color: #fff;
+                        border-radius: 2px;
                         width: 40%;
                         margin-left: 20px;
                         padding-left: 8px;
                         outline: none;
-                        color: $blancoCoder;
+                        color: #000;
                         font-weight: bold;
                         letter-spacing: 1px;
                         

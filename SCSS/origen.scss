@@ -69,16 +69,39 @@ body{
                 .campoBusqueda{
 
                     border: none;
-                    background-color: rgba(100, 99, 99, 0.835); /*gris intermedio*/
-                    border-radius: 20px;
+                    background-color: #fff;
+                    border-radius: 2px;
                     width: 40%;
                     margin-left: 20px;
                     padding-left: 8px;
                     outline: none;
-                    color: $blancoCoder;
+                    color: #000;
                     font-weight: bold;
                     letter-spacing: 1px;
-                    
+
+                    transition: all 0.3s ease;
+
+                }
+
+                .campoBusqueda:focus{
+
+                    background-color: $verdeClaroCoder;
+                    color: #fff;
+
+                }
+
+                ::placeholder{
+
+                    color: #000;
+
+                    transition: color 0.3s ease;
+
+                }
+
+                ::placeholder:focus{
+
+                    color: #fff;
+
                 }
 
                 .buttonSearch{
@@ -90,6 +113,7 @@ body{
                     background-color: $trasparente; /*trasparente*/
                     color: $blancoCoder;
                     font-family: 'Lato', sans-serif;
+                    cursor: pointer;
                     
                 }
             
@@ -246,7 +270,7 @@ body{
         .foto:hover{
 
             border: 2px solid $verdeCoder;
-            transform: scale(1.15);
+            transform: scale(1.1);
         
         }
     
