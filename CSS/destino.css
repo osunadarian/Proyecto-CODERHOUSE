@@ -133,12 +133,13 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    background-color: blueviolet; }
     .containerIndex .box .foto,
     .containerSeriesMovies .box .foto {
       width: 180px;
       height: 220px;
-      margin: 20px auto;
+      margin: 30px auto;
       cursor: pointer;
       border: none;
       border-radius: 2px;
