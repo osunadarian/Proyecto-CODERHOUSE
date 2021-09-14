@@ -2,8 +2,6 @@
 @import "colores";
 
 // Variables //
-
-
 // SCSS //
 
 *{
@@ -36,6 +34,9 @@ body{
 
         width: 50%;
         margin: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
 
         .secciones{
 
@@ -63,29 +64,30 @@ body{
                 a:hover{
 
                     color: $verdeCoder;
+                    transform: scale(1.1);
 
                 }
-
-            }
-
-            .listItem:hover{
-
-                transform: scale(1.1);
 
             }
             
             .campoBusqueda{
 
-                border: none;
-                background-color: rgba(100, 99, 99, 0.835); /*gris intermedio*/
+                border: 2px solid white;
+                background-color: #fff;
                 border-radius: 20px;
                 margin-left: 15px;
                 outline: none;
-                color: $blancoCoder;
+                color: #000;
                 font-weight: bold;
                 letter-spacing: 1px;
-                padding-left: 15px;
+                padding: 2px 2px 2px 15px;
                 
+            }
+
+            .campoBusqueda:focus{
+
+                border: 2px solid $verdeCoder;
+
             }
         }
 
