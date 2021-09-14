@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -131,6 +132,12 @@ body {
     padding-left: 15px;
     letter-spacing: 1px;
     margin-top: 30px; }
+  .containerIndex .title,
+  .containerSeriesMovies .title {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 2px;
+    font-size: 2rem; }
   .containerIndex .box,
   .containerSeriesMovies .box {
     width: 100%;
@@ -167,6 +174,76 @@ body {
     .containerIndex .boxDestacados .fotoDestacada:hover,
     .containerSeriesMovies .boxDestacados .fotoDestacada:hover {
       transform: scale(1.1); }
+
+.containerCards {
+  max-width: 1600px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .containerCards .card {
+    width: 300px;
+    margin: 30px;
+    transition: all 0.3s ease-in-out; }
+    .containerCards .card .cover {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden; }
+      .containerCards .card .cover img {
+        width: 250px;
+        position: relative;
+        margin: auto;
+        z-index: 1;
+        top: 80px;
+        display: block;
+        transition: all 0.4s ease-in-out; }
+      .containerCards .card .cover .img__back {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        bottom: -20px;
+        background-size: cover;
+        left: 0;
+        border-radius: 20px; }
+    .containerCards .card .descripcion {
+      background-color: rgba(255, 255, 255, 0.9);
+      margin-top: -10px;
+      padding: 20px;
+      border-radius: 0px 0px 20px 20px;
+      font-size: 1rem;
+      text-align: center; }
+      .containerCards .card .descripcion h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.2rem; }
+      .containerCards .card .descripcion input {
+        padding: 10px 40px;
+        margin: 10px;
+        border: none;
+        background-color: #1c8e3e;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: all 300ms; }
+      .containerCards .card .descripcion input:hover {
+        background-color: #22b14c; }
+      .containerCards .card .descripcion span {
+        display: block;
+        font-weight: bold; }
+  .containerCards .card:hover {
+    transform: scale(1.1); }
+  .containerCards .card:hover .cover img {
+    transform: scale(1.2); }
+  .containerCards .card:nth-of-type(1) .img__back {
+    background-image: url(../image/cards/fondo.jpg); }
+  .containerCards .card:nth-of-type(2) .img__back {
+    background-image: url(../image/cards/backgroundBBad.png); }
+  .containerCards .card:nth-of-type(3) .img__back {
+    background-image: url(../image/cards/backgroundDexter.png); }
+  .containerCards .card:nth-of-type(4) .img__back {
+    background-image: url(../image/cards/backgroundPeaky.png); }
 
 .footerF {
   margin-top: 20px;
