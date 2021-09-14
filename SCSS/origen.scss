@@ -29,46 +29,49 @@ body{
     .containerLogo{
 
         width: 50%;
-        background-color: blueviolet;
 
     }
 
     .containerSecciones{
 
-        background-color: brown;
         width: 50%;
+        margin: auto;
 
         .secciones{
 
             display: flex;
             flex-direction: row;
-            margin: auto;
             flex-wrap: wrap;
             font-size: 1rem;
-            background-color:darkblue;
-            width: auto;
 
             .listItem{
 
                 list-style: none;
+                transition: all 0.1s ease-in-out;
 
                 a{
 
                     text-decoration: none;
-                    color: $grisClaro;
+                    color: $blancoCoder;
                     font-family: 'Lato', sans-serif;
                     padding: 0 10px;
-                    background-color: darkgoldenrod;
 
-                    transition: font-size 0.3s ease;
+                    transition: all 0.3s ease-in-out;
 
                 }
 
                 a:hover{
 
-                    font-size: 1.2rem;
+                    color: $verdeCoder;
 
                 }
+
+            }
+
+            .listItem:hover{
+
+                transform: scale(1.1);
+
             }
             
             .campoBusqueda{
@@ -81,6 +84,7 @@ body{
                 color: $blancoCoder;
                 font-weight: bold;
                 letter-spacing: 1px;
+                padding-left: 15px;
                 
             }
         }
@@ -219,23 +223,21 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        background-color: blueviolet;
 
         .foto{
 
             width: 180px;
             height: 220px;
-            margin: 30px auto;
+            margin: 20px auto;
             cursor: pointer;
             border: none;
             border-radius: 2px;
         
-            transition: transform 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
 
         }
         .foto:hover{
 
-            border: 2px solid $verdeCoder;
             transform: scale(1.15);
         
         }

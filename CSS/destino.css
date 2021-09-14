@@ -13,30 +13,28 @@ body {
   display: flex;
   flex-direction: row; }
   .header .containerLogo {
-    width: 50%;
-    background-color: blueviolet; }
-  .header .containerSecciones {
-    background-color: brown;
     width: 50%; }
+  .header .containerSecciones {
+    width: 50%;
+    margin: auto; }
     .header .containerSecciones .secciones {
       display: flex;
       flex-direction: row;
-      margin: auto;
       flex-wrap: wrap;
-      font-size: 1rem;
-      background-color: darkblue;
-      width: auto; }
+      font-size: 1rem; }
       .header .containerSecciones .secciones .listItem {
-        list-style: none; }
+        list-style: none;
+        transition: all 0.1s ease-in-out; }
         .header .containerSecciones .secciones .listItem a {
           text-decoration: none;
-          color: #cecbcb;
+          color: rgba(255, 255, 255, 0.9);
           font-family: 'Lato', sans-serif;
           padding: 0 10px;
-          background-color: darkgoldenrod;
-          transition: font-size 0.3s ease; }
+          transition: all 0.3s ease-in-out; }
         .header .containerSecciones .secciones .listItem a:hover {
-          font-size: 1.2rem; }
+          color: #1c8e3e; }
+      .header .containerSecciones .secciones .listItem:hover {
+        transform: scale(1.1); }
       .header .containerSecciones .secciones .campoBusqueda {
         border: none;
         background-color: rgba(100, 99, 99, 0.835);
@@ -46,7 +44,8 @@ body {
         outline: none;
         color: rgba(255, 255, 255, 0.9);
         font-weight: bold;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        padding-left: 15px; }
     .header .containerSecciones .buttonNav {
       width: 50px;
       height: 50px;
@@ -133,20 +132,18 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: blueviolet; }
+    justify-content: space-evenly; }
     .containerIndex .box .foto,
     .containerSeriesMovies .box .foto {
       width: 180px;
       height: 220px;
-      margin: 30px auto;
+      margin: 20px auto;
       cursor: pointer;
       border: none;
       border-radius: 2px;
-      transition: transform 0.3s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
     .containerIndex .box .foto:hover,
     .containerSeriesMovies .box .foto:hover {
-      border: 2px solid #1c8e3e;
       transform: scale(1.15); }
   .containerIndex .boxDestacados,
   .containerSeriesMovies .boxDestacados {
