@@ -206,7 +206,7 @@ body{
     width: 100%;
     margin-top: 50px;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -214,9 +214,11 @@ body{
     .subtitle{
 
         color: $blancoCoder;
-        text-align: center;
+        text-align: left;
+        padding-left: 15px;
         letter-spacing: 1px;
         margin-top: 30px;
+
     }
 
     .box{
@@ -228,9 +230,9 @@ body{
 
         .foto{
 
-            width: 180px;
-            height: 220px;
-            margin: 20px auto;
+            width: 300px;
+            height: 180px;
+            margin-top: 30px;
             cursor: pointer;
             border: none;
             border-radius: 2px;
@@ -539,13 +541,14 @@ body{
 
     margin: 40px auto;
     text-align: center;
-    padding: 80px;
+    width: 40%;
+    border: 2px solid #fff; 
 
     h1{
 
         padding: 50px;
         color: $verdeCoder;
-        font-size: 3rem;
+        font-size: 2rem;
     
     }
 
@@ -554,7 +557,7 @@ body{
         .itemsHelp{
 
             width: 300px;
-            margin: 10px auto 80px auto;
+            margin: 10px auto 60px auto;
             list-style: none;
             display: flex;
             flex-direction: column;
@@ -567,8 +570,7 @@ body{
                 a{
     
                     text-decoration: none;
-                    font-size: 2rem;
-                    font-weight: bold;
+                    font-size: 1.5rem;
                     color: $blancoCoder;
                 
                     transition: color 0.3s ease-in-out;
@@ -627,27 +629,6 @@ body{
 
 
     }
-}
-
-/* series.HTML - peliculas.HTML *////////////////////////////////////////
-
-.containerSeriesMovies{
-
-    width: 100%;
-    margin-top: 50px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-size: 1.5rem;
-
-    h1 h2{
-
-    
-        margin: 30px auto 20px auto;
-    
-    }
-
 }
 
 /* reestablecer-pw.HTML *////////////////////////////////////////

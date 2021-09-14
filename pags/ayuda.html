@@ -11,19 +11,27 @@
 <body>
 
     <header class="header">
-        <a href="../index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>  
+        <div class="containerLogo">
+            <a href="index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>  
+        </div>
 
-        <nav id="barraNavegacion">
-            <ul class="secciones">
-                <li class="listItem"><a href="index.html">HOME</a></li>
-                <li class="listItem"><a href="pags/series.html">SERIES</a></li>
-                <li class="listItem"><a href="pags/peliculas.html">PELICULAS</a></li>
-                <li class="listItem"><a href="pags/ayuda.html">AYUDA</a></li>
-                <li class="listItem"><a href="pags/login.html">LOGIN</a></li>
-                <li class="listItem"><input type="text" name="search" class="campoBusqueda"></li>
-                <li class="listItem"><a href="#">BUSCAR</a></li>    
-            </ul>
-        </nav>
+        <div class="containerSecciones">
+            <nav id="barraNavegacion">
+                <ul class="secciones">
+                    <li class="listItem"><a href="../index.html">HOME</a></li>
+                    <li class="listItem"><a href="../pags/series.html">SERIES</a></li>
+                    <li class="listItem"><a href="../pags/peliculas.html">PELICULAS</a></li>
+                    <li class="listItem"><a href="../pags/ayuda.html">AYUDA</a></li>
+                    <li class="listItem"><a href="../pags/login.html">LOGIN</a></li>
+                    <li class="listItem"><input type="text" name="search" class="campoBusqueda" placeholder="Titulo..."></li>
+                    <li class="listItem"><a href="#">BUSCAR</a></li>     
+                </ul>
+            </nav>
+    
+            <button class="buttonNav">
+                <a href="#barraNavegacion"><i class="fas fa-arrow-up"></i></a>
+            </button>
+        </div>
     </header>
 
     <section class="containerHelp">
@@ -34,7 +42,7 @@
 
             <ul class="itemsHelp">
                 <li><a href="login.html">Cuenta</a></li>
-                <li><a href="appcoder.html">App de Coderflix</a></li>
+                <li><a href="appcoder.html">Coderflix App</a></li>
                 <li><a href="planes.html">Planes</a></li>
                 <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
             </ul>            

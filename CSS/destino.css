@@ -120,14 +120,15 @@ body {
   width: 100%;
   margin-top: 50px;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap; }
   .containerIndex .subtitle,
   .containerSeriesMovies .subtitle {
     color: rgba(255, 255, 255, 0.9);
-    text-align: center;
+    text-align: left;
+    padding-left: 15px;
     letter-spacing: 1px;
     margin-top: 30px; }
   .containerIndex .box,
@@ -138,9 +139,9 @@ body {
     justify-content: space-evenly; }
     .containerIndex .box .foto,
     .containerSeriesMovies .box .foto {
-      width: 180px;
-      height: 220px;
-      margin: 20px auto;
+      width: 300px;
+      height: 180px;
+      margin-top: 30px;
       cursor: pointer;
       border: none;
       border-radius: 2px;
@@ -327,14 +328,15 @@ body {
 .containerHelp {
   margin: 40px auto;
   text-align: center;
-  padding: 80px; }
+  width: 40%;
+  border: 2px solid #fff; }
   .containerHelp h1 {
     padding: 50px;
     color: #1c8e3e;
-    font-size: 3rem; }
+    font-size: 2rem; }
   .containerHelp .boxHelp .itemsHelp {
     width: 300px;
-    margin: 10px auto 80px auto;
+    margin: 10px auto 60px auto;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -343,8 +345,7 @@ body {
       margin: 30px auto 30px auto; }
       .containerHelp .boxHelp .itemsHelp li a {
         text-decoration: none;
-        font-size: 2rem;
-        font-weight: bold;
+        font-size: 1.5rem;
         color: rgba(255, 255, 255, 0.9);
         transition: color 0.3s ease-in-out; }
   .containerHelp .boxHelp .itemsHelp li a:hover {
@@ -377,18 +378,6 @@ body {
         padding-top: 10px;
         color: rgba(255, 255, 255, 0.9);
         border: none; }
-
-/* series.HTML - peliculas.HTML */
-.containerSeriesMovies {
-  width: 100%;
-  margin-top: 50px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  font-size: 1.5rem; }
-  .containerSeriesMovies h1 h2 {
-    margin: 30px auto 20px auto; }
 
 /* reestablecer-pw.HTML */
 .recuadroForgot {
