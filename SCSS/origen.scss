@@ -14,8 +14,9 @@
 body{
 
     font-family: 'Lato', sans-serif;
-    background-image: url(../image/background2.png);
     font-size: 16px;
+    background: rgb(0,33,16);
+    background: linear-gradient(90deg, rgba(0,33,16,1) 0%, rgba(0,0,0,1) 50%, rgba(0,33,16,1) 100%);
 
 }
 
@@ -24,6 +25,8 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
+
+
 
     .containerLogo{
 
@@ -65,7 +68,8 @@ body{
                 a:hover{
 
                     color: $verdeCoder;
-                    transform: scale(1.1);
+                    margin-left: 10px;
+
 
                 }
 
@@ -105,6 +109,7 @@ body{
             right: 0px;
             bottom: 100px;
             list-style: none;
+            visibility: hidden;
 
             z-index: 999;
 
@@ -239,22 +244,27 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        
+        
 
         .foto{
 
-            width: 300px;
-            height: 180px;
+            width: 180px;
+            height: 220px;
             margin-top: 30px;
             cursor: pointer;
             border: none;
-            border-radius: 2px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px $blancoCoder;
         
             transition: all 0.3s ease-in-out;
 
         }
+
         .foto:hover{
 
             transform: scale(1.15);
+            box-shadow: 1px 1px 20px $verdeClaroCoder;
         
         }
     
