@@ -2,21 +2,21 @@
 @import "colores";
 
 // Variables //
-
-
 // SCSS //
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
 }
 
 body{
 
     font-family: 'Lato', sans-serif;
-    background-image: url(../image/background2.png);
     font-size: 16px;
+    background: rgb(0,33,16);
+    background: linear-gradient(90deg, rgba(0,33,16,1) 0%, rgba(0,0,0,1) 50%, rgba(0,33,16,1) 100%);
 
 }
 
@@ -25,49 +25,49 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
 
-    #barraNavegacion{
 
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    
+
+    .containerLogo{
+
+        width: 50%;
+
     }
 
-    .secciones{
+    .containerSecciones{
 
+        width: 50%;
+        margin: auto;
+        padding: 10px;
         display: flex;
-        font-size: 1rem;
-        flex-wrap: wrap;
-        align-items: center;
+        justify-content: flex-end;
 
-        .listItem{
+        .secciones{
 
-            list-style: none;
-            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-size: 1rem;
 
-            a{
+            .listItem{
 
-                text-decoration: none;
-                color: $grisClaro; /*gris claro*/
-                font-family: 'Lato', sans-serif;
-            }
-        }
+                list-style: none;
+                transition: all 0.1s ease-in-out;
 
-        li{
+                a{
 
-            list-style: none;
+                    text-decoration: none;
+                    color: $blancoCoder;
+                    font-family: 'Lato', sans-serif;
+                    padding: 0 10px;
 
-            .barraBusqueda{
+                    transition: all 0.3s ease-in-out;
 
-                display: flex;
-                flex-direction: row;
-                padding: 2px;
+                }
 
-                .campoBusqueda{
+                a:hover{
 
+<<<<<<< HEAD
                     border: none;
                     background-color: #fff;
                     border-radius: 2px;
@@ -103,9 +103,13 @@ body{
                     color: #fff;
 
                 }
+=======
+                    color: $verdeCoder;
+                    margin-left: 10px;
+>>>>>>> rama
 
-                .buttonSearch{
 
+<<<<<<< HEAD
                     border: none;
                     margin-left: 5px;
                     margin-right: 8px;
@@ -115,47 +119,70 @@ body{
                     font-family: 'Lato', sans-serif;
                     cursor: pointer;
                     
+=======
+>>>>>>> rama
                 }
+
+            }
+            
+            .campoBusqueda{
+
+                border: 2px solid white;
+                background-color: #fff;
+                border-radius: 20px;
+                margin-left: 15px;
+                outline: none;
+                color: #000;
+                font-weight: bold;
+                letter-spacing: 1px;
+                padding: 2px 2px 2px 15px;
+                
+            }
+
+            .campoBusqueda:focus{
+
+                border: 2px solid $verdeCoder;
+
+            }
+        }
+
+        .buttonNav{
+
+            width: 50px;
+            height: 50px;
+            background-color: $verdeCoder;
+            border-top: 3px solid $blancoCoder;
+            border-bottom: 3px solid $blancoCoder;
+            border-left: 3px solid $blancoCoder;
+            border-right: 1px solid $blancoCoder;
+            position: fixed;
+            right: 0px;
+            bottom: 100px;
+            list-style: none;
+            visibility: hidden;
+
+            z-index: 999;
+
+            transition: 0.3s all;
+
+
+            a{
+
+                color: $blancoCoder;
+                text-decoration: none;
             
             }
-        
-        }
-    }
 
-    .buttonNav{
-
-        width: 50px;
-        height: 50px;
-        background-color: $verdeCoder;
-        border-top: 3px solid $blancoCoder;
-        border-bottom: 3px solid $blancoCoder;
-        border-left: 3px solid $blancoCoder;
-        border-right: 1px solid $blancoCoder;
-        position: fixed;
-        right: 0px;
-        bottom: 100px;
-        list-style: none;
-
-        z-index: 999;
-
-        transition: 0.3s all;
-
-
-        a{
-
-            color: $blancoCoder;
-            text-decoration: none;
-        
         }
 
-    }
+        .buttonNav:hover{
 
-    .buttonNav:hover{
+            background-color: $negroCoder;
+            color: $verdeCoder;
+            font-size: 1.5rem;
+            
+        }
 
-        background-color: $negroCoder;
-        color: $verdeCoder;
-        font-size: 1.5rem;
-        
     }
 
 }
@@ -168,7 +195,7 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0,0,0, .50) 100%), url(../image/Highlights/theoffice.png);
     background-position: center 30%;
     background-size: cover;
-    margin-top: 2.12em;
+    margin-top: 0;
     margin-bottom: 3.12em;
     display: flex;
     align-items: flex-end;
@@ -235,7 +262,7 @@ body{
     width: 100%;
     margin-top: 50px;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -243,10 +270,23 @@ body{
     .subtitle{
 
         color: $blancoCoder;
-        text-align: center;
+        text-align: left;
+        padding-left: 15px;
         letter-spacing: 1px;
         margin-top: 30px;
+
     }
+
+    
+    .title{
+
+        text-align: center;
+        color: $blancoCoder;
+        letter-spacing: 2px;
+        font-size: 2rem;
+
+    }
+
 
     .box{
 
@@ -254,23 +294,32 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        
+        
 
         .foto{
 
             width: 180px;
             height: 220px;
-            margin: 20px auto;
+            margin-top: 30px;
             cursor: pointer;
-            border: 2px solid $blancoCoder;
-            border-radius: 5px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px $blancoCoder;
         
-            transition: transform 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
 
         }
+
         .foto:hover{
 
+<<<<<<< HEAD
             border: 2px solid $verdeCoder;
             transform: scale(1.1);
+=======
+            transform: scale(1.15);
+            box-shadow: 1px 1px 20px $verdeClaroCoder;
+>>>>>>> rama
         
         }
     
@@ -303,6 +352,143 @@ body{
         }
     
     }
+
+}
+
+.containerCards{
+
+    max-width: 1600px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+    .card{
+
+        width: 300px;
+        margin: 30px;
+        transition: all 0.3s ease-in-out;
+
+
+        .cover{
+
+            position: relative;
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+
+            img{
+
+                width: 250px;
+                position: relative;
+                margin: auto;
+                z-index: 1;
+                top: 80px;
+                display: block;
+
+                transition: all 0.4s ease-in-out;
+    
+            }
+
+            .img__back{
+
+                width: 100%;
+                height: 200px;
+                position: absolute;
+                bottom: -20px;
+                background-size: cover;
+                left: 0;
+                border-radius: 20px;
+    
+            }
+        }
+
+        .descripcion{
+
+            background-color: $blancoCoder;
+            margin-top: -10px;
+            padding: 20px;
+            border-radius: 0px 0px 20px 20px;
+            font-size: 1rem;
+            text-align: center;
+
+            h2{
+
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+
+            }
+
+            input{
+
+                padding: 10px 40px;
+                margin: 10px;
+                border: none;
+                background-color: $verdeCoder;
+                color: #fff;
+                font-size: 14px;
+                cursor: pointer;
+                border-radius: 8px;
+
+                transition: all 300ms;
+            }
+
+            input:hover{
+
+                background-color: $verdeClaroCoder;
+            }
+
+            span{
+
+                display: block;
+                font-weight: bold;
+
+            }
+
+        }
+    }
+
+    
+    .card:hover{
+
+        transform: scale(1.1);
+
+    }
+    
+
+    .card:hover .cover img{
+
+        transform: scale(1.2);
+
+    }
+
+    .card:nth-of-type(1) .img__back{
+
+        background-image: url(../image/cards/fondo.jpg);
+
+    }
+
+    .card:nth-of-type(2) .img__back{
+
+        background-image: url(../image/cards/backgroundBBad.png);
+
+    }
+
+    .card:nth-of-type(3) .img__back{
+
+        background-image: url(../image/cards/backgroundDexter.png);
+
+    }
+
+    .card:nth-of-type(4) .img__back{
+
+        background-image: url(../image/cards/backgroundPeaky.png);
+
+    }
+
+
 
 }
 
@@ -570,13 +756,14 @@ body{
 
     margin: 40px auto;
     text-align: center;
-    padding: 80px;
+    width: 40%;
+    border: 2px solid #fff; 
 
     h1{
 
         padding: 50px;
         color: $verdeCoder;
-        font-size: 3rem;
+        font-size: 2rem;
     
     }
 
@@ -585,7 +772,7 @@ body{
         .itemsHelp{
 
             width: 300px;
-            margin: 10px auto 80px auto;
+            margin: 10px auto 60px auto;
             list-style: none;
             display: flex;
             flex-direction: column;
@@ -598,8 +785,7 @@ body{
                 a{
     
                     text-decoration: none;
-                    font-size: 2rem;
-                    font-weight: bold;
+                    font-size: 1.5rem;
                     color: $blancoCoder;
                 
                     transition: color 0.3s ease-in-out;
@@ -658,27 +844,6 @@ body{
 
 
     }
-}
-
-/* series.HTML - peliculas.HTML *////////////////////////////////////////
-
-.containerSeriesMovies{
-
-    width: 100%;
-    margin-top: 50px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-size: 1.5rem;
-
-    h1 h2{
-
-    
-        margin: 30px auto 20px auto;
-    
-    }
-
 }
 
 /* reestablecer-pw.HTML *////////////////////////////////////////

@@ -1,25 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: 'Lato', sans-serif;
-  background-image: url(../image/background2.png);
-  font-size: 16px; }
+  font-size: 16px;
+  background: #002110;
+  background: linear-gradient(90deg, #002110 0%, black 50%, #002110 100%); }
 
 .header {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end; }
-  .header #barraNavegacion {
+  flex-direction: row; }
+  .header .containerLogo {
+    width: 50%; }
+  .header .containerSecciones {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
     display: flex;
-    flex-direction: row;
-    align-items: center; }
-  .header .secciones {
-    display: flex;
+<<<<<<< HEAD
     font-size: 1rem;
     flex-wrap: wrap;
     align-items: center; }
@@ -88,6 +90,60 @@ body {
     background-color: #141414;
     color: #1c8e3e;
     font-size: 1.5rem; }
+=======
+    justify-content: flex-end; }
+    .header .containerSecciones .secciones {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 1rem; }
+      .header .containerSecciones .secciones .listItem {
+        list-style: none;
+        transition: all 0.1s ease-in-out; }
+        .header .containerSecciones .secciones .listItem a {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.9);
+          font-family: 'Lato', sans-serif;
+          padding: 0 10px;
+          transition: all 0.3s ease-in-out; }
+        .header .containerSecciones .secciones .listItem a:hover {
+          color: #1c8e3e;
+          margin-left: 10px; }
+      .header .containerSecciones .secciones .campoBusqueda {
+        border: 2px solid white;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-left: 15px;
+        outline: none;
+        color: #000;
+        font-weight: bold;
+        letter-spacing: 1px;
+        padding: 2px 2px 2px 15px; }
+      .header .containerSecciones .secciones .campoBusqueda:focus {
+        border: 2px solid #1c8e3e; }
+    .header .containerSecciones .buttonNav {
+      width: 50px;
+      height: 50px;
+      background-color: #1c8e3e;
+      border-top: 3px solid rgba(255, 255, 255, 0.9);
+      border-bottom: 3px solid rgba(255, 255, 255, 0.9);
+      border-left: 3px solid rgba(255, 255, 255, 0.9);
+      border-right: 1px solid rgba(255, 255, 255, 0.9);
+      position: fixed;
+      right: 0px;
+      bottom: 100px;
+      list-style: none;
+      visibility: hidden;
+      z-index: 999;
+      transition: 0.3s all; }
+      .header .containerSecciones .buttonNav a {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none; }
+    .header .containerSecciones .buttonNav:hover {
+      background-color: #141414;
+      color: #1c8e3e;
+      font-size: 1.5rem; }
+>>>>>>> rama
 
 .img-principal {
   font-size: 16px;
@@ -96,7 +152,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(../image/Highlights/theoffice.png);
   background-position: center 30%;
   background-size: cover;
-  margin-top: 2.12em;
+  margin-top: 0;
   margin-bottom: 3.12em;
   display: flex;
   align-items: flex-end; }
@@ -138,16 +194,23 @@ body {
   width: 100%;
   margin-top: 50px;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap; }
   .containerIndex .subtitle,
   .containerSeriesMovies .subtitle {
     color: rgba(255, 255, 255, 0.9);
-    text-align: center;
+    text-align: left;
+    padding-left: 15px;
     letter-spacing: 1px;
     margin-top: 30px; }
+  .containerIndex .title,
+  .containerSeriesMovies .title {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 2px;
+    font-size: 2rem; }
   .containerIndex .box,
   .containerSeriesMovies .box {
     width: 100%;
@@ -158,15 +221,21 @@ body {
     .containerSeriesMovies .box .foto {
       width: 180px;
       height: 220px;
-      margin: 20px auto;
+      margin-top: 30px;
       cursor: pointer;
-      border: 2px solid rgba(255, 255, 255, 0.9);
-      border-radius: 5px;
-      transition: transform 0.3s ease-in-out; }
+      border: none;
+      border-radius: 10px;
+      box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.9);
+      transition: all 0.3s ease-in-out; }
     .containerIndex .box .foto:hover,
     .containerSeriesMovies .box .foto:hover {
+<<<<<<< HEAD
       border: 2px solid #1c8e3e;
       transform: scale(1.1); }
+=======
+      transform: scale(1.15);
+      box-shadow: 1px 1px 20px #22b14c; }
+>>>>>>> rama
   .containerIndex .boxDestacados,
   .containerSeriesMovies .boxDestacados {
     margin-top: 20px;
@@ -185,6 +254,76 @@ body {
     .containerIndex .boxDestacados .fotoDestacada:hover,
     .containerSeriesMovies .boxDestacados .fotoDestacada:hover {
       transform: scale(1.1); }
+
+.containerCards {
+  max-width: 1600px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .containerCards .card {
+    width: 300px;
+    margin: 30px;
+    transition: all 0.3s ease-in-out; }
+    .containerCards .card .cover {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden; }
+      .containerCards .card .cover img {
+        width: 250px;
+        position: relative;
+        margin: auto;
+        z-index: 1;
+        top: 80px;
+        display: block;
+        transition: all 0.4s ease-in-out; }
+      .containerCards .card .cover .img__back {
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        bottom: -20px;
+        background-size: cover;
+        left: 0;
+        border-radius: 20px; }
+    .containerCards .card .descripcion {
+      background-color: rgba(255, 255, 255, 0.9);
+      margin-top: -10px;
+      padding: 20px;
+      border-radius: 0px 0px 20px 20px;
+      font-size: 1rem;
+      text-align: center; }
+      .containerCards .card .descripcion h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.2rem; }
+      .containerCards .card .descripcion input {
+        padding: 10px 40px;
+        margin: 10px;
+        border: none;
+        background-color: #1c8e3e;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: all 300ms; }
+      .containerCards .card .descripcion input:hover {
+        background-color: #22b14c; }
+      .containerCards .card .descripcion span {
+        display: block;
+        font-weight: bold; }
+  .containerCards .card:hover {
+    transform: scale(1.1); }
+  .containerCards .card:hover .cover img {
+    transform: scale(1.2); }
+  .containerCards .card:nth-of-type(1) .img__back {
+    background-image: url(../image/cards/fondo.jpg); }
+  .containerCards .card:nth-of-type(2) .img__back {
+    background-image: url(../image/cards/backgroundBBad.png); }
+  .containerCards .card:nth-of-type(3) .img__back {
+    background-image: url(../image/cards/backgroundDexter.png); }
+  .containerCards .card:nth-of-type(4) .img__back {
+    background-image: url(../image/cards/backgroundPeaky.png); }
 
 .footerF {
   margin-top: 20px;
@@ -347,14 +486,15 @@ body {
 .containerHelp {
   margin: 40px auto;
   text-align: center;
-  padding: 80px; }
+  width: 40%;
+  border: 2px solid #fff; }
   .containerHelp h1 {
     padding: 50px;
     color: #1c8e3e;
-    font-size: 3rem; }
+    font-size: 2rem; }
   .containerHelp .boxHelp .itemsHelp {
     width: 300px;
-    margin: 10px auto 80px auto;
+    margin: 10px auto 60px auto;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -363,8 +503,7 @@ body {
       margin: 30px auto 30px auto; }
       .containerHelp .boxHelp .itemsHelp li a {
         text-decoration: none;
-        font-size: 2rem;
-        font-weight: bold;
+        font-size: 1.5rem;
         color: rgba(255, 255, 255, 0.9);
         transition: color 0.3s ease-in-out; }
   .containerHelp .boxHelp .itemsHelp li a:hover {
@@ -397,18 +536,6 @@ body {
         padding-top: 10px;
         color: rgba(255, 255, 255, 0.9);
         border: none; }
-
-/* series.HTML - peliculas.HTML */
-.containerSeriesMovies {
-  width: 100%;
-  margin-top: 50px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  font-size: 1.5rem; }
-  .containerSeriesMovies h1 h2 {
-    margin: 30px auto 20px auto; }
 
 /* reestablecer-pw.HTML */
 .recuadroForgot {
