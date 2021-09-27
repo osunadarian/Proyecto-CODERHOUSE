@@ -1,655 +1,1414 @@
 @import "colores";
 
-@media (max-width: 576px) {
+@media (max-width: 424px){
 
     .header{
 
-        display: flex;
+        width: 100%;
         flex-direction: column;
-        justify-content: center;
-
-        a{
-
-            display: block;
-            margin: auto;
-    
-        }
-
-        .secciones{
+        position: static;
+       
+        .containerLogo{
 
             width: 100%;
-            margin: 0px;
+            text-align: center;
+
+            a img{
+
+                width: 80%;
+
+            }
+        }
+
+        .containerSecciones{
+
+            width: 100%;
+            margin: auto;
+            display: block;
             padding: 0px;
-            display: flex;
-            flex-wrap: wrap;
 
-            .listItem{
+            .secciones{
 
-                list-style: none;
-                transition: font-size 0.2s ease-in-out;
-                padding: 15px;
-                margin: auto;
+                display: flex;
+                font-size: 1.5rem;
+                flex-direction: row;
+                padding: 20px;
+                justify-content: center;
 
-                a{
 
-                    text-decoration: none;
-                    color: $grisClaro;
-                    font-family: 'Lato', sans-serif;
-            
+                .listItem{
+
+                    text-align: center;
+                    padding: 10px;
+
+                    a{
+                        margin: 20px auto;
+                    }
+
+                    a:hover{
+
+                        color: $verdeCoder;
+                        margin-left: 0px;
+
+                    }
+
+                    .campoBusqueda{
+
+                        margin: 0px;
+                        width: 100%;
+                        border-radius: 0px;
+    
+                    }
+
+                    i{
+
+                        background-color: #fff;
+
+                    }
+
                 }
 
-                a:hover{
-
-                    color: $verdeCoder;
-            
-                }
             }
 
-            li{
+            .buttonNav{
 
-                margin: auto;
-                list-style: none;
+                visibility: visible;
 
-                .barraBusqueda{
-
-                    display: flex;
-                    flex-direction: row; 
-                    padding: 2px;
-                    justify-content: center;
-    
-                    .campoBusqueda{
-    
-                        border: none;
-                        background-color: #fff;
-                        border-radius: 2px;
-                        width: 40%;
-                        margin-left: 20px;
-                        padding-left: 8px;
-                        outline: none;
-                        color: #000;
-                        font-weight: bold;
-                        letter-spacing: 1px;
-                        
-                    }
-    
-                    .buttonSearch{
-    
-                        border: none;
-                        margin-left: 5px;
-                        margin-right: 8px;
-                        font-size: 1rem;
-                        padding: 5px;
-                        background-color: $trasparente;
-                        color: $blancoCoder;
-                
-                    }
-                }
             }
         }
     }
 
-    .img-principal .descripcionMovie{
+    .img-principal{
 
-        max-width: 100%;
+        display: none;
 
     }
 
     .containerIndex,
     .containerSeriesMovies{
 
+        .subtitle{
+
+            text-align: center;
+            font-size: 2rem;
+
+        }
+
+
+        .destacadosKids{
+
+            display: none;
+            
+        }
+
+        .boxDestacados{
+
+            display: none;    
+        }
+    }   
+
+    .containerCards{
+
+        display: none;
+    }
+
+    .containerFirstMovie{
+
+        display: none;
+
+    }
+
+    .footerF{
+
+        font-size: 1.2rem;
+
+        span{
+
+            display: block;
+
+        }
+
+        a{
+            img{
+
+                width: 40%;
+            }
+        }
+    }
+
+    /* LOGIN.HTML *////////////////////////////////////////
+
+    .containerLogin{
+
         width: 100%;
-        margin-top: 25px;
+        margin: 20px auto 100px auto;
+
+        a{
+            font-size: 1.3rem;
+        }
+
+    }
+
+    /* NEW-USER.HTML *////////////////////////////////////////
+
+    .recuadroDatos{
+
+        width: 100%;
+
+        .cuadroBotones{
+
+            width: 100%;
+
+            .botonNewUser{
+
+                width: 40%;
+                display: block;
+                margin: 10px auto;
+
+            }
+
+        }
+
+    }
+
+    /* ayuda.HTML *////////////////////////////////////////
+
+    .containerHelp{ 
+
+        margin: 20px auto;
+        margin-top: 0px;
+        width: 100%; 
+
+        h1{
+
+            padding: 20px;
+            font-size: 2.2rem;
+        
+        }
+
+        .boxHelp{
+            
+            .itemsHelp{
+
+                width: 100%;
+
+                li{
+                    a{
+        
+                        font-size: 1.8rem;
+        
+                    }
+                }
+            }
+
+            .itemsHelp li a:hover{
+
+                color: $verdeClaroCoder;
+            
+            }
+        }
+
+        .containerButtons{
+
+            display: block;
+
+            div{
+
+                width: 80%;
+
+            }
+        }
+    }
+
+    /* reestablecer-pw.HTML *////////////////////////////////////////
+
+    .recuadroForgot{
+
+        width: 100%;
+        margin: 10px 0px 50px 0px;
+
+    }
+
+    /* planes.HTML *////////////////////////////////////////
+
+    .boxPlanes{
+
+        margin: 0px auto 100px auto;
+
+        h1{
+
+            font-size: 2rem;
+            margin: 10px;
+        
+        }
+
+        .container-planes{
+
+            margin: auto auto 10px auto;
+            display: flex;
+            flex-direction: column;
+        
+        }
+    }
+
+    /* appcoder.HTML *////////////////////////////////////////
+
+    .boxApps{
+
+        margin-top: 10px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+
+    
+        .boxMarca{
+
+            width: 50%;
+            flex-direction: column;
+            margin: 20px auto;
+
+        }
+
+
+    }
+
+
+    /* cuenta.HTML *//////////////////////////////////////////
+
+    .boxAyudaLogin{
+
+        margin-top: 0px;
+
+        .boxBotonesLogin{
+
+            width: 100%;
+            text-align: center;
+
+            button{
+
+                padding: 10px 25px;
+
+            }
+        }
+
+        .campoDeAyuda{
+
+            width: 100%;
+
+            input{
+
+                width: 80%;
+
+            }
+
+        }
+
+        .boxAyudaTemas{
+
+            padding-bottom: 40px;
+            flex-direction: column;
+
+            .itemBox{
+
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+               
+
+                h2{
+
+                    color: $verdeCoder;
+                    font-size: 2rem;
+
+                } 
+
+                ul li{
+
+                    font-size: 1.2rem;
+                    list-style: none;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    /* preguntasFrecuentes.HTML *////////////////////////////////////////
+
+    .seccion{
+
+        width: 100%;
+        margin: 0px auto;
+
+        .seccion__respuestas{
+
+            width: 100%;
+
+            h1{
+
+                margin: 30px auto;
+            
+            }
+
+            .pregunta{
+
+                margin: 20px auto;
+                font-size: 1.5rem;
+            
+            }
+
+            p{
+
+                width: 90%;
+                font-size: 1.2rem;
+
+            }
+        }
+    }
+}
+
+@media (min-width: 425px) and (max-width: 576px){
+
+    .header{
+
+        width: 100%;
+        flex-direction: column;
+        position: static;
+       
+        .containerLogo{
+
+            width: 100%;
+            text-align: center;
+
+            a img{
+
+                width: 80%;
+
+            }
+        }
+
+        .containerSecciones{
+
+            width: 100%;
+            margin: auto;
+            display: block;
+            padding: 0px;
+
+            .secciones{
+
+                display: flex;
+                font-size: 1.5rem;
+                flex-direction: row;
+                padding: 20px;
+                justify-content: center;
+
+
+                .listItem{
+
+                    text-align: center;
+                    padding: 10px;
+
+                    a{
+                        margin: 20px auto;
+                    }
+
+                    a:hover{
+
+                        color: $verdeCoder;
+                        margin-left: 0px;
+
+                    }
+
+                    .campoBusqueda{
+
+                        margin: 0px;
+                        width: 100%;
+                        border-radius: 0px;
+    
+                    }
+
+                    i{
+
+                        background-color: #fff;
+
+                    }
+
+                }
+
+            }
+
+            .buttonNav{
+
+                visibility: visible;
+
+            }
+        }
+    }
+
+    .img-principal{
+
+        margin-top: 20px;
+
+        .contenedorImg{
+
+            margin: 0 auto;
+            margin-bottom: 30px;
+        
+        }
+
+        .descripcionMovie{
+
+            font-size: 1.2em;
+            max-width: 100%;
+    
+        }
+
+    }
+
+    .containerIndex,
+    .containerSeriesMovies{
 
         .subtitle{
 
+            text-align: center;
             font-size: 2rem;
-            margin-top: 20px;
-            border-top: 3px solid $verdeCoder;
-            padding-top: 15px;
+
         }
 
-        .box{
+        .destacadosKids{
 
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-            margin: 0px;
+            justify-content:space-evenly;
+            margin: 50px auto;
 
-            .foto{
+            .boxDestacadoKids{
+                width: 240px;
 
-                width: 60%;
-                height: 60%;
-                margin: 5px;
-                border: none;
+                img{
+
+                    width: 240px;
+                    height: 240px;
+                    border-radius: 150px;
+                    cursor: pointer
+
+                }
+
+                p{
+                    text-align: center;
+                    color: #fff;
+                    margin-top: 15px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+
+                transition: all 0.3s ease-in-out;
+
+
+            }
+
+            .boxDestacadoKids:hover{
+
+                transform: scale(1.1);
+
+                img{
+                    box-shadow: 0px 0px 30px $verdeClaroCoder;
+                }
+            }
+        }
+
+
+        .boxDestacados{
+
+            .fotoDestacada{
+
+                width: 200px;
+                height: 290px;
+                margin: 15px;
+
             }        
+        }
+    }   
+
+    .containerCards{
+
+        .card{
+
+            width: 100%;
+            margin: 0px;
+            transition: all 0.3s ease-in-out;
+
+            .cover{
+
+                .img__back{
+
+                    border-radius: 0px;
+        
+                }
+            }
+
+            .descripcion{
+
+                border-radius: 0px;
+                font-size: 1.2rem;
+
+                h2{
+
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+    }
+
+    .containerFirstMovie{
+
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+        .portadaMovie{
+
+            width: 100%;
+
+            img{
+
+                width: 100%;
+                margin: auto;
+                
+            }
+        }
+
+        .descripcionMovie{
+
+            font-size: 1.2rem;
+
+        }
+    }
+
+    .footerF{
+
+        font-size: 1.2rem;
+
+        span{
+
+            display: block;
+
+        }
+
+        a{
+            img{
+
+                width: 40%;
+            }
+        }
+    }
+
+    /* LOGIN.HTML *////////////////////////////////////////
+
+    .containerLogin{
+
+        width: 100%;
+        margin: 20px auto 100px auto;
+
+        a{
+            font-size: 1.3rem;
+        }
+
+    }
+
+    /* NEW-USER.HTML *////////////////////////////////////////
+
+    .recuadroDatos{
+
+        width: 100%;
+
+        .cuadroBotones{
+
+            width: 100%;
+
+            .botonNewUser{
+
+                width: 40%;
+                display: block;
+                margin: 10px auto;
+
+            }
+
+        }
+
+    }
+
+    /* ayuda.HTML *////////////////////////////////////////
+
+    .containerHelp{ 
+
+        margin: 20px auto;
+        margin-top: 0px;
+        width: 100%; 
+
+        h1{
+
+            padding: 20px;
+            font-size: 2.2rem;
+        
+        }
+
+        .boxHelp{
+            
+            .itemsHelp{
+
+                width: 100%;
+
+                li{
+                    a{
+        
+                        font-size: 1.8rem;
+        
+                    }
+                }
+            }
+
+            .itemsHelp li a:hover{
+
+                color: $verdeClaroCoder;
+            
+            }
+        }
+
+        .containerButtons{
+
+            div{
+
+                width: 40%;
+
+            }
+        }
+    }
+
+    /* reestablecer-pw.HTML *////////////////////////////////////////
+
+    .recuadroForgot{
+
+        width: 100%;
+        margin: 10px 0px 50px 0px;
+
+    }
+
+    /* planes.HTML *////////////////////////////////////////
+
+    .boxPlanes{
+
+        margin: 0px auto 100px auto;
+
+        h1{
+
+            font-size: 2rem;
+            margin: 10px;
+        
+        }
+
+        .container-planes{
+
+            margin: auto auto 10px auto;
+            display: flex;
+            flex-direction: column;
+        
+        }
+    }
+
+    /* appcoder.HTML *////////////////////////////////////////
+
+    .boxApps{
+
+        margin-top: 10px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+
+    
+        .boxMarca{
+
+            width: 50%;
+            flex-direction: column;
+            margin: 20px auto;
+
+        }
+
+
+    }
+
+
+    /* cuenta.HTML *//////////////////////////////////////////
+
+    .boxAyudaLogin{
+
+        margin-top: 0px;
+
+        .boxBotonesLogin{
+
+            width: 100%;
+            text-align: center;
+
+            button{
+
+                padding: 10px 25px;
+
+            }
+        }
+
+        .campoDeAyuda{
+
+            width: 100%;
+
+            input{
+
+                width: 80%;
+
+            }
+
+        }
+
+        .boxAyudaTemas{
+
+            padding-bottom: 40px;
+            flex-direction: column;
+
+            .itemBox{
+
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+               
+
+                h2{
+
+                    color: $verdeCoder;
+                    font-size: 2rem;
+
+                } 
+
+                ul li{
+
+                    font-size: 1.2rem;
+                    list-style: none;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    /* preguntasFrecuentes.HTML *////////////////////////////////////////
+
+    .seccion{
+
+        width: 100%;
+        margin: 0px auto;
+
+        .seccion__respuestas{
+
+            width: 100%;
+
+            h1{
+
+                margin: 30px auto;
+            
+            }
+
+            .pregunta{
+
+                margin: 20px auto;
+                font-size: 1.5rem;
+            
+            }
+
+            p{
+
+                width: 90%;
+                font-size: 1.2rem;
+
+            }
+        }
+    }
+}
+
+@media (min-width: 577px) and (max-width: 630px){
+
+    .header{
+
+        width: 100%;
+        flex-direction: column;
+        position: static;
+        
+        .containerLogo{
+
+            width: 100%;
+            text-align: center;
+
+            a img{
+
+                width: 40%;
+
+            }
+        }
+
+        .containerSecciones{
+
+            width: 100%;
+            margin: auto;
+            display: block;
+            padding: 0px;
+
+            .secciones{
+
+                display: flex;
+                font-size: 1.5rem;
+                flex-direction: row;
+                padding: 20px;
+                justify-content: center;
+
+
+                .listItem{
+
+                    text-align: center;
+                    padding: 10px;
+
+                    a{
+                        margin: 20px auto;
+                    }
+
+                    a:hover{
+
+                        color: $verdeCoder;
+                        margin-left: 0px;
+
+                    }
+
+                    .campoBusqueda{
+
+                        margin: 0px;
+                        width: 100%;
+                        border-radius: 0px;
+    
+                    }
+
+                    i{
+
+                        background-color: #fff;
+
+                    }
+
+                }
+
+            }
+
+            .buttonNav{
+
+                visibility: visible;
+
+            }
+        }
+    }
+
+    .img-principal{
+
+        margin-top: 20px;
+
+        .contenedorImg{
+
+            margin: 0 auto;
+            margin-bottom: 30px;
+        
+        }
+
+        .descripcionMovie{
+
+            font-size: 1.2em;
+            max-width: 100%;
+    
+        }
+
+    }
+
+    .containerIndex,
+    .containerSeriesMovies{
+
+        .subtitle{
+
+            text-align: center;
+            font-size: 2rem;
+
+        }
+
+        .destacadosKids{
+
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            margin: 50px auto;
+
+            .boxDestacadoKids{
+                width: 240px;
+
+                img{
+
+                    width: 240px;
+                    height: 240px;
+                    border-radius: 150px;
+                    cursor: pointer
+
+                }
+
+                p{
+                    text-align: center;
+                    color: #fff;
+                    margin-top: 15px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+
+                transition: all 0.3s ease-in-out;
+
+
+            }
+
+            .boxDestacadoKids:hover{
+
+                transform: scale(1.1);
+
+                img{
+                    box-shadow: 0px 0px 30px $verdeClaroCoder;
+                }
+            }
         }
 
         .boxDestacados{
 
             .fotoDestacada{
 
-                width: 40%;
-                height: 40%;
-                margin: 20px;
+                width: 220px;
+                height: 310px;
+                margin: 10px;
+
+            }        
+        }
+    }   
+
+    .containerCards{
+
+        .card{
+
+            width: 45%;
+            margin: 10px;
+            transition: all 0.3s ease-in-out;
+
+            .cover{
+
+                .img__back{
+
+                    border-radius: 0px;
+        
+                }
+            }
+
+            .descripcion{
+
+                border-radius: 0px;
+                font-size: 1.2rem;
+
+                h2{
+
+                    font-size: 1.5rem;
+
+                }
             }
         }
     }
-    
-    /************************AYUDA.HTML****************************************/
 
-    .containerHelp{
+    .containerFirstMovie{
 
-        margin: auto;
-        text-align: center;
-        padding: 30px;
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 30px;
 
-        h1{
+        .portadaMovie{
 
-            padding-top: 30px;
-            font-size: 2rem;
-            text-transform: uppercase;
-            color: $verdeCoder;
+            width: 100%;
+
+            img{
+
+                width: 100%;
+                margin: auto;
+                
+            }
+        }
+
+        .descripcionMovie{
+
+            font-size: 1.2rem;
+
+        }
+    }
+
+    .footerF{
+
+        font-size: 1rem;
+
+        span{
+
+            display: inline;
+
+        }
+
+        span:last-of-type{
+
+            display: block;
     
         }
 
-        .boxHelp{
+        a{
+            img{
 
+                width: 40%;
+            }
+        }
+    }
+
+    /* LOGIN.HTML *////////////////////////////////////////
+
+    .containerLogin{
+
+        width: 100%;
+        margin: 20px auto 100px auto;
+
+        a{
+            font-size: 1.3rem;
+        }
+
+    }
+
+    /* NEW-USER.HTML *////////////////////////////////////////
+
+    .recuadroDatos{
+
+        width: 100%;
+
+        .cuadroBotones{
+
+            width: 100%;
+
+            .botonNewUser{
+
+                width: 40%;
+                display: block;
+                margin: 10px auto;
+
+            }
+
+        }
+
+    }
+
+    /* ayuda.HTML *////////////////////////////////////////
+
+    .containerHelp{ 
+
+        margin: 20px auto;
+        margin-top: 0px;
+        width: 100%; 
+
+        h1{
+
+            padding: 20px;
+            font-size: 2.2rem;
+        
+        }
+
+        .boxHelp{
+            
             .itemsHelp{
 
-                width: 80%;
+                width: 100%;
 
-                li a{
-
-                    font-size: 1.5rem;
-                    text-transform: uppercase;
-
+                li{
+                    a{
+        
+                        font-size: 1.8rem;
+        
+                    }
                 }
+            }
+
+            .itemsHelp li a:hover{
+
+                color: $verdeClaroCoder;
+            
             }
         }
 
         .containerButtons{
 
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            align-items: center;
-
             div{
 
-                display: flex;
-                flex-direction: column;
-                margin: auto;
-                align-items: center;
-                background-color: $verdeCoder;
-                border: 3px solid $blancoCoder;
-                border-radius: 10px;
+                width: 40%;
 
-                .buttonsHelp{
-
-                    margin: 0px;
-                    padding: 0px 10px 10px 10px;
-                    border: none;
-                    font-size: 1rem;
-                    color: $blancoCoder;
-                    background-color: $verdeCoder;
-                    font-weight: normal;
-                    letter-spacing: 2px;
-            
-                }
-
-                i{
-
-                    padding: 10px;
-                    color: $blancoCoder;
-                    border: none;
-
-                }
             }
         }
     }
 
+    /* reestablecer-pw.HTML *////////////////////////////////////////
 
-    /************************planes.HTML****************************************/
+    .recuadroForgot{
+
+        width: 100%;
+        margin: 40px 0px 130px 0px;
+
+    }
+
+    /* planes.HTML *////////////////////////////////////////
 
     .boxPlanes{
 
+        margin: 0px auto 100px auto;
+
         h1{
 
-            font-size: 1.7rem;
-            text-transform: uppercase;
-    
+            font-size: 2rem;
+            margin: 10px;
+        
         }
 
         .container-planes{
 
-            margin: 0px;
-            display: block;
-            flex-direction: column;
-            justify-content: center;
-
-            .boxPlan{
-
-                margin: 20px;
-                border: none;
-                border-bottom: 2px solid $verdeCoder;
-                border-radius: 0px;
-                background-color: $negroCoder;
-
-                h2{
-
-                    color: $verdeClaroCoder;
-                    margin-top: 30px;
-                    margin-bottom: 30px;
-                    font-size: 1.5rem;
-            
-                }
-
-                ul{
-
-                    text-align: center;
-                    margin: auto;
-                    letter-spacing: 1px;
-
-                    li{
-
-                        padding: 15px;
-                        text-align: center;
-                        color: $blancoCoder;
-                        font-size: 1.2rem;
-                
-                    }
-            
-                }
-
-                .getPlan{
-
-                    margin: 20px auto 20px auto;
-                    padding: 10px 30px 10px 30px;
-                    cursor: pointer;
-                    border-radius: 0px;
-                    letter-spacing: 2px;
-                    font-weight: bold;
-            
-                }
-            }
-        }
-    }
-
-    /*************login.html***************/
-
-    .containerLogin{
-
-        width: 100%;
-        margin: 40px auto 30px auto;
-        display: flex;
-        flex-direction: column;
-
-        .titleLogin{
-
-            width: 30%;
-            font-size: 1.5rem;
-            border-bottom: 3px solid $verdeCoder;
-    
-        }
-
-        .recuadroDatosUser{
-
-            margin: 5px;
-
-            i{
-
-                color: $blancoCoder;
-                margin-right: 10px;
-                
-            }
-
-            .boxDatosUser{
-
-                padding: 10px;
-                border-bottom: 1px solid $verdeCoder;
-        
-            }
-
-            #send{
-
-                font-size: 1rem;
-        
-            }
-    
-        }
-
-        
-        .notLogin{
-
+            margin: auto auto 10px auto;
             display: flex;
             flex-direction: column;
-            text-align: center;
-            background-color: $trasparente;
-            align-items: center;
-            font-size: 1rem;
-            margin-top: 15px;
+        
+        }
+    }
+
+    /* appcoder.HTML *////////////////////////////////////////
+
+    .boxApps{
+
+        margin-top: 10px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+
+    
+        .boxMarca{
+
+            width: 50%;
+            flex-direction: column;
+            margin: 20px auto;
 
         }
+
 
     }
 
-    /**********************new-user.html******************/
 
-    .recuadroDatos{
+    /* cuenta.HTML *//////////////////////////////////////////
 
-        width: 100%;
-        margin: 30px auto auto auto;
-        color: $verdeClaroCoder;
-        font-size: 1rem;
+    .boxAyudaLogin{
 
-        h1{
+        margin-top: 0px;
 
-            margin: auto;
+        .boxBotonesLogin{
+
+            width: 100%;
             text-align: center;
-            color: $blancoCoder;
-            width: 80%;
-    
+
+            button{
+
+                padding: 10px 25px;
+
+            }
         }
 
-        .campoDatos{
+        .campoDeAyuda{
 
-            text-align: center;
-            margin-top: 30px;
-            padding-bottom: 30px;
-
-            legend{
-
-                margin-bottom: 20px;
-                font-size: 1.5rem;
-        
-            }
-
-            div{
-
-                margin: 10px;
-        
-            }
+            width: 100%;
 
             input{
 
-                border-radius: 0px;
-                font-size: 1.2rem;
-        
+                width: 80%;
+
             }
 
-            select{
-
-                font-size: 1rem;
-                border-radius: 0px;
-                padding-left: 5px;
-        
-            }
-
-            .cuadroDeDatos div{
-
-                display: inline;
-        
-            }
-    
         }
 
-        .termsConditions{
+        .boxAyudaTemas{
 
-            width: 100%;
-            font-size: 1.2rem;
+            padding-bottom: 40px;
+            flex-direction: column;
 
-            h2{
+            .itemBox{
 
-                font-size: 1.2rem;
-                margin-bottom: 20px;
-        
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+               
+
+                h2{
+
+                    color: $verdeCoder;
+                    font-size: 2rem;
+
+                } 
+
+                ul li{
+
+                    font-size: 1.2rem;
+                    list-style: none;
+                    text-decoration: underline;
+                }
             }
-    
         }
-
-        .cuadroBotones .botonNewUser{
-
-            border-radius: 0px;
-            padding: 10px 20px 10px 20px;
-    
-        }
-
     }
 
+    /* preguntasFrecuentes.HTML *////////////////////////////////////////
 
-    /*********************reestablecerpw**************/
-    
-    .recuadroForgot{
-
-        width: 100%;
-        margin: 100px auto 100px auto;
-        color: $verdeClaroCoder;
-        font-size: 1rem;
-        text-align: center;
-
-        div{
-
-            font-size: 1.2rem;
-    
-        }
-
-        .sendCode{
-
-            border-radius: 5px;
-    
-        }
-
-        .fieldMail{
-
-            border-radius: 0px;
-            padding: 5px 0px 5px 5px;
-            text-align: left;
-            font-size: 1.2rem;
-            
-        }
-
-    }
-
-    /*************preguntas-frecuentes.html***************/
-
-    
     .seccion{
 
         width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-
-        .seccion__preguntas{
-
-            background-color: $negroCoder;
-            width: 100%;
-            text-align: center;
-            font-size: 1rem;/**/
-            border-right: none;/**/
-            margin-top: 40px;/**/
-            border-bottom: 3px solid $verdeCoder;
-
-            li{
-
-                padding: 0px;/**/
-        
-            }
-
-            a{
-
-                text-decoration: none;
-                font-weight: bold;
-                color: $blancoCoder;
-                padding: 20px auto;
-        
-            }
-            
-    
-        }
+        margin: 0px auto;
 
         .seccion__respuestas{
 
-            width: 100%;/**/
-            text-align: center;
-            overflow: auto;
+            width: 100%;
 
             h1{
 
                 margin: 30px auto;
-                letter-spacing: 1px;/**/
-                color: $blancoCoder;
-                display: none;
-        
+            
             }
 
-            h2{
+            .pregunta{
 
                 margin: 20px auto;
-                letter-spacing: 1px;/**/
-                color: $verdeCoder;/**/
-        
+                font-size: 1.5rem;
+            
             }
 
             p{
 
-                width: 100%;
-                margin: auto;
-                height: auto;
-                font-size: 1rem;
-        
-            }
+                width: 90%;
+                font-size: 1.2rem;
 
-            span{
-
-                font-weight: bold;
-            }
-
-            a{
-
-                text-decoration: none;
-                color: $verdeCoder;
-        
             }
         }
     }
 }
 
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-
-@media (min-width: 577px) and (max-width: 830px){
+@media (min-width: 631px) and (max-width: 800px){
 
     .header{
 
-        display: flex;
+        width: 100%;
         flex-direction: column;
-        justify-content: center;
-
-        a{
-
-            display: block;
-            margin: auto;
-    
-        }
-
-        .secciones{
+        position: static;
+        
+        .containerLogo{
 
             width: 100%;
-            margin: 0px;
-            padding: 0px;
-            display: flex;
-            flex-wrap: wrap;
+            text-align: center;
 
-            .listItem{
+            a img{
 
-                list-style: none;
-                transition: font-size 0.2s ease-in-out;
-                padding: 15px;
-                margin: auto;
+                width: 40%;
 
-                a{
-
-                    text-decoration: none;
-                    color: $grisClaro;
-                    font-family: 'Lato', sans-serif;
-            
-                }
-
-                a:hover{
-
-                    color: $verdeCoder;
-            
-                }
-            }
-
-            li{
-
-                margin: auto;
-                list-style: none;
-
-                .barraBusqueda{
-
-                    display: flex;
-                    flex-direction: row; 
-                    padding: 2px;
-                    justify-content: center;
-    
-                    .campoBusqueda{
-    
-                        border: none;
-                        background-color: #fff;
-                        border-radius: 2px;
-                        width: 40%;
-                        margin-left: 20px;
-                        padding-left: 8px;
-                        outline: none;
-                        color: #000;
-                        font-weight: bold;
-                        letter-spacing: 1px;
-                        
-                    }
-    
-                    .buttonSearch{
-    
-                        border: none;
-                        margin-left: 5px;
-                        margin-right: 8px;
-                        font-size: 1rem;
-                        padding: 5px;
-                        background-color: $trasparente;
-                        color: $blancoCoder;
-                
-                    }
-                }
             }
         }
+
+        .containerSecciones{
+
+            width: 100%;
+            margin: auto;
+            display: block;
+            padding: 0px;
+
+            .secciones{
+
+                display: flex;
+                font-size: 1.5rem;
+                flex-direction: row;
+                padding: 20px;
+                justify-content: center;
+
+
+                .listItem{
+
+                    text-align: center;
+                    padding: 10px;
+
+                    a{
+                        margin: 20px auto;
+                    }
+
+                    a:hover{
+
+                        color: $verdeCoder;
+                        margin-left: 0px;
+
+                    }
+
+                    .campoBusqueda{
+
+                        margin: 0px;
+                        width: 100%;
+                        border-radius: 0px;
     
+                    }
+
+                    i{
+
+                        background-color: #fff;
+
+                    }
+
+                }
+
+            }
+
+            .buttonNav{
+
+                visibility: visible;
+
+            }
+        }
     }
 
-    .img-principal .descripcionMovie{
+    .img-principal{
 
-        max-width: 100%;
+        margin-top: 20px;
+
+        .contenedorImg{
+
+            margin: 0 auto;
+            margin-bottom: 30px;
+        
+        }
+
+        .descripcionMovie{
+
+            font-size: 1.2em;
+            max-width: 100%;
+    
+        }
 
     }
 
     .containerIndex,
     .containerSeriesMovies{
 
-        width: 100%;
-        margin-top: 25px;
-
         .subtitle{
 
-            font-size: 1.5rem;
+            text-align: center;
+            font-size: 2rem;
+
         }
 
         .box{
@@ -657,548 +1416,534 @@
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            margin: 0px;
+            justify-content: space-around;
+            
+            .contenedorImg{
+    
+                width: 180px;
+                transition: all 0.3s ease-in-out;
+                margin: 20px;
+    
+                p{
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: rgba(0,0,0,0);
+                    text-align: center;
+                    letter-spacing: 1px;
+                    visibility: hidden;
+    
+                    transition: all 0.3s ease-in-out;
+    
+                }
+    
+                .foto{
+    
+                    width: 180px;
+                    height: 220px;
+                    margin-top: 30px;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 10px $blancoCoder;
+    
+                    transition: all 0.3s ease-in-out;
+                }
+        
+                
+                .foto:hover{
+        
+                    box-shadow: 1px 1px 20px $verdeClaroCoder;
+                    
+                }
+                
+            }
+    
+            .contenedorImg:hover{
+    
+                transform: scale(1.15);
+                
+                p{
+    
+                    visibility: visible;
+                    color: $blancoCoder;
+    
+                }
+    
+            }
+        }
 
-            .foto{
+        .destacadosKids{
+
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            margin: 50px auto;
+
+            .boxDestacadoKids{
+                width: 240px;
+
+                img{
+
+                    width: 240px;
+                    height: 240px;
+                    border-radius: 150px;
+                    cursor: pointer
+
+                }
+
+                p{
+                    text-align: center;
+                    color: #fff;
+                    margin-top: 15px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+
+                transition: all 0.3s ease-in-out;
+
+
+            }
+
+            .boxDestacadoKids:hover{
+
+                transform: scale(1.1);
+
+                img{
+                    box-shadow: 0px 0px 30px $verdeClaroCoder;
+                }
+            }
+        }
+
+        .boxDestacados{
+
+            .fotoDestacada{
+
+                width: 220px;
+                height: 310px;
+                margin: 10px;
+
+            }        
+        }
+    }   
+
+    .containerCards{
+
+        .card{
+
+            width: 45%;
+            margin: 10px;
+            transition: all 0.3s ease-in-out;
+
+            .cover{
+
+                .img__back{
+
+                    border-radius: 0px;
+        
+                }
+            }
+
+            .descripcion{
+
+                border-radius: 0px;
+                font-size: 1.2rem;
+
+                h2{
+
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+    }
+
+    .containerFirstMovie{
+
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+        .portadaMovie{
+
+            width: 100%;
+
+            img{
+
+                width: 100%;
+                margin: auto;
+                
+            }
+        }
+
+        .descripcionMovie{
+
+            font-size: 1.2rem;
+
+        }
+    }
+
+    .footerF{
+
+        font-size: 1rem;
+
+        span{
+
+            display: inline;
+
+        }
+
+        span:last-of-type{
+
+            display: block;
+    
+        }
+
+        a{
+            img{
 
                 width: 20%;
-                height: 20%;
-                margin: 20px 40px;
-                border: none;
-            }        
-        }
-
-        .boxDestacados{
-
-            .fotoDestacada{
-
-                width: 40%;
-                height: 40%;
-                margin: 20px;
             }
         }
     }
-    
-    /************************AYUDA.HTML****************************************/
 
-    
-    .containerHelp{
+    /* LOGIN.HTML *////////////////////////////////////////
 
-        margin: auto;
-        text-align: center;
-        padding: 30px;
+    .containerLogin{
+
+        width: 100%;
+        margin: 20px auto 100px auto;
+
+        a{
+            font-size: 1.3rem;
+        }
+
+    }
+
+    /* NEW-USER.HTML *////////////////////////////////////////
+
+    .recuadroDatos{
+
+        width: 100%;
+
+        .cuadroBotones{
+
+            width: 100%;
+
+            .botonNewUser{
+
+                width: 40%;
+                display: block;
+                margin: 10px auto;
+
+            }
+
+        }
+
+    }
+
+    /* ayuda.HTML *////////////////////////////////////////
+
+    .containerHelp{ 
+
+        margin: 20px auto;
+        margin-top: 0px;
+        width: 100%; 
 
         h1{
 
-            padding-top: 30px;
-            font-size: 2rem;
-            text-transform: uppercase;
-            color: $verdeCoder;
-    
+            padding: 20px;
+            font-size: 2.2rem;
+        
         }
 
         .boxHelp{
-
+            
             .itemsHelp{
 
-                width: 80%;
+                width: 100%;
 
-                li a{
-
-                    font-size: 1.5rem;
-                    text-transform: uppercase;
-
+                li{
+                    a{
+        
+                        font-size: 1.8rem;
+        
+                    }
                 }
+            }
+
+            .itemsHelp li a:hover{
+
+                color: $verdeClaroCoder;
+            
             }
         }
 
         .containerButtons{
 
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            align-items: center;
-
             div{
 
-                display: flex;
-                flex-direction: column;
-                margin: 10px;
-                align-items: center;
-                background-color: $verdeCoder;
-                border: 3px solid $blancoCoder;
-                border-radius: 10px;
-
-                .buttonsHelp{
-
-                    margin: 0px;
-                    padding: 0px 10px 10px 10px;
-                    border: none;
-                    font-size: 1rem;
-                    color: $blancoCoder;
-                    background-color: $verdeCoder;
-                    font-weight: normal;
-                    letter-spacing: 2px;
-            
-                }
-
-                i{
-
-                    padding: 10px;
-                    color: $blancoCoder;
-                    border: none;
-
-                }
+                width: 20%;
 
             }
         }
     }
 
+    /* reestablecer-pw.HTML *////////////////////////////////////////
 
-    /************************planes.HTML****************************************/
+    .recuadroForgot{
+
+        width: 100%;
+        margin: 40px 0px 130px 0px;
+
+    }
+
+    /* planes.HTML *////////////////////////////////////////
 
     .boxPlanes{
 
+        margin: 0px auto 100px auto;
+
         h1{
 
-            font-size: 1.7rem;
-            text-transform: uppercase;
-    
+            font-size: 2rem;
+            margin: 10px;
+        
         }
 
         .container-planes{
 
-            margin: 0px;
-            display: block;
-            flex-direction: column;
-            justify-content: center;
-
-            .boxPlan{
-
-                margin: 20px;
-                border: none;
-                border-bottom: 2px solid $verdeCoder;
-                border-radius: 0px;
-                background-color: $negroCoder;
-
-                h2{
-
-                    color: $verdeClaroCoder;
-                    margin-top: 30px;
-                    margin-bottom: 30px;
-                    font-size: 1.5rem;
-            
-                }
-
-                ul{
-
-                    text-align: center;
-                    margin: auto;
-                    letter-spacing: 1px;
-
-                    li{
-
-                        padding: 15px;
-                        text-align: center;
-                        color: $blancoCoder;
-                        font-size: 1.2rem;
-                
-                    }
-            
-                }
-
-                .getPlan{
-
-                    margin: 20px auto 20px auto;
-                    padding: 10px 30px 10px 30px;
-                    cursor: pointer;
-                    border-radius: 0px;
-                    letter-spacing: 2px;
-                    font-weight: bold;
-            
-                }
-            }
-        }
-    }
-
-    /*************login.html***************/
-
-    .containerLogin{
-
-        width: 100%;
-        margin: 40px auto 30px auto;
-        display: flex;
-        flex-direction: column;
-
-        .titleLogin{
-
-            width: 30%;
-            font-size: 1.5rem;
-            border-bottom: 3px solid $verdeCoder;
-    
-        }
-
-        .recuadroDatosUser{
-
-            margin: 5px;
-
-            i{
-
-                color: $blancoCoder;
-                margin-right: 10px;
-                
-            }
-
-            .boxDatosUser{
-
-                padding: 10px;
-                border-bottom: 1px solid $verdeCoder;
-        
-            }
-
-            #send{
-
-                font-size: 1rem;
-        
-            }
-    
-        }
-
-        
-        .notLogin{
-
+            margin: auto auto 10px auto;
             display: flex;
             flex-direction: column;
-            text-align: center;
-            background-color: $trasparente;;
-            align-items: center;
-            font-size: 1rem;
-            margin-top: 15px;
+        
+        }
+    }
+
+    /* appcoder.HTML *////////////////////////////////////////
+
+    .boxApps{
+
+        margin-top: 10px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+
+    
+        .boxMarca{
+
+            width: 50%;
+            flex-direction: column;
+            margin: 20px auto;
 
         }
+
 
     }
 
-    /**********************new-user.html******************/
 
-    .recuadroDatos{
+    /* cuenta.HTML *//////////////////////////////////////////
 
-        width: 100%;
-        margin: 30px auto auto auto;
-        color: $verdeClaroCoder;
-        font-size: 1rem;
+    .boxAyudaLogin{
 
-        h1{
+        margin-top: 0px;
 
-            margin: auto;
+        .boxBotonesLogin{
+
+            width: 100%;
             text-align: center;
-            color: $blancoCoder;
-            width: 80%;
-    
+            
+
+            button{
+
+                padding: 10px 25px;
+                font-size: 1.2rem;
+
+            }
         }
 
-        .campoDatos{
+        .campoDeAyuda{
 
-            text-align: center;
-            margin-top: 30px;
-            padding-bottom: 30px;
-
-            legend{
-
-                margin-bottom: 20px;
-                font-size: 1.5rem;
-        
-            }
-
-            div{
-
-                margin: 10px;
-        
-            }
+            width: 100%;
 
             input{
 
-                border-radius: 0px;
-                font-size: 1.2rem;
-        
+                width: 80%;
+
             }
 
-            select{
-
-                font-size: 1rem;
-                border-radius: 0px;
-                padding-left: 5px;
-        
-            }
-
-            .cuadroDeDatos div{
-
-                display: inline;
-        
-            }
-    
         }
 
-        .termsConditions{
+        .boxAyudaTemas{
 
-            width: 100%;
-            font-size: 1.2rem;
+            padding-bottom: 40px;
+            flex-direction: column;
 
-            h2{
+            .itemBox{
 
-                font-size: 1.2rem;
-                margin-bottom: 20px;
-        
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+               
+
+                h2{
+
+                    color: $verdeCoder;
+                    font-size: 2.2rem;
+
+                } 
+
+                ul li{
+
+                    font-size: 1.4rem;
+                    list-style: none;
+                    text-decoration: underline;
+                }
             }
-    
         }
-
-        .cuadroBotones .botonNewUser{
-
-            border-radius: 0px;
-            padding: 10px 20px 10px 20px;
-    
-        }
-
     }
 
+    /* preguntasFrecuentes.HTML *////////////////////////////////////////
 
-    /*********************reestablecerpw**************/
-    
-    .recuadroForgot{
-
-        width: 100%;
-        margin: 100px auto 100px auto;
-        color: $verdeClaroCoder;
-        font-size: 1rem;
-        text-align: center;
-
-        div{
-
-            font-size: 1.2rem;
-    
-        }
-
-        .sendCode{
-
-            border-radius: 5px;
-    
-        }
-
-        .fieldMail{
-
-            border-radius: 0px;
-            padding: 5px 0px 5px 5px;
-            text-align: left;
-            font-size: 1.2rem;
-            
-        }
-
-    }
-
-    /*************preguntas-frecuentes.html***************/
-
-    
     .seccion{
 
         width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-
-        .seccion__preguntas{
-
-            background-color: $negroCoder;
-            width: 100%;
-            text-align: center;
-            font-size: 1rem;/**/
-            border-right: none;/**/
-            margin-top: 40px;/**/
-            border-bottom: 3px solid $verdeCoder;
-
-            li{
-
-                padding: 0px;/**/
-        
-            }
-
-            a{
-
-                text-decoration: none;
-                font-weight: bold;
-                color: $blancoCoder;
-                padding: 20px auto;
-        
-            }
-            
-    
-        }
+        margin: 0px auto;
 
         .seccion__respuestas{
 
-            width: 100%;/**/
-            text-align: center;
-            overflow: auto;
+            width: 100%;
 
             h1{
 
                 margin: 30px auto;
-                letter-spacing: 1px;/**/
-                color: $blancoCoder;
-                display: none;
-        
+            
             }
 
-            h2{
+            .pregunta{
 
                 margin: 20px auto;
-                letter-spacing: 1px;/**/
-                color: $verdeCoder;/**/
-        
+                font-size: 1.5rem;
+            
             }
 
             p{
 
-                width: 100%;
-                margin: auto;
-                height: auto;
-                font-size: 1rem;
-        
-            }
+                width: 90%;
+                font-size: 1.2rem;
 
-            span{
-
-                font-weight: bold;
-            }
-
-            a{
-
-                text-decoration: none;
-                color: $verdeCoder;
-        
             }
         }
     }
 }
 
-
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-
-@media (min-width: 831px) and (max-width: 1200px){
+@media (min-width: 801px) and (max-width: 1000px){
 
     .header{
 
         width: 100%;
-        display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
+        position: static;
+        
+        .containerLogo{
 
-        a{
+            width: 50%;
+            text-align: left;
 
-            display: block;
+            a img{
+
+                width: 70%;
+                margin: auto;
+
+            }
+        }
+
+        .containerSecciones{
+
+            width: 50%;
             margin: auto;
-    
-        }
-
-        .secciones{
-
-            width: 100%;
-            margin: 0px;
+            display: block;
             padding: 0px;
-            display: flex;
-            flex-wrap: wrap;
 
-            .listItem{
+            .secciones{
 
-                list-style: none;
-                transition: font-size 0.2s ease-in-out;
-                padding: 15px;
-                margin: auto;
+                display: flex;
+                font-size: 1rem;
+                flex-direction: row;
+                padding: 20px;
+                justify-content: center;
 
-                a{
 
-                    text-decoration: none;
-                    color: $grisClaro;
-                    font-family: 'Lato', sans-serif;
-            
+                .listItem{
+
+                    text-align: center;
+                    padding: 10px;
+
+                    a{
+                        margin: 20px auto;
+                    }
+
+                    a:hover{
+
+                        color: $verdeCoder;
+                        margin-left: 0px;
+
+                    }
+
+                    .campoBusqueda{
+
+                        margin: 0px;
+                        width: 100%;
+                        border-radius: 0px;
+    
+                    }
+
+                    i{
+
+                        background-color: #fff;
+
+                    }
+
                 }
 
-                a:hover{
-
-                    color: $verdeCoder;
-            
-                }
             }
 
-            li{
+            .buttonNav{
 
-                margin: auto;
-                list-style: none;
+                visibility: visible;
 
-                .barraBusqueda{
-
-                    display: flex;
-                    flex-direction: row; 
-                    padding: 2px;
-                    justify-content: center;
-    
-                    .campoBusqueda{
-    
-                        border: none;
-                        background-color: #fff;
-                        border-radius: 2px;
-                        width: 40%;
-                        margin-left: 20px;
-                        padding-left: 8px;
-                        outline: none;
-                        color: #000;
-                        font-weight: bold;
-                        letter-spacing: 1px;
-                        
-                    }
-    
-                    .buttonSearch{
-    
-                        border: none;
-                        margin-left: 5px;
-                        margin-right: 8px;
-                        font-size: 1rem;
-                        padding: 5px;
-                        background-color: $trasparente;
-                        color: $blancoCoder;
-                
-                    }
-                }
             }
         }
-    
     }
 
-    .img-principal .descripcionMovie{
+    .img-principal{
 
-        max-width: 100%;
+        margin-top: 20px;
+
+        .contenedorImg{
+
+            margin: 0 auto;
+            margin-bottom: 30px;
+        
+        }
+
+        .descripcionMovie{
+
+            font-size: 1.2em;
+            max-width: 100%;
+    
+        }
 
     }
 
     .containerIndex,
     .containerSeriesMovies{
 
-        width: 100%;
-        margin-top: 25px;
-
         .subtitle{
 
-            font-size: 1.5rem;
+            text-align: center;
+            font-size: 2rem;
+
         }
 
         .box{
@@ -1206,427 +1951,1491 @@
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            margin: 0px;
+            justify-content: space-around;
+            
+            .contenedorImg{
+    
+                width: 180px;
+                transition: all 0.3s ease-in-out;
+                margin: auto 40px;
+    
+                p{
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: rgba(0,0,0,0);
+                    text-align: center;
+                    letter-spacing: 1px;
+                    visibility: hidden;
+    
+                    transition: all 0.3s ease-in-out;
+    
+                }
+    
+                .foto{
+    
+                    width: 180px;
+                    height: 220px;
+                    margin-top: 30px;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 10px $blancoCoder;
+    
+                    transition: all 0.3s ease-in-out;
+                }
+        
+                
+                .foto:hover{
+        
+                    box-shadow: 1px 1px 20px $verdeClaroCoder;
+                    
+                }
+                
+            }
+    
+            .contenedorImg:hover{
+    
+                transform: scale(1.15);
+                
+                p{
+    
+                    visibility: visible;
+                    color: $blancoCoder;
+    
+                }
+    
+            }
+        }
 
-            .foto{
+        .destacadosKids{
 
-                width: 20%;
-                height: 20%;
-                margin: 20px 40px;
-                border: none;
-            }        
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            margin: 50px auto;
+
+            .boxDestacadoKids{
+                width: 240px;
+
+                img{
+
+                    width: 240px;
+                    height: 240px;
+                    border-radius: 150px;
+                    cursor: pointer
+
+                }
+
+                p{
+                    text-align: center;
+                    color: #fff;
+                    margin-top: 15px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+
+                transition: all 0.3s ease-in-out;
+
+
+            }
+
+            .boxDestacadoKids:hover{
+
+                transform: scale(1.1);
+
+                img{
+                    box-shadow: 0px 0px 30px $verdeClaroCoder;
+                }
+            }
         }
 
         .boxDestacados{
 
             .fotoDestacada{
 
-                width: 40%;
-                height: 40%;
-                margin: 20px;
+                width: 260px;
+                height: 350px;
+                margin: 10px;
+
+            }        
+        }
+    }   
+
+    .containerCards{
+
+        .card{
+
+            width: 45%;
+            margin: 10px;
+            transition: all 0.3s ease-in-out;
+
+            .cover{
+
+                .img__back{
+
+                    border-radius: 0px;
+        
+                }
+            }
+
+            .descripcion{
+
+                border-radius: 0px;
+                font-size: 1.2rem;
+
+                h2{
+
+                    font-size: 1.5rem;
+
+                }
             }
         }
     }
-    
-    /************************AYUDA.HTML****************************************/
 
-    
-    .containerHelp{
+    .containerFirstMovie{
 
-        margin: auto;
-        text-align: center;
-        padding: 30px;
+        width: 80%;
+        margin-bottom: 30px;
+        margin-top: 30px;
 
-        h1{
+        .portadaMovie{
 
-            padding-top: 30px;
-            font-size: 2rem;
-            text-transform: uppercase;
-            color: $verdeCoder;
+            width: 100%;
+
+            img{
+
+                width: 100%;
+                margin: auto;
+                
+            }
+        }
+
+        .descripcionMovie{
+
+            font-size: 1.2rem;
+
+        }
+    }
+
+    .footerF{
+
+        font-size: 1rem;
+
+        span{
+
+            display: inline;
+
+        }
+
+        span:last-of-type{
+
+            display: block;
     
         }
 
-        .boxHelp{
+        a{
+            img{
 
+                width: 20%;
+            }
+        }
+    }
+
+    /* LOGIN.HTML *////////////////////////////////////////
+
+    .containerLogin{
+
+        width: 100%;
+        margin: 20px auto 100px auto;
+
+        a{
+            font-size: 1.3rem;
+        }
+
+    }
+
+    /* NEW-USER.HTML *////////////////////////////////////////
+
+    .recuadroDatos{
+
+        width: 100%;
+
+        .cuadroBotones{
+
+            width: 100%;
+
+            .botonNewUser{
+
+                width: 40%;
+                display: block;
+                margin: 10px auto;
+
+            }
+
+        }
+
+    }
+
+    /* ayuda.HTML *////////////////////////////////////////
+
+    .containerHelp{ 
+
+        margin: 20px auto;
+        margin-top: 0px;
+        width: 100%; 
+
+        h1{
+
+            padding: 20px;
+            font-size: 2.2rem;
+        
+        }
+
+        .boxHelp{
+            
             .itemsHelp{
 
-                width: 80%;
+                width: 100%;
 
-                li a{
-
-                    font-size: 1.5rem;
-                    text-transform: uppercase;
-
+                li{
+                    a{
+        
+                        font-size: 1.8rem;
+        
+                    }
                 }
+            }
+
+            .itemsHelp li a:hover{
+
+                color: $verdeClaroCoder;
+            
             }
         }
 
         .containerButtons{
 
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            align-items: center;
-
             div{
 
-                display: flex;
-                flex-direction: column;
-                margin: 10px;
-                align-items: center;
-                background-color: $verdeCoder;
-                border: 3px solid $blancoCoder;
-                border-radius: 10px;
-
-                .buttonsHelp{
-
-                    margin: 0px;
-                    padding: 0px 10px 10px 10px;
-                    border: none;
-                    font-size: 1rem;
-                    color: $blancoCoder;
-                    background-color: $verdeCoder;
-                    font-weight: normal;
-                    letter-spacing: 2px;
-            
-                }
-
-                i{
-
-                    padding: 10px;
-                    color: $blancoCoder;
-                    border: none;
-
-                }
+                width: 20%;
 
             }
         }
     }
 
+    /* reestablecer-pw.HTML *////////////////////////////////////////
 
-    /************************planes.HTML****************************************/
+    .recuadroForgot{
+
+        width: 100%;
+        margin: 40px 0px 130px 0px;
+
+    }
+
+    /* planes.HTML *////////////////////////////////////////
 
     .boxPlanes{
 
+        margin: 0px auto 100px auto;
+
         h1{
 
-            font-size: 1.7rem;
-            text-transform: uppercase;
-    
+            font-size: 2rem;
+            margin: 10px;
+        
         }
 
         .container-planes{
 
-            margin: 0px;
-            display: block;
-            flex-direction: column;
-            justify-content: center;
-
-            .boxPlan{
-
-                margin: 20px;
-                border: none;
-                border-bottom: 2px solid $verdeCoder;
-                border-radius: 0px;
-                background-color: $negroCoder;
-
-                h2{
-
-                    color: $verdeClaroCoder;
-                    margin-top: 30px;
-                    margin-bottom: 30px;
-                    font-size: 1.5rem;
-            
-                }
-
-                ul{
-
-                    text-align: center;
-                    margin: auto;
-                    letter-spacing: 1px;
-
-                    li{
-
-                        padding: 15px;
-                        text-align: center;
-                        color: $blancoCoder;
-                        font-size: 1.2rem;
-                
-                    }
-            
-                }
-
-                .getPlan{
-
-                    margin: 20px auto 20px auto;
-                    padding: 10px 30px 10px 30px;
-                    cursor: pointer;
-                    border-radius: 0px;
-                    letter-spacing: 2px;
-                    font-weight: bold;
-            
-                }
-            }
-        }
-    }
-
-    /*************login.html***************/
-
-    .containerLogin{
-
-        width: 100%;
-        margin: 40px auto 30px auto;
-        display: flex;
-        flex-direction: column;
-
-        .titleLogin{
-
-            width: 30%;
-            font-size: 1.5rem;
-            border-bottom: 3px solid $verdeCoder;
-    
-        }
-
-        .recuadroDatosUser{
-
-            margin: 5px;
-
-            i{
-
-                color: $blancoCoder;
-                margin-right: 10px;
-                
-            }
-
-            .boxDatosUser{
-
-                padding: 10px;
-                border-bottom: 1px solid $verdeCoder;
-        
-            }
-
-            #send{
-
-                font-size: 1rem;
-        
-            }
-    
-        }
-
-        
-        .notLogin{
-
+            margin: auto auto 10px auto;
             display: flex;
+            flex-direction: row;
+        
+        }
+    }
+
+    /* appcoder.HTML *////////////////////////////////////////
+
+    .boxApps{
+
+        margin-top: 10px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+
+    
+        .boxMarca{
+
+            width: 50%;
             flex-direction: column;
-            text-align: center;
-            background-color: $trasparente;;
-            align-items: center;
-            font-size: 1rem;
-            margin-top: 15px;
+            margin: 20px auto;
 
         }
+
 
     }
 
-    /**********************new-user.html******************/
 
-    .recuadroDatos{
+    /* cuenta.HTML *//////////////////////////////////////////
 
-        width: 100%;
-        margin: 30px auto auto auto;
-        color: $verdeClaroCoder;
-        font-size: 1rem;
+    .boxAyudaLogin{
 
-        h1{
+        margin-top: 0px;
 
-            margin: auto;
+        .boxBotonesLogin{
+
+            width: 100%;
             text-align: center;
-            color: $blancoCoder;
-            width: 80%;
-    
+            
+
+            button{
+
+                padding: 10px 25px;
+                font-size: 1.2rem;
+
+            }
         }
 
-        .campoDatos{
+        .campoDeAyuda{
 
-            text-align: center;
-            margin-top: 30px;
-            padding-bottom: 30px;
-
-            legend{
-
-                margin-bottom: 20px;
-                font-size: 1.5rem;
-        
-            }
-
-            div{
-
-                margin: 10px;
-        
-            }
+            width: 100%;
 
             input{
 
-                border-radius: 0px;
-                font-size: 1.2rem;
-        
+                width: 80%;
+
             }
 
-            select{
-
-                font-size: 1rem;
-                border-radius: 0px;
-                padding-left: 5px;
-        
-            }
-
-            .cuadroDeDatos div{
-
-                display: inline;
-        
-            }
-    
         }
 
-        .termsConditions{
+        .boxAyudaTemas{
 
-            width: 100%;
-            font-size: 1.2rem;
+            padding-bottom: 40px;
+            flex-direction: column;
 
-            h2{
+            .itemBox{
 
-                font-size: 1.2rem;
-                margin-bottom: 20px;
-        
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+               
+
+                h2{
+
+                    color: $verdeCoder;
+                    font-size: 2.2rem;
+
+                } 
+
+                ul li{
+
+                    font-size: 1.4rem;
+                    list-style: none;
+                    text-decoration: underline;
+                }
             }
-    
         }
-
-        .cuadroBotones .botonNewUser{
-
-            border-radius: 0px;
-            padding: 10px 20px 10px 20px;
-    
-        }
-
     }
 
+    /* preguntasFrecuentes.HTML *////////////////////////////////////////
 
-    /*********************reestablecerpw**************/
-    
-    .recuadroForgot{
-
-        width: 100%;
-        margin: 100px auto 100px auto;
-        color: $verdeClaroCoder;
-        font-size: 1rem;
-        text-align: center;
-
-        div{
-
-            font-size: 1.2rem;
-    
-        }
-
-        .sendCode{
-
-            border-radius: 5px;
-    
-        }
-
-        .fieldMail{
-
-            border-radius: 0px;
-            padding: 5px 0px 5px 5px;
-            text-align: left;
-            font-size: 1.2rem;
-            
-        }
-
-    }
-
-    /*************preguntas-frecuentes.html***************/
-
-    
     .seccion{
 
         width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-
-        .seccion__preguntas{
-
-            background-color: $negroCoder;
-            width: 100%;
-            text-align: center;
-            font-size: 1rem;/**/
-            border-right: none;/**/
-            margin-top: 40px;/**/
-            border-bottom: 3px solid $verdeCoder;
-
-            li{
-
-                padding: 0px;/**/
-        
-            }
-
-            a{
-
-                text-decoration: none;
-                font-weight: bold;
-                color: $blancoCoder;
-                padding: 20px auto;
-        
-            }
-            
-    
-        }
+        margin: 0px auto;
 
         .seccion__respuestas{
 
-            width: 100%;/**/
-            text-align: center;
-            overflow: auto;
+            width: 100%;
 
             h1{
 
                 margin: 30px auto;
-                letter-spacing: 1px;/**/
-                color: $blancoCoder;
-                display: none;
-        
+            
             }
 
-            h2{
+            .pregunta{
 
                 margin: 20px auto;
-                letter-spacing: 1px;/**/
-                color: $verdeCoder;/**/
-        
+                font-size: 1.5rem;
+            
             }
 
             p{
 
+                width: 90%;
+                font-size: 1.2rem;
+
+            }
+        }
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px){
+
+    .header{
+
+        width: 100%;
+        flex-direction: row;
+        position: static;
+        
+        .containerLogo{
+
+            width: 40%;
+            text-align: left;
+
+            a img{
+
+                width: 50%;
+                margin: auto;
+
+            }
+        }
+
+        .containerSecciones{
+
+            width: 60%;
+            margin: auto;
+            display: block;
+            padding: 0px;
+
+            .secciones{
+
+                display: flex;
+                font-size: 1rem;
+                flex-direction: row;
+                padding: 20px;
+                justify-content: center;
+
+
+                .listItem{
+
+                    text-align: center;
+                    padding: 10px;
+
+                    a{
+                        margin: 20px auto;
+                    }
+
+                    a:hover{
+
+                        color: $verdeCoder;
+                        margin-left: 0px;
+
+                    }
+
+                    .campoBusqueda{
+
+                        margin: 0px;
+                        width: 100%;
+                        border-radius: 0px;
+    
+                    }
+
+                    i{
+
+                        background-color: #fff;
+
+                    }
+
+                }
+
+            }
+
+            .buttonNav{
+
+                visibility: hidden;
+
+            }
+        }
+    }
+
+    .img-principal{
+
+        margin-top: 20px;
+
+        .contenedorImg{
+
+            margin: 0 auto;
+            margin-bottom: 30px;
+        
+        }
+
+        .descripcionMovie{
+
+            font-size: 1.2em;
+            max-width: 60%;
+    
+        }
+
+    }
+
+    .containerIndex,
+    .containerSeriesMovies{
+
+        .subtitle{
+
+            text-align: center;
+            font-size: 2rem;
+
+        }
+
+        .box{
+
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+            .contenedorImg{
+    
+                width: 180px;
+                transition: all 0.3s ease-in-out;
+                margin: auto 60px;
+    
+                p{
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: rgba(0,0,0,0);
+                    text-align: center;
+                    letter-spacing: 1px;
+                    visibility: hidden;
+    
+                    transition: all 0.3s ease-in-out;
+    
+                }
+    
+                .foto{
+    
+                    width: 180px;
+                    height: 220px;
+                    margin-top: 30px;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 10px $blancoCoder;
+    
+                    transition: all 0.3s ease-in-out;
+                }
+        
+                
+                .foto:hover{
+        
+                    box-shadow: 1px 1px 20px $verdeClaroCoder;
+                    
+                }
+                
+            }
+    
+            .contenedorImg:hover{
+    
+                transform: scale(1.15);
+                
+                p{
+    
+                    visibility: visible;
+                    color: $blancoCoder;
+    
+                }
+    
+            }
+        }
+
+        .destacadosKids{
+
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            margin: 50px auto;
+
+            .boxDestacadoKids{
+                width: 240px;
+
+                img{
+
+                    width: 240px;
+                    height: 240px;
+                    border-radius: 150px;
+                    cursor: pointer
+
+                }
+
+                p{
+                    text-align: center;
+                    color: #fff;
+                    margin-top: 15px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+
+                transition: all 0.3s ease-in-out;
+
+
+            }
+
+            .boxDestacadoKids:hover{
+
+                transform: scale(1.1);
+
+                img{
+                    box-shadow: 0px 0px 30px $verdeClaroCoder;
+                }
+            }
+        }
+
+        .boxDestacados{
+
+            .fotoDestacada{
+
+                width: 260px;
+                height: 350px;
+                margin: 10px;
+
+            }        
+        }
+    }   
+
+    .containerCards{
+
+        .card{
+
+            width: 45%;
+            margin: 10px;
+            transition: all 0.3s ease-in-out;
+
+            .cover{
+
+                .img__back{
+
+                    border-radius: 0px;
+        
+                }
+            }
+
+            .descripcion{
+
+                border-radius: 0px;
+                font-size: 1.2rem;
+
+                h2{
+
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+    }
+
+    .containerFirstMovie{
+
+        width: 80%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+        .portadaMovie{
+
+            width: 100%;
+
+            img{
+
                 width: 100%;
                 margin: auto;
-                height: auto;
+                
+            }
+        }
+
+        .descripcionMovie{
+
+            font-size: 1.2rem;
+
+        }
+    }
+
+    .footerF{
+
+        font-size: 1rem;
+
+        span{
+
+            display: inline;
+
+        }
+
+        span:last-of-type{
+
+            display: block;
+    
+        }
+
+        a{
+            img{
+
+                width: 20%;
+            }
+        }
+    }
+
+    /* LOGIN.HTML *////////////////////////////////////////
+
+    .containerLogin{
+
+        width: 100%;
+        margin: 20px auto 100px auto;
+
+        a{
+            font-size: 1.3rem;
+        }
+
+    }
+
+    /* NEW-USER.HTML *////////////////////////////////////////
+
+    .recuadroDatos{
+
+        width: 60%;
+
+        .cuadroBotones{
+
+            width: 100%;
+
+            .botonNewUser{
+
+                width: 40%;
+                display: block;
+                margin: 10px auto;
+
+            }
+
+        }
+
+    }
+
+    /* ayuda.HTML *////////////////////////////////////////
+
+    .containerHelp{ 
+
+        margin: 20px auto;
+        margin-top: 0px;
+        width: 100%; 
+
+        h1{
+
+            padding: 20px;
+            font-size: 2.2rem;
+        
+        }
+
+        .boxHelp{
+            
+            .itemsHelp{
+
+                width: 100%;
+
+                li{
+                    a{
+        
+                        font-size: 1.8rem;
+        
+                    }
+                }
+            }
+
+            .itemsHelp li a:hover{
+
+                color: $verdeClaroCoder;
+            
+            }
+        }
+
+        .containerButtons{
+
+            div{
+
+                width: 20%;
+
+            }
+        }
+    }
+
+    /* reestablecer-pw.HTML *////////////////////////////////////////
+
+    .recuadroForgot{
+
+        width: 60%;
+        margin: 120px auto 140px auto;
+
+    }
+
+    /* planes.HTML *////////////////////////////////////////
+
+    .boxPlanes{
+
+        margin: 0px auto 100px auto;
+
+        h1{
+
+            font-size: 2rem;
+            margin: 10px;
+        
+        }
+
+        .container-planes{
+
+            margin: auto auto 10px auto;
+            display: flex;
+            flex-direction: row;
+        
+        }
+    }
+
+    /* appcoder.HTML *////////////////////////////////////////
+
+    .boxApps{
+
+        margin-top: 10px;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: center;
+
+    
+        .boxMarca{
+
+            width: 30%;
+            flex-direction: column;
+            margin: 20px auto;
+
+        }
+
+
+    }
+
+
+    /* cuenta.HTML *//////////////////////////////////////////
+
+    .boxAyudaLogin{
+
+        margin-top: 0px;
+
+        .boxBotonesLogin{
+
+            width: 100%;
+            text-align: center;
+            
+
+            button{
+
+                padding: 10px 25px;
+                font-size: 1.2rem;
+
+            }
+        }
+
+        .campoDeAyuda{
+
+            width: 100%;
+
+            input{
+
+                width: 80%;
+
+            }
+
+        }
+
+        .boxAyudaTemas{
+
+            padding-bottom: 40px;
+            flex-direction: column;
+
+            .itemBox{
+
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+               
+
+                h2{
+
+                    color: $verdeCoder;
+                    font-size: 2.2rem;
+
+                } 
+
+                ul li{
+
+                    font-size: 1.4rem;
+                    list-style: none;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    /* preguntasFrecuentes.HTML *////////////////////////////////////////
+
+    .seccion{
+
+        width: 70%;
+        margin: 0px auto;
+
+        .seccion__respuestas{
+
+            width: 100%;
+
+            h1{
+
+                margin: 30px auto;
+            
+            }
+
+            .pregunta{
+
+                margin: 20px auto;
+                font-size: 1.5rem;
+            
+            }
+
+            p{
+
+                width: 90%;
+                font-size: 1.2rem;
+
+            }
+        }
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px){
+
+    .header{
+
+        width: 100%;
+        flex-direction: row;
+        position: static;
+        
+        .containerLogo{
+
+            width: 40%;
+            text-align: left;
+
+            a img{
+
+                width: 50%;
+                margin: auto;
+
+            }
+        }
+
+        .containerSecciones{
+
+            width: 60%;
+            margin: auto;
+            display: block;
+            padding: 0px;
+
+            .secciones{
+
+                display: flex;
                 font-size: 1rem;
-        
+                flex-direction: row;
+                padding: 20px;
+                justify-content: center;
+
+                .listItem{
+
+                    text-align: center;
+                    padding: 10px;
+
+                    a{
+                        margin: 20px auto;
+                    }
+
+                    a:hover{
+
+                        color: $verdeCoder;
+                        margin-left: 0px;
+
+                    }
+
+                    .campoBusqueda{
+
+                        margin: 0px;
+                        width: 100%;
+                        border-radius: 0px;
+    
+                    }
+
+                    i{
+
+                        background-color: #fff;
+
+                    }
+
+                }
+
             }
 
-            span{
+            .buttonNav{
 
-                font-weight: bold;
+                visibility: hidden;
+
+            }
+        }
+    }
+
+    .img-principal{
+
+        margin-top: 20px;
+
+        .contenedorImg{
+
+            margin: 0 auto;
+            margin-bottom: 30px;
+        
+        }
+
+        .descripcionMovie{
+
+            font-size: 1.2em;
+            max-width: 60%;
+    
+        }
+
+    }
+
+    .containerIndex,
+    .containerSeriesMovies{
+
+        .subtitle{
+
+            text-align: center;
+            font-size: 2rem;
+
+        }
+
+        .box{
+
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+            .contenedorImg{
+    
+                width: 160px;
+                transition: all 0.3s ease-in-out;
+                margin: auto 0px;
+    
+                p{
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: rgba(0,0,0,0);
+                    text-align: center;
+                    letter-spacing: 1px;
+                    visibility: hidden;
+    
+                    transition: all 0.3s ease-in-out;
+                }
+    
+                .foto{
+    
+                    width: 160px;
+                    height: 200px;
+                    margin-top: 30px;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 10px $blancoCoder;
+    
+                    transition: all 0.3s ease-in-out;
+                }
+
+        
+                .foto:hover{
+        
+                    box-shadow: 1px 1px 20px $verdeClaroCoder;
+                    
+                }
+                
+            }
+    
+            .contenedorImg:hover{
+    
+                transform: scale(1.15);
+                
+                p{
+    
+                    visibility: visible;
+                    color: $blancoCoder;
+    
+                }
+    
+            }
+        }
+
+        .destacadosKids{
+
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            margin: 50px auto;
+
+            .boxDestacadoKids{
+                width: 240px;
+
+                img{
+
+                    width: 240px;
+                    height: 240px;
+                    border-radius: 150px;
+                    cursor: pointer
+
+                }
+
+                p{
+                    text-align: center;
+                    color: #fff;
+                    margin-top: 15px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+
+                transition: all 0.3s ease-in-out;
+
+
             }
 
-            a{
+            .boxDestacadoKids:hover{
 
-                text-decoration: none;
-                color: $verdeCoder;
+                transform: scale(1.1);
+
+                img{
+                    box-shadow: 0px 0px 30px $verdeClaroCoder;
+                }
+            }
+        }
+
+        .boxDestacados{
+
+            .fotoDestacada{
+
+                width: 260px;
+                height: 350px;
+                margin: 10px;
+
+            }        
+        }
+    }   
+
+    .containerCards{
+
+        .card{
+
+            width: 20%;
+            margin: 10px;
+            transition: all 0.3s ease-in-out;
+
+            .cover{
+
+                .img__back{
+
+                    border-radius: 0px;
         
+                }
+            }
+
+            .descripcion{
+
+                border-radius: 0px;
+                font-size: 1rem;
+
+                h2{
+
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+    }
+
+    .containerFirstMovie{
+
+        width: 80%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+
+        .portadaMovie{
+
+            width: 100%;
+
+            img{
+
+                width: 100%;
+                margin: auto;
+                
+            }
+        }
+
+        .descripcionMovie{
+
+            font-size: 1.2rem;
+
+        }
+    }
+
+    .footerF{
+
+        font-size: 1rem;
+
+        span{
+
+            display: inline;
+
+        }
+
+        span:last-of-type{
+
+            display: block;
+    
+        }
+
+        a{
+            img{
+
+                width: 20%;
+            }
+        }
+    }
+
+    /* LOGIN.HTML *////////////////////////////////////////
+
+    .containerLogin{
+
+        width: 50%;
+        margin: 20px auto 100px auto;
+
+        a{
+            font-size: 1.3rem;
+        }
+
+    }
+
+    /* NEW-USER.HTML *////////////////////////////////////////
+
+    .recuadroDatos{
+
+        width: 60%;
+
+        .cuadroBotones{
+
+            width: 100%;
+
+            .botonNewUser{
+
+                width: 40%;
+                display: block;
+                margin: 10px auto;
+
+            }
+
+        }
+
+    }
+
+    /* ayuda.HTML *////////////////////////////////////////
+
+    .containerHelp{ 
+
+        margin: 20px auto;
+        margin-top: 0px;
+        width: 100%; 
+
+        h1{
+
+            padding: 20px;
+            font-size: 2.2rem;
+        
+        }
+
+        .boxHelp{
+            
+            .itemsHelp{
+
+                width: 100%;
+
+                li{
+                    a{
+        
+                        font-size: 1.8rem;
+        
+                    }
+                }
+            }
+
+            .itemsHelp li a:hover{
+
+                color: $verdeClaroCoder;
+            
+            }
+        }
+
+        .containerButtons{
+
+            div{
+
+                width: 10%;
+
+            }
+        }
+    }
+
+    /* reestablecer-pw.HTML *////////////////////////////////////////
+
+    .recuadroForgot{
+
+        width: 60%;
+        margin: 120px auto 140px auto;
+
+    }
+
+    /* planes.HTML *////////////////////////////////////////
+
+    .boxPlanes{
+
+        margin: 0px auto 100px auto;
+
+        h1{
+
+            font-size: 2rem;
+            margin: 10px;
+        
+        }
+
+        .container-planes{
+
+            margin: auto auto 10px auto;
+            display: flex;
+            flex-direction: row;
+        
+        }
+    }
+
+    /* appcoder.HTML *////////////////////////////////////////
+
+    .boxApps{
+
+        margin-top: 10px;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: center;
+
+    
+        .boxMarca{
+
+            width: 30%;
+            flex-direction: column;
+            margin: 20px auto;
+
+        }
+
+
+    }
+
+
+    /* cuenta.HTML *//////////////////////////////////////////
+
+    .boxAyudaLogin{
+
+        margin-top: 0px;
+
+        .boxBotonesLogin{
+
+            width: 100%;
+            text-align: center;
+            
+
+            button{
+
+                padding: 10px 25px;
+                font-size: 1.2rem;
+
+            }
+        }
+
+        .campoDeAyuda{
+
+            width: 50%;
+            margin: auto;
+
+            input{
+
+                width: 80%;
+
+            }
+
+        }
+
+        .boxAyudaTemas{
+
+            padding-bottom: 40px;
+            flex-direction: column;
+
+            .itemBox{
+
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+               
+
+                h2{
+
+                    color: $verdeCoder;
+                    font-size: 2rem;
+
+                } 
+
+                ul li{
+
+                    font-size: 1.2rem;
+                    list-style: none;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    /* preguntasFrecuentes.HTML *////////////////////////////////////////
+
+    .seccion{
+
+        width: 70%;
+        margin: 0px auto;
+
+        .seccion__respuestas{
+
+            width: 100%;
+
+            h1{
+
+                margin: 30px auto;
+            
+            }
+
+            .pregunta{
+
+                margin: 20px auto;
+                font-size: 1.5rem;
+            
+            }
+
+            p{
+
+                width: 90%;
+                font-size: 1.2rem;
+
             }
         }
     }

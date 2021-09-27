@@ -1,54 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>SERIES - CODERFLIX</title>
     <meta name="description" content="Catalogo completo de peliculas en Coderflix">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Coderflix, peliculas, aventuras, comedias">
     <link rel="stylesheet" href="../CSS/destino.css">
-    <link rel="shortcut icon" href="../image/icon.png">
-    <title>SERIES - CODERFLIX</title>
+    <link rel="shortcut icon" href="../image/coder.ico"> 
 </head>
 <body>
 
     <header class="header">
-<<<<<<< HEAD
-        <a href="../index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>  
-
-        <nav id="barraNavegacion">
-            <ul class="secciones">
-                <li class="listItem"><a href="../index.html">HOME</a></li>
-                <li class="listItem"><a href="series.html">SERIES</a></li>
-                <li class="listItem"><a href="peliculas.html">PELICULAS</a></li>
-                <li class="listItem"><a href="ayuda.html">AYUDA</a></li>
-                <li class="listItem"><a href="login.html">LOGIN</a></li>
-                <li>
-                    <div class="barraBusqueda">
-                        <input type="text" class="campoBusqueda" placeholder="Titulo..."></input>
-                        <button class="buttonSearch">BUSCAR</button>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
-        <button class="buttonNav">
-            <a href="#barraNavegacion"><i class="fas fa-arrow-up"></i></a>
-        </button>
-=======
+        <!-- logo -->
         <div class="containerLogo">
             <a href="index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>  
         </div>
->>>>>>> rama
 
+        <!-- secciones nav -->
         <div class="containerSecciones">
             <nav id="barraNavegacion">
                 <ul class="secciones">
                     <li class="listItem"><a href="../index.html">HOME</a></li>
                     <li class="listItem"><a href="../pags/series.html">SERIES</a></li>
                     <li class="listItem"><a href="../pags/peliculas.html">PELICULAS</a></li>
+                    <li class="listItem"><a href="../pags/kids.html">KIDS</a></li>
                     <li class="listItem"><a href="../pags/ayuda.html">AYUDA</a></li>
                     <li class="listItem"><a href="../pags/login.html">LOGIN</a></li>
-                    <li class="listItem"><input type="text" name="search" class="campoBusqueda" placeholder="Titulo..."></li>
-                    <li class="listItem"><a href="#">BUSCAR</a></li>     
+                    <li class="listItem">
+                        <input type="text" name="search" class="campoBusqueda" placeholder="Titulo...">
+                        <i class="fas fa-search"></i>
+                    </li>    
                 </ul>
             </nav>
     
@@ -58,57 +39,154 @@
         </div>
     </header>
 
+    <!-- pelicula destacada del sitio -->
     <section class="containerSeriesMovies">
 
-        <h1 class="subtitle">SELECCION CODERFLIX</h1>
+        <h1 class="title">ESTRENO DESTACADO CODERFLIX</h1>
+
+        <div class="containerFirstMovie">
+
+            <div class="portadaMovie">
+
+                <img src="../image/cards/onceuponatime.png" alt="">
+
+            </div>
+            
+            <div class="descripcionMovie">
+                <h1>Once upon a time in Hollywood</h1>
+                <p>A finales de los 60, Hollywood empieza a cambiar y el actor Rick Dalton trata de adaptarse a 
+                    los nuevos tiempos. Junto a su doble, ambos experimentan problemas para modificar sus hábitos, 
+                    debido a lo enraizados que están. Al mismo tiempo, nace una relación entre Rick y la actriz 
+                    Sharon Tate, que fue víctima de la familia Manson en la matanza de 1969.</p>
+                <input type="button" value="VER AHORA">
+            </div>
+
+        </div>
+
+        <!-- Comienza catalogo de peliculas -->
+        <h2 class="subtitle">SELECCION CODERFLIX</h2>
         <div class="box"> 
-            <img src="../image/movies/blackwidow.png" alt="portada black widow" class="foto">
-            <img src="../image/movies/tenet.png" alt="portada tenet" class="foto">
-            <img src="../image/movies/tomorrow.png" alt="portada war of tomorrow" class="foto">
-            <img src="../image/movies/badboys.png" alt="portada bad boys" class="foto">
-            <img src="../image/movies/johnwick.png" alt="portada john wick" class="foto">
-            <img src="../image/movies/readyplayerone.png" alt="portada ready player one" class="foto">
+            <div class="contenedorImg">
+                <img src="../image/movies/readyplayerone.png" alt="portada ready player one" class="foto">
+                <p>Ready Player One</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/johnwick.png" alt="portada john wick" class="foto">
+                <p>John Wick</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/badboys.png" alt="portada bad boys" class="foto">
+                <p>Bad Boys</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/tomorrow.png" alt="portada war of tomorrow" class="foto">
+                <p>War of Tomorrow</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/tenet.png" alt="portada tenet" class="foto">
+                <p>Tenet</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/blackwidow.png" alt="portada black widow" class="foto">
+                <p>Black Widow</p>
+            </div>
         </div>
 
         <h2 class="subtitle">AVENTURAS</h2>
         <div class="box">
-            <img src="../image/movies/interstellar.png" alt="portada interstellar" class="foto">
-            <img src="../image/movies/mulan.png" alt="portada mulan" class="foto">
-            <img src="../image/movies/jurassic.png" alt="portada jurassic world" class="foto">
-            <img src="../image/movies/darktower.png" alt="portada dark tower" class="foto">
-            <img src="../image/movies/mk.png" alt="portada mortal kombat" class="foto">
-            <img src="../image/movies/hunger.png" alt="portada hunger games" class="foto">
+            <div class="contenedorImg">
+                <img src="../image/movies/hunger.png" alt="portada hunger games" class="foto">
+                <p>Los Juegos del Hambre</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/mk.png" alt="portada mortal kombat" class="foto">
+                <p>Mortal Kombat</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/darktower.png" alt="portada dark tower" class="foto">
+                <p>Dark Tower</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/jurassic.png" alt="portada jurassic world" class="foto">
+                <p>Jurassic World</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/mulan.png" alt="portada mulan" class="foto">
+                <p>Mulan</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/interstellar.png" alt="portada interstellar" class="foto">
+                <p>Interstellar</p>
+            </div>
         </div>
 
         <h2 class="subtitle">COMEDIAS</h2>
         <div class="box">
-            <img src="../image/movies/supercool.png" alt="portada supercool" class="foto">
-            <img src="../image/movies/quepasoayer.png" alt="portada que paso ayer" class="foto">
-            <img src="../image/movies/wolf.png" alt="portada wolf" class="foto">
-            <img src="../image/movies/proyectox.png" alt="portada proyecto x" class="foto">
-            <img src="../image/movies/zoolander.png" alt="portada zoolander" class="foto">
-            <img src="../image/movies/todopoderoso.png" alt="portada todopoderoso" class="foto">
+            <div class="contenedorImg">
+                <img src="../image/movies/todopoderoso.png" alt="portada todopoderoso" class="foto">
+                <p>TodoPoderoso</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/zoolander.png" alt="portada zoolander" class="foto">
+                <p>Zoolander</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/proyectox.png" alt="portada proyecto x" class="foto">
+                <p>Proyecto X</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/wolf.png" alt="portada wolf" class="foto">
+                <p>Wolf</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/quepasoayer.png" alt="portada que paso ayer" class="foto">
+                <p>Que paso ayer?</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/supercool.png" alt="portada supercool" class="foto">
+                <p>Supercool</p>
+            </div>
         </div>
 
         <h2 class="subtitle">GRANDES PELICULAS</h2>
         <div class="box">
-            <img src="../image/movies/titanic.png" alt="portada titanic" class="foto">
-            <img src="../image/movies/laplaya.png" alt="portada la playa" class="foto">
-            <img src="../image/movies/atrapame.png" alt="portada atrapame si puedes" class="foto">
-            <img src="../image/movies/el renacido.png" alt="portada el renacido" class="foto">
-            <img src="../image/movies/holly.png" alt="portada holly" class="foto">
-            <img src="../image/movies/aviador.png" alt="portada el aviador" class="foto">
+            <div class="contenedorImg">
+                <img src="../image/movies/aviador.png" alt="portada el aviador" class="foto">
+                <p>El Aviador</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/holly.png" alt="portada holly" class="foto">
+                <p>Once Upon a Time in Hollywood</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/el renacido.png" alt="portada el renacido" class="foto">
+                <p>El renacido</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/atrapame.png" alt="portada atrapame si puedes" class="foto">
+                <p>Atrapame si puedes</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/laplaya.png" alt="portada la playa" class="foto">
+                <p>La Playa</p>
+            </div>
+            <div class="contenedorImg">
+                <img src="../image/movies/titanic.png" alt="portada titanic" class="foto">
+                <p>Titanic</p>
+            </div>
         </div>
-        <br>
+
     </section>
 
+    <!-- footer -->
     <footer class="footerF">
-        <span>CODERFLIX</span>
-        <span>Todos los derechos reservados</span>
-        <span>Coderflix ya disponible en PlayStore y AppStore</span>
+        <a href="index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>
+        <span>Terminos y Aviso de privacidad</span>
+        <span>Ayuda</span>
+        <span>Envianos tus comentarios</span>
+        <span>2020-2021, coderflix.com</span>
     </footer>
 
     <script src="https://kit.fontawesome.com/15784ea8d5.js" crossorigin="anonymous"></script>
-
 </body>
 </html>

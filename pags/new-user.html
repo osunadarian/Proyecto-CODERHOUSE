@@ -6,49 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Coderflix, cuenta, nueva, login, usuario, series, peliculas">
     <link rel="stylesheet" href="../CSS/destino.css">
-    <link rel="shortcut icon" href="../image/icon.png">
+    <link rel="shortcut icon" href="../image/coder.ico">
 </head>
 <body>
     
     <header class="header">
-<<<<<<< HEAD
-        <a href="../index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>  
-
-        <nav id="barraNavegacion">
-            <ul class="secciones">
-                <li class="listItem"><a href="../index.html">HOME</a></li>
-                <li class="listItem"><a href="series.html">SERIES</a></li>
-                <li class="listItem"><a href="peliculas.html">PELICULAS</a></li>
-                <li class="listItem"><a href="ayuda.html">AYUDA</a></li>
-                <li class="listItem"><a href="login.html">LOGIN</a></li>
-                <li>
-                    <div class="barraBusqueda">
-                        <input type="text" class="campoBusqueda" placeholder="Titulo..."></input>
-                        <button class="buttonSearch">BUSCAR</button>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
-        <button class="buttonNav">
-            <a href="#barraNavegacion"><i class="fas fa-arrow-up"></i></a>
-        </button>
-
-=======
+        <!-- logo -->
         <div class="containerLogo">
             <a href="index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>  
         </div>
 
+        <!-- secciones nav -->
         <div class="containerSecciones">
             <nav id="barraNavegacion">
                 <ul class="secciones">
                     <li class="listItem"><a href="../index.html">HOME</a></li>
                     <li class="listItem"><a href="../pags/series.html">SERIES</a></li>
                     <li class="listItem"><a href="../pags/peliculas.html">PELICULAS</a></li>
+                    <li class="listItem"><a href="../pags/kids.html">KIDS</a></li>
                     <li class="listItem"><a href="../pags/ayuda.html">AYUDA</a></li>
                     <li class="listItem"><a href="../pags/login.html">LOGIN</a></li>
-                    <li class="listItem"><input type="text" name="search" class="campoBusqueda" placeholder="Titulo..."></li>
-                    <li class="listItem"><a href="#">BUSCAR</a></li>     
+                    <li class="listItem">
+                        <input type="text" name="search" class="campoBusqueda" placeholder="Titulo...">
+                        <i class="fas fa-search"></i>
+                    </li>    
                 </ul>
             </nav>
     
@@ -56,7 +37,6 @@
                 <a href="#barraNavegacion"><i class="fas fa-arrow-up"></i></a>
             </button>
         </div>
->>>>>>> rama
     </header>
 
     <section class="recuadroDatos">
@@ -64,7 +44,7 @@
         <form action="">
 
             <fieldset class="campoDatos">
-                <legend><strong>Datos Personales</strong></legend><br>
+                <legend>Datos Personales</legend>
 
                 <div>
                     <label for="nombre">Nombre</label>
@@ -160,6 +140,21 @@
                         <label for="option-documentales"
                         >Documentales</label>
                     </div>
+                    <div>
+                        <input type="checkbox" name="favourite-movies" id="option-terror">
+                        <label for="option-terror"
+                        >Terror</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favourite-movies" id="option-romanticas">
+                        <label for="option-romanticas"
+                        >Romanticas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favourite-movies" id="option-belicas">
+                        <label for="option-belicas"
+                        >Belicas</label>
+                    </div>
                 </div>
 
             </fieldset>
@@ -189,11 +184,13 @@
 
     </section>
     
-
+    <!-- footer -->
     <footer class="footerF">
-        <span>CODERFLIX</span>
-        <span>Todos los derechos reservados</span>
-        <span>Coderflix ya disponible en PlayStore y AppStore</span>
+        <a href="index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>
+        <span>Terminos y Aviso de privacidad</span>
+        <span>Ayuda</span>
+        <span>Envianos tus comentarios</span>
+        <span>2020-2021, coderflix.com</span>
     </footer>
     
     <script src="https://kit.fontawesome.com/15784ea8d5.js" crossorigin="anonymous"></script>

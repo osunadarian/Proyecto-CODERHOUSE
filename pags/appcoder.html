@@ -2,54 +2,34 @@
 <html lang="en">
 <head>
     <title>Planes Coderflix</title>
-    <meta name="description" content="Descarga la aplicacion de Coderflix en tu dispositivo">
+    <meta name="description" content="Descarga Coderflix en tu dispositivo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Coderflix, series, peliculas, aplicaciones, movil, appstore">
-    <link rel="stylesheet" href="../style/bootstrap.css">
     <link rel="stylesheet" href="../CSS/destino.css">
-    <link rel="shortcut icon" href="image/icon.png">
+    <link rel="shortcut icon" href="../image/coder.ico">
 </head>
 <body>
 
     <header class="header">
-<<<<<<< HEAD
-        <a href="../index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>  
-
-        <nav id="barraNavegacion">
-            <ul class="secciones">
-                <li class="listItem"><a href="../index.html">HOME</a></li>
-                <li class="listItem"><a href="series.html">SERIES</a></li>
-                <li class="listItem"><a href="peliculas.html">PELICULAS</a></li>
-                <li class="listItem"><a href="ayuda.html">AYUDA</a></li>
-                <li class="listItem"><a href="login.html">LOGIN</a></li>
-                <li>
-                    <div class="barraBusqueda">
-                        <input type="text" class="campoBusqueda" placeholder="Titulo..."></input>
-                        <button class="buttonSearch">BUSCAR</button>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
-        <button class="buttonNav">
-            <a href="#barraNavegacion"><i class="fas fa-arrow-up"></i></a>
-        </button>
-=======
+        <!-- logo -->
         <div class="containerLogo">
             <a href="index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>  
         </div>
->>>>>>> rama
 
+        <!-- secciones nav -->
         <div class="containerSecciones">
             <nav id="barraNavegacion">
                 <ul class="secciones">
                     <li class="listItem"><a href="../index.html">HOME</a></li>
                     <li class="listItem"><a href="../pags/series.html">SERIES</a></li>
                     <li class="listItem"><a href="../pags/peliculas.html">PELICULAS</a></li>
+                    <li class="listItem"><a href="../pags/kids.html">KIDS</a></li>
                     <li class="listItem"><a href="../pags/ayuda.html">AYUDA</a></li>
                     <li class="listItem"><a href="../pags/login.html">LOGIN</a></li>
-                    <li class="listItem"><input type="text" name="search" class="campoBusqueda" placeholder="Titulo..."></li>
-                    <li class="listItem"><a href="#">BUSCAR</a></li>     
+                    <li class="listItem">
+                        <input type="text" name="search" class="campoBusqueda" placeholder="Titulo...">
+                        <i class="fas fa-search"></i>
+                    </li>  
                 </ul>
             </nav>
     
@@ -58,65 +38,52 @@
             </button>
         </div>
     </header>
-    
-    <section class="recuadroApps">
 
-        <h1>CODERFLIX PARA TODOS TUS DISPOSITIVOS</h1>
+    <!-- cuadro que contiene cada una de las marcas -->
+    <section class="boxApps">
 
-        <div class="accordionNews">
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    CÓMO DESCARGAR CODERFLIX PARA <span class="systemApp">IPHONE</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                    <div class="accordion-body">
-                    Podes encontrar nuestra app de Coderflix en tu <strong>AppStore.</strong> La misma fue desarrollada en dos versiones, la
-                    V.02 llamada "Coderflix All" para versiones de Iphones más recientes (consultá si es compatible con tu iPhone,
-                    <a href="">ACÁ</a>) y, para modelos mas antiguos, la aplicación en AppStore es "Coderflix Lite", pensada para iPhone's sin
-                    mucha capacidad de almacenamiento (Lista de <a href="">iPhones compatibles</a>.)
-                    </div>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        CÓMO DESCARGAR CODERFLIX PARA <span class="systemApp">ANDROID</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                    <div class="accordion-body">
-                        Podes encontrar nuestra app de Coderflix en tu Play Store.
-                        Disponemos de dos versiones, la version Coderflix STARS (Android 9.0 o superior) y la version Coderflix LITE (Funciona en todos los dispositivos Android, pero cuenta con una optimización y un diseño exclusivo para celulares que no poseen grandes prestaciones.)
+        <div class="boxMarca">
+            <i class="fab fa-apple"></i>
+            <ul>
+                <li>Iphone 7 o superior</li>
+                <li>270 megabytes libres en memoria</li>
+                <li>Version lite disponible</li>
+                <li>Descargala desde tu AppStore</li>
+            </ul>
+        </div>
 
-                    </div>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        CÓMO DESCARGAR CODERFLIX DE <span class="systemApp">ESCRITORIO</span>
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body">
-                        Coderflix está disponible para descargar para Windows y Mac. Para descargar, clic <a href="">ACÁ</a>
-                    </div>
-                </div>
-            </div>
+        <div class="boxMarca">
+            <i class="fab fa-android"></i>
+            <ul>
+                <li>Android 8.0 o superior</li>
+                <li>180 megabytes libres en memoria</li>
+                <li>Version lite disponible</li>
+                <li>Descargala desde tu PlayStore</li>
+            </ul>
+        </div>
+
+        <div class="boxMarca">
+            <i class="fas fa-desktop"></i>
+            <ul>
+                <li>Windows/Mac</li>
+                <li>250 megabytes libres en memoria</li>
+                <li>Descarga tu version desde <a href="">aca</a></li>
+            </ul>
         </div>
 
     </section>
 
+    <!-- footer -->
     <footer class="footerF">
-        <span>CODERFLIX</span>
-        <span>Todos los derechos reservados</span>
-        <span>Coderflix ya disponible en PlayStore y AppStore</span>
+
+        <a href="index.html"><img src="../image/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>
+        <span>Terminos y Aviso de privacidad</span>
+        <span>Ayuda</span>
+        <span>Envianos tus comentarios</span>
+        <span>2020-2021, coderflix.com</span>
+
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/15784ea8d5.js" crossorigin="anonymous"></script>
 </body>
 </html>

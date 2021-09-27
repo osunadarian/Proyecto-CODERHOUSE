@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif; }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -13,84 +14,22 @@ body {
 .header {
   width: 100%;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: linear-gradient(90deg, #002110 0%, black 50%, #002110 100%); }
   .header .containerLogo {
     width: 50%; }
+    .header .containerLogo a img {
+      width: 25%; }
   .header .containerSecciones {
     width: 50%;
     margin: auto;
     padding: 10px;
     display: flex;
-<<<<<<< HEAD
-    font-size: 1rem;
-    flex-wrap: wrap;
-    align-items: center; }
-    .header .secciones .listItem {
-      list-style: none;
-      padding: 20px; }
-      .header .secciones .listItem a {
-        text-decoration: none;
-        color: #cecbcb;
-        /*gris claro*/
-        font-family: 'Lato', sans-serif; }
-    .header .secciones li {
-      list-style: none; }
-      .header .secciones li .barraBusqueda {
-        display: flex;
-        flex-direction: row;
-        padding: 2px; }
-        .header .secciones li .barraBusqueda .campoBusqueda {
-          border: none;
-          background-color: #fff;
-          border-radius: 2px;
-          width: 40%;
-          margin-left: 20px;
-          padding-left: 8px;
-          outline: none;
-          color: #000;
-          font-weight: bold;
-          letter-spacing: 1px;
-          transition: all 0.3s ease; }
-        .header .secciones li .barraBusqueda .campoBusqueda:focus {
-          background-color: #22b14c;
-          color: #fff; }
-        .header .secciones li .barraBusqueda ::placeholder {
-          color: #000;
-          transition: color 0.3s ease; }
-        .header .secciones li .barraBusqueda ::placeholder:focus {
-          color: #fff; }
-        .header .secciones li .barraBusqueda .buttonSearch {
-          border: none;
-          margin-left: 5px;
-          margin-right: 8px;
-          padding: 5px;
-          background-color: rgba(0, 0, 0, 0);
-          /*trasparente*/
-          color: rgba(255, 255, 255, 0.9);
-          font-family: 'Lato', sans-serif;
-          cursor: pointer; }
-  .header .buttonNav {
-    width: 50px;
-    height: 50px;
-    background-color: #1c8e3e;
-    border-top: 3px solid rgba(255, 255, 255, 0.9);
-    border-bottom: 3px solid rgba(255, 255, 255, 0.9);
-    border-left: 3px solid rgba(255, 255, 255, 0.9);
-    border-right: 1px solid rgba(255, 255, 255, 0.9);
-    position: fixed;
-    right: 0px;
-    bottom: 100px;
-    list-style: none;
-    z-index: 999;
-    transition: 0.3s all; }
-    .header .buttonNav a {
-      color: rgba(255, 255, 255, 0.9);
-      text-decoration: none; }
-  .header .buttonNav:hover {
-    background-color: #141414;
-    color: #1c8e3e;
-    font-size: 1.5rem; }
-=======
     justify-content: flex-end; }
     .header .containerSecciones .secciones {
       display: flex;
@@ -99,7 +38,8 @@ body {
       font-size: 1rem; }
       .header .containerSecciones .secciones .listItem {
         list-style: none;
-        transition: all 0.1s ease-in-out; }
+        transition: all 0.1s ease-in-out;
+        margin: auto; }
         .header .containerSecciones .secciones .listItem a {
           text-decoration: none;
           color: rgba(255, 255, 255, 0.9);
@@ -107,20 +47,25 @@ body {
           padding: 0 10px;
           transition: all 0.3s ease-in-out; }
         .header .containerSecciones .secciones .listItem a:hover {
+          color: #1c8e3e; }
+        .header .containerSecciones .secciones .listItem .campoBusqueda {
+          border: 2px solid white;
+          background-color: #fff;
+          margin-left: 15px;
+          outline: none;
+          color: #000;
+          font-weight: bold;
+          letter-spacing: 1px;
+          padding: 4px 4px 4px 15px;
+          font-family: 'Lato', sans-serif; }
+        .header .containerSecciones .secciones .listItem i {
           color: #1c8e3e;
-          margin-left: 10px; }
-      .header .containerSecciones .secciones .campoBusqueda {
-        border: 2px solid white;
-        background-color: #fff;
-        border-radius: 20px;
-        margin-left: 15px;
-        outline: none;
-        color: #000;
-        font-weight: bold;
-        letter-spacing: 1px;
-        padding: 2px 2px 2px 15px; }
-      .header .containerSecciones .secciones .campoBusqueda:focus {
-        border: 2px solid #1c8e3e; }
+          font-size: 1.3rem;
+          padding: 4px;
+          cursor: pointer;
+          background-color: #fff; }
+      .header .containerSecciones .secciones .listItem:last-of-type {
+        display: flex; }
     .header .containerSecciones .buttonNav {
       width: 50px;
       height: 50px;
@@ -143,23 +88,22 @@ body {
       background-color: #141414;
       color: #1c8e3e;
       font-size: 1.5rem; }
->>>>>>> rama
 
 .img-principal {
   font-size: 16px;
   min-height: 31.25em;
   color: rgba(255, 255, 255, 0.9);
-  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(../image/Highlights/theoffice.png);
-  background-position: center 30%;
+  background: linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.5) 100%), url(../image/Highlights/theoffice.png);
+  background-position: center 12%;
   background-size: cover;
-  margin-top: 0;
+  margin-top: 70px;
   margin-bottom: 3.12em;
   display: flex;
   align-items: flex-end; }
   .img-principal .contenedorImg {
     margin: 0 auto;
     margin-bottom: 30px; }
-  .img-principal .movie {
+  .img-principal .firstMovie {
     font-weight: bold;
     font-family: 'Lato', sans-serif;
     font-size: 40px;
@@ -192,7 +136,7 @@ body {
 .containerIndex,
 .containerSeriesMovies {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
   text-align: left;
   font-size: 1.2rem;
   display: flex;
@@ -217,25 +161,76 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; }
-    .containerIndex .box .foto,
-    .containerSeriesMovies .box .foto {
+    .containerIndex .box .contenedorImg,
+    .containerSeriesMovies .box .contenedorImg {
       width: 180px;
-      height: 220px;
-      margin-top: 30px;
-      cursor: pointer;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.9);
       transition: all 0.3s ease-in-out; }
-    .containerIndex .box .foto:hover,
-    .containerSeriesMovies .box .foto:hover {
-<<<<<<< HEAD
-      border: 2px solid #1c8e3e;
+      .containerIndex .box .contenedorImg p,
+      .containerSeriesMovies .box .contenedorImg p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: rgba(0, 0, 0, 0);
+        text-align: center;
+        letter-spacing: 1px;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out; }
+      .containerIndex .box .contenedorImg .foto,
+      .containerSeriesMovies .box .contenedorImg .foto {
+        width: 180px;
+        height: 220px;
+        margin-top: 30px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.9);
+        transition: all 0.3s ease-in-out; }
+      .containerIndex .box .contenedorImg .foto:hover,
+      .containerSeriesMovies .box .contenedorImg .foto:hover {
+        box-shadow: 1px 1px 20px #22b14c; }
+    .containerIndex .box .contenedorImg:hover,
+    .containerSeriesMovies .box .contenedorImg:hover {
+      transform: scale(1.15); }
+      .containerIndex .box .contenedorImg:hover p,
+      .containerSeriesMovies .box .contenedorImg:hover p {
+        visibility: visible;
+        color: rgba(255, 255, 255, 0.9); }
+  .containerIndex .destacadosKids,
+  .containerSeriesMovies .destacadosKids {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px auto; }
+    .containerIndex .destacadosKids .boxDestacadoKids,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids {
+      width: 240px;
+      transition: all 0.3s ease-in-out; }
+      .containerIndex .destacadosKids .boxDestacadoKids img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids img {
+        width: 240px;
+        height: 240px;
+        border-radius: 150px;
+        cursor: pointer; }
+      .containerIndex .destacadosKids .boxDestacadoKids p,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids p {
+        text-align: center;
+        color: #fff;
+        margin-top: 15px;
+        font-weight: bold;
+        letter-spacing: 1px; }
+    .containerIndex .destacadosKids .boxDestacadoKids:hover,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover {
       transform: scale(1.1); }
-=======
-      transform: scale(1.15);
-      box-shadow: 1px 1px 20px #22b14c; }
->>>>>>> rama
+      .containerIndex .destacadosKids .boxDestacadoKids:hover img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover img {
+        box-shadow: 0px 0px 30px #22b14c; }
+  .containerIndex .titleDestacado,
+  .containerSeriesMovies .titleDestacado {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 10px #22b14c;
+    text-transform: uppercase; }
   .containerIndex .boxDestacados,
   .containerSeriesMovies .boxDestacados {
     margin-top: 20px;
@@ -325,42 +320,72 @@ body {
   .containerCards .card:nth-of-type(4) .img__back {
     background-image: url(../image/cards/backgroundPeaky.png); }
 
+.containerFirstMovie {
+  width: 50%;
+  margin: 10px auto;
+  margin-top: 100px;
+  box-shadow: 1px 1px 10px #fff; }
+  .containerFirstMovie .portadaMovie {
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out; }
+    .containerFirstMovie .portadaMovie img {
+      width: 100%;
+      margin: auto; }
+  .containerFirstMovie .descripcionMovie {
+    background-color: #fff;
+    font-size: 1.1rem;
+    text-align: center; }
+    .containerFirstMovie .descripcionMovie h1 {
+      font-size: 2rem;
+      margin-bottom: 20px; }
+    .containerFirstMovie .descripcionMovie p {
+      width: 80%;
+      margin: auto;
+      letter-spacing: 1px; }
+    .containerFirstMovie .descripcionMovie input {
+      padding: 10px 40px;
+      margin: 30px 10px 30px 10px;
+      border: none;
+      background-color: #1c8e3e;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 300ms; }
+    .containerFirstMovie .descripcionMovie input:hover {
+      background-color: #22b14c; }
+
 .footerF {
   margin-top: 20px;
-  position: relative;
   bottom: 0px;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
   border-top: 2px solid rgba(255, 255, 255, 0.9);
-  background-color: rgba(255, 255, 255, 0.9);
-  display: flex;
-  flex-direction: column;
-  background-color: #141414; }
+  margin-bottom: 30px;
+  display: block;
+  flex-direction: row; }
   .footerF span {
-    margin: 10px; }
-
-.footerInc {
-  margin-top: 20px;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  border-top: 2px solid rgba(255, 255, 255, 0.9);
-  background-color: rgba(255, 255, 255, 0.9);
-  display: flex;
-  flex-direction: column;
-  background-color: #141414; }
-  .footerInc span {
-    margin: 10px; }
+    display: inline;
+    margin: 10px;
+    cursor: pointer; }
+  .footerF a {
+    display: flex;
+    flex-direction: column; }
+    .footerF a img {
+      margin: auto;
+      width: 10%; }
+  .footerF i {
+    font-size: 1.1rem;
+    margin: auto 5px;
+    cursor: pointer; }
 
 /* LOGIN.HTML */
 .containerLogin {
   width: 40%;
-  margin: 40px auto 100px auto;
+  margin: 140px auto 150px auto;
   display: flex;
   flex-direction: column; }
   .containerLogin .titleLogin {
@@ -395,12 +420,13 @@ body {
       background-color: rgba(0, 0, 0, 0);
       color: rgba(255, 255, 255, 0.9);
       outline: none; }
+    .containerLogin .recuadroDatosUser .boxDatosUser:focus {
+      border-bottom: 3px solid #22b14c; }
     .containerLogin .recuadroDatosUser #send {
       border: 4px solid rgba(255, 255, 255, 0.9);
       font-size: 1.5rem;
-      background-color: #1c8e3e;
+      background-color: rgba(0, 0, 0, 0);
       color: rgba(255, 255, 255, 0.9);
-      border-radius: 2px;
       padding: 15px;
       margin-top: 30px;
       cursor: pointer; }
@@ -418,7 +444,7 @@ body {
 /* NEW-USER.HTML */
 .recuadroDatos {
   width: 50%;
-  margin: 30px auto auto auto;
+  margin: 100px auto auto auto;
   color: #22b14c;
   font-size: 1.5rem; }
   .recuadroDatos h1 {
@@ -434,15 +460,19 @@ body {
       border: none;
       border-radius: 8px;
       outline: none;
-      font-size: 1.5rem;
-      text-align: center; }
+      font-size: 1.2rem;
+      text-align: left;
+      padding-left: 10px; }
+    .recuadroDatos .campoDatos input:focus {
+      box-shadow: 1px 1px 10px #22b14c; }
     .recuadroDatos .campoDatos select {
       margin: 5px;
       font-family: 'Lato', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       outline: none;
       border: none;
-      border-radius: 8px; }
+      border-radius: 8px;
+      padding: 5px 15px; }
     .recuadroDatos .campoDatos legend {
       margin-bottom: 10px; }
     .recuadroDatos .campoDatos .cuadroDeDatos div {
@@ -469,25 +499,24 @@ body {
   .recuadroDatos .cuadroBotones {
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     text-align: center; }
     .recuadroDatos .cuadroBotones .botonNewUser {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: #1c8e3e;
+      color: rgba(255, 255, 255, 0.9);
       cursor: pointer;
-      border: 1px solid #141414;
+      border: none;
       border-radius: 10px;
       padding: 10px;
-      font-weight: bold;
-      transition: background-color 0.3s ease-in-out; }
-    .recuadroDatos .cuadroBotones .botonNewUser:hover {
-      background-color: #cecbcb; }
+      font-weight: normal;
+      width: 20%; }
 
 /* ayuda.HTML */
 .containerHelp {
   margin: 40px auto;
+  margin-top: 120px;
   text-align: center;
-  width: 40%;
-  border: 2px solid #fff; }
+  width: 40%; }
   .containerHelp h1 {
     padding: 50px;
     color: #1c8e3e;
@@ -518,29 +547,33 @@ body {
       display: flex;
       flex-direction: column;
       margin: 30px;
-      align-items: center;
       background-color: #1c8e3e;
       border: 3px solid rgba(255, 255, 255, 0.9);
-      border-radius: 10px; }
+      border-radius: 10px;
+      width: 20%;
+      transition: all 0.3s ease-in-out; }
       .containerHelp .containerButtons div .buttonsHelp {
-        padding: 10px 20px;
-        margin: 0px 15px;
         background-color: #1c8e3e;
         cursor: pointer;
         border: none;
-        font-size: 1.5rem;
-        letter-spacing: 2px;
+        font-size: 1rem;
+        letter-spacing: 1px;
         font-weight: normal;
-        color: rgba(255, 255, 255, 0.9); }
+        color: rgba(255, 255, 255, 0.9);
+        margin-top: 5px;
+        margin-bottom: 3px; }
       .containerHelp .containerButtons div i {
         padding-top: 10px;
         color: rgba(255, 255, 255, 0.9);
         border: none; }
+    .containerHelp .containerButtons div:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 10px #22b14c; }
 
 /* reestablecer-pw.HTML */
 .recuadroForgot {
   width: 50%;
-  margin: 100px auto 150px auto;
+  margin: 250px auto 350px auto;
   color: #22b14c;
   font-size: 1.5rem;
   text-align: center; }
@@ -576,7 +609,7 @@ body {
 
 /* planes.HTML */
 .boxPlanes {
-  margin: auto auto 150px auto;
+  margin: 150px auto 160px auto;
   text-align: center; }
   .boxPlanes h1 {
     font-size: 2rem;
@@ -589,9 +622,8 @@ body {
     justify-content: center; }
     .boxPlanes .container-planes .boxPlan {
       margin: 20px;
-      border: 2px solid #22b14c;
-      border-radius: 10px;
-      background-color: #141414; }
+      box-shadow: 1px 1px 10px #22b14c;
+      border-radius: 10px; }
       .boxPlanes .container-planes .boxPlan ul {
         text-align: center;
         margin: auto;
@@ -607,77 +639,140 @@ body {
         margin-top: 30px;
         margin-bottom: 30px; }
       .boxPlanes .container-planes .boxPlan .getPlan {
-        padding: 5px 10px;
-        margin: 15px;
-        background-color: #1c8e3e;
+        margin: 20px auto 20px auto;
+        padding: 10px;
         cursor: pointer;
-        border: 1px solid #fff;
-        font-size: 1rem;
-        letter-spacing: 1px;
-        font-weight: normal;
-        color: rgba(255, 255, 255, 0.9);
-        border-radius: 3px;
+        border-radius: 10px;
+        border: none;
+        font-weight: bold;
+        text-align: center;
         transition: background-color 0.3s ease-in-out; }
       .boxPlanes .container-planes .boxPlan .getPlan:hover {
         background-color: #22b14c; }
+    .boxPlanes .container-planes .boxPlan:nth-of-type(3) {
+      animation-name: destacar;
+      animation-duration: 0.3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse; }
+
+@keyframes destacar {
+  from {
+    box-shadow: 1px 1px 10px #22b14c; }
+  to {
+    box-shadow: 1px 1px 30px #1c8e3e; } }
 
 /* appcoder.HTML */
-.recuadroApps h1 {
-  text-align: center;
-  margin-top: 50px;
-  color: #22b14c;
-  animation-name: sizeSubtitle;
-  animation-duration: 2s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: infinite; }
+.boxApps {
+  margin-top: 100px;
+  width: 100%;
+  padding: 180px;
+  display: flex;
+  justify-content: space-around; }
+  .boxApps .boxMarca {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid rgba(251, 251, 251, 0.5);
+    border-radius: 15px;
+    padding: 80px 20px;
+    transition: 0.3s all ease-in-out; }
+    .boxApps .boxMarca i {
+      font-size: 100px;
+      text-align: center;
+      padding-bottom: 30px; }
+    .boxApps .boxMarca ul li {
+      font-weight: bold; }
+    .boxApps .boxMarca a {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600; }
+  .boxApps .boxMarca:hover {
+    background-color: white;
+    color: #000;
+    transform: scale(1.1); }
+    .boxApps .boxMarca:hover a {
+      color: #000; }
 
-@keyframes sizeSubtitle {
-  from {
-    letter-spacing: 0.5px; }
-  to {
-    letter-spacing: 1px; } }
-
-.recuadroApps .accordionNews {
-  margin: 10px auto 180px auto; }
-
-.recuadroApps .systemApp {
-  margin-left: 5px;
-  font-weight: bold; }
+/* cuenta.HTML */
+.boxAyudaLogin {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 100px; }
+  .boxAyudaLogin .boxBotonesLogin {
+    width: 100%;
+    text-align: center; }
+    .boxAyudaLogin .boxBotonesLogin h1 {
+      color: #fff;
+      font-size: 1.2rem;
+      text-align: center;
+      padding-top: 30px; }
+    .boxAyudaLogin .boxBotonesLogin button {
+      outline: none;
+      border: none;
+      background-color: #1c8e3e;
+      padding: 5px 15px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      .boxAyudaLogin .boxBotonesLogin button a {
+        color: #fff;
+        text-decoration: none; }
+  .boxAyudaLogin .campoDeAyuda {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+    .boxAyudaLogin .campoDeAyuda i {
+      color: #000;
+      background-color: #fff;
+      padding: 4px;
+      padding-left: 8px;
+      margin-right: 0px;
+      border-radius: 50px 0px 0px 50px; }
+    .boxAyudaLogin .campoDeAyuda input {
+      width: 50%;
+      outline: none;
+      border: none;
+      padding-left: 5px;
+      margin-left: 0px;
+      border-radius: 0px 50px 50px 0px; }
+  .boxAyudaLogin .boxAyudaTemas {
+    display: flex;
+    padding-bottom: 240px; }
+    .boxAyudaLogin .boxAyudaTemas .itemBox {
+      padding: 10px;
+      color: #fff;
+      margin: 0px auto; }
+      .boxAyudaLogin .boxAyudaTemas .itemBox h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 15px; }
+      .boxAyudaLogin .boxAyudaTemas .itemBox ul li {
+        margin: 15px;
+        padding-left: 0px;
+        cursor: pointer; }
 
 /* preguntasFrecuentes.HTML */
 .seccion {
   width: 90%;
   margin: 100px auto;
   display: flex;
-  flex-direction: row;
-  height: 700px; }
-  .seccion .seccion__preguntas {
-    background-color: #141414;
-    width: 30%;
-    text-align: center;
-    border-right: 5px solid #1c8e3e; }
-    .seccion .seccion__preguntas ul {
-      list-style: none;
-      text-align: left; }
-    .seccion .seccion__preguntas li {
-      padding: 10px 30px; }
-    .seccion .seccion__preguntas a {
-      text-decoration: none;
-      font-weight: bold;
-      color: rgba(255, 255, 255, 0.9);
-      padding: 20px auto; }
+  flex-direction: row; }
   .seccion .seccion__respuestas {
     width: 70%;
     text-align: center;
-    overflow: auto; }
+    overflow: auto;
+    margin: auto; }
     .seccion .seccion__respuestas h1 {
       margin: 30px auto;
       letter-spacing: 3px;
       color: rgba(255, 255, 255, 0.9); }
-    .seccion .seccion__respuestas h2 {
+    .seccion .seccion__respuestas .pregunta {
       margin: 20px auto;
       letter-spacing: 2px;
-      color: #1c8e3e; }
+      color: #1c8e3e;
+      font-size: 1.5rem; }
     .seccion .seccion__respuestas p {
       width: 60%;
       margin: auto; }
@@ -687,899 +782,1585 @@ body {
       text-decoration: none;
       color: #1c8e3e; }
 
-@media (max-width: 576px) {
+@media (max-width: 424px) {
   .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .header a {
-      display: block;
-      margin: auto; }
-    .header .secciones {
-      width: 100%;
-      margin: 0px;
-      padding: 0px;
-      display: flex;
-      flex-wrap: wrap; }
-      .header .secciones .listItem {
-        list-style: none;
-        transition: font-size 0.2s ease-in-out;
-        padding: 15px;
-        margin: auto; }
-        .header .secciones .listItem a {
-          text-decoration: none;
-          color: #cecbcb;
-          font-family: 'Lato', sans-serif; }
-        .header .secciones .listItem a:hover {
-          color: #1c8e3e; }
-      .header .secciones li {
-        margin: auto;
-        list-style: none; }
-        .header .secciones li .barraBusqueda {
-          display: flex;
-          flex-direction: row;
-          padding: 2px;
-          justify-content: center; }
-          .header .secciones li .barraBusqueda .campoBusqueda {
-            border: none;
-            background-color: #fff;
-            border-radius: 2px;
-            width: 40%;
-            margin-left: 20px;
-            padding-left: 8px;
-            outline: none;
-            color: #000;
-            font-weight: bold;
-            letter-spacing: 1px; }
-          .header .secciones li .barraBusqueda .buttonSearch {
-            border: none;
-            margin-left: 5px;
-            margin-right: 8px;
-            font-size: 1rem;
-            padding: 5px;
-            background-color: rgba(0, 0, 0, 0);
-            color: rgba(255, 255, 255, 0.9); }
-  .img-principal .descripcionMovie {
-    max-width: 100%; }
-  .containerIndex,
-  .containerSeriesMovies {
     width: 100%;
-    margin-top: 25px; }
-    .containerIndex .subtitle,
-    .containerSeriesMovies .subtitle {
-      font-size: 2rem;
-      margin-top: 20px;
-      border-top: 3px solid #1c8e3e;
-      padding-top: 15px; }
-    .containerIndex .box,
-    .containerSeriesMovies .box {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      margin: 0px; }
-      .containerIndex .box .foto,
-      .containerSeriesMovies .box .foto {
-        width: 60%;
-        height: 60%;
-        margin: 5px;
-        border: none; }
-    .containerIndex .boxDestacados .fotoDestacada,
-    .containerSeriesMovies .boxDestacados .fotoDestacada {
-      width: 40%;
-      height: 40%;
-      margin: 20px; }
-  /************************AYUDA.HTML****************************************/
-  .containerHelp {
-    margin: auto;
-    text-align: center;
-    padding: 30px; }
-    .containerHelp h1 {
-      padding-top: 30px;
-      font-size: 2rem;
-      text-transform: uppercase;
-      color: #1c8e3e; }
-    .containerHelp .boxHelp .itemsHelp {
-      width: 80%; }
-      .containerHelp .boxHelp .itemsHelp li a {
-        font-size: 1.5rem;
-        text-transform: uppercase; }
-    .containerHelp .containerButtons {
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      align-items: center; }
-      .containerHelp .containerButtons div {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        align-items: center;
-        background-color: #1c8e3e;
-        border: 3px solid rgba(255, 255, 255, 0.9);
-        border-radius: 10px; }
-        .containerHelp .containerButtons div .buttonsHelp {
-          margin: 0px;
-          padding: 0px 10px 10px 10px;
-          border: none;
-          font-size: 1rem;
-          color: rgba(255, 255, 255, 0.9);
-          background-color: #1c8e3e;
-          font-weight: normal;
-          letter-spacing: 2px; }
-        .containerHelp .containerButtons div i {
-          padding: 10px;
-          color: rgba(255, 255, 255, 0.9);
-          border: none; }
-  /************************planes.HTML****************************************/
-  .boxPlanes h1 {
-    font-size: 1.7rem;
-    text-transform: uppercase; }
-  .boxPlanes .container-planes {
-    margin: 0px;
-    display: block;
     flex-direction: column;
-    justify-content: center; }
-    .boxPlanes .container-planes .boxPlan {
-      margin: 20px;
-      border: none;
-      border-bottom: 2px solid #1c8e3e;
-      border-radius: 0px;
-      background-color: #141414; }
-      .boxPlanes .container-planes .boxPlan h2 {
-        color: #22b14c;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 1.5rem; }
-      .boxPlanes .container-planes .boxPlan ul {
-        text-align: center;
-        margin: auto;
-        letter-spacing: 1px; }
-        .boxPlanes .container-planes .boxPlan ul li {
-          padding: 15px;
+    position: static; }
+    .header .containerLogo {
+      width: 100%;
+      text-align: center; }
+      .header .containerLogo a img {
+        width: 80%; }
+    .header .containerSecciones {
+      width: 100%;
+      margin: auto;
+      display: block;
+      padding: 0px; }
+      .header .containerSecciones .secciones {
+        display: flex;
+        font-size: 1.5rem;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: center; }
+        .header .containerSecciones .secciones .listItem {
           text-align: center;
-          color: rgba(255, 255, 255, 0.9);
-          font-size: 1.2rem; }
-      .boxPlanes .container-planes .boxPlan .getPlan {
-        margin: 20px auto 20px auto;
-        padding: 10px 30px 10px 30px;
-        cursor: pointer;
-        border-radius: 0px;
-        letter-spacing: 2px;
-        font-weight: bold; }
-  /*************login.html***************/
+          padding: 10px; }
+          .header .containerSecciones .secciones .listItem a {
+            margin: 20px auto; }
+          .header .containerSecciones .secciones .listItem a:hover {
+            color: #1c8e3e;
+            margin-left: 0px; }
+          .header .containerSecciones .secciones .listItem .campoBusqueda {
+            margin: 0px;
+            width: 100%;
+            border-radius: 0px; }
+          .header .containerSecciones .secciones .listItem i {
+            background-color: #fff; }
+      .header .containerSecciones .buttonNav {
+        visibility: visible; }
+  .img-principal {
+    display: none; }
+  .containerIndex .subtitle,
+  .containerSeriesMovies .subtitle {
+    text-align: center;
+    font-size: 2rem; }
+  .containerIndex .destacadosKids,
+  .containerSeriesMovies .destacadosKids {
+    display: none; }
+  .containerIndex .boxDestacados,
+  .containerSeriesMovies .boxDestacados {
+    display: none; }
+  .containerCards {
+    display: none; }
+  .containerFirstMovie {
+    display: none; }
+  .footerF {
+    font-size: 1.2rem; }
+    .footerF span {
+      display: block; }
+    .footerF a img {
+      width: 40%; }
+  /* LOGIN.HTML */
   .containerLogin {
     width: 100%;
-    margin: 40px auto 30px auto;
-    display: flex;
-    flex-direction: column; }
-    .containerLogin .titleLogin {
-      width: 30%;
-      font-size: 1.5rem;
-      border-bottom: 3px solid #1c8e3e; }
-    .containerLogin .recuadroDatosUser {
-      margin: 5px; }
-      .containerLogin .recuadroDatosUser i {
-        color: rgba(255, 255, 255, 0.9);
-        margin-right: 10px; }
-      .containerLogin .recuadroDatosUser .boxDatosUser {
-        padding: 10px;
-        border-bottom: 1px solid #1c8e3e; }
-      .containerLogin .recuadroDatosUser #send {
-        font-size: 1rem; }
-    .containerLogin .notLogin {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0);
-      align-items: center;
-      font-size: 1rem;
-      margin-top: 15px; }
-  /**********************new-user.html******************/
+    margin: 20px auto 100px auto; }
+    .containerLogin a {
+      font-size: 1.3rem; }
+  /* NEW-USER.HTML */
   .recuadroDatos {
-    width: 100%;
-    margin: 30px auto auto auto;
-    color: #22b14c;
-    font-size: 1rem; }
-    .recuadroDatos h1 {
-      margin: auto;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.9);
-      width: 80%; }
-    .recuadroDatos .campoDatos {
-      text-align: center;
-      margin-top: 30px;
-      padding-bottom: 30px; }
-      .recuadroDatos .campoDatos legend {
-        margin-bottom: 20px;
-        font-size: 1.5rem; }
-      .recuadroDatos .campoDatos div {
-        margin: 10px; }
-      .recuadroDatos .campoDatos input {
-        border-radius: 0px;
-        font-size: 1.2rem; }
-      .recuadroDatos .campoDatos select {
-        font-size: 1rem;
-        border-radius: 0px;
-        padding-left: 5px; }
-      .recuadroDatos .campoDatos .cuadroDeDatos div {
-        display: inline; }
-    .recuadroDatos .termsConditions {
-      width: 100%;
-      font-size: 1.2rem; }
-      .recuadroDatos .termsConditions h2 {
-        font-size: 1.2rem;
-        margin-bottom: 20px; }
-    .recuadroDatos .cuadroBotones .botonNewUser {
-      border-radius: 0px;
-      padding: 10px 20px 10px 20px; }
-  /*********************reestablecerpw**************/
+    width: 100%; }
+    .recuadroDatos .cuadroBotones {
+      width: 100%; }
+      .recuadroDatos .cuadroBotones .botonNewUser {
+        width: 40%;
+        display: block;
+        margin: 10px auto; }
+  /* ayuda.HTML */
+  .containerHelp {
+    margin: 20px auto;
+    margin-top: 0px;
+    width: 100%; }
+    .containerHelp h1 {
+      padding: 20px;
+      font-size: 2.2rem; }
+    .containerHelp .boxHelp .itemsHelp {
+      width: 100%; }
+      .containerHelp .boxHelp .itemsHelp li a {
+        font-size: 1.8rem; }
+    .containerHelp .boxHelp .itemsHelp li a:hover {
+      color: #22b14c; }
+    .containerHelp .containerButtons {
+      display: block; }
+      .containerHelp .containerButtons div {
+        width: 80%; }
+  /* reestablecer-pw.HTML */
   .recuadroForgot {
     width: 100%;
-    margin: 100px auto 100px auto;
-    color: #22b14c;
-    font-size: 1rem;
-    text-align: center; }
-    .recuadroForgot div {
-      font-size: 1.2rem; }
-    .recuadroForgot .sendCode {
-      border-radius: 5px; }
-    .recuadroForgot .fieldMail {
-      border-radius: 0px;
-      padding: 5px 0px 5px 5px;
-      text-align: left;
-      font-size: 1.2rem; }
-  /*************preguntas-frecuentes.html***************/
-  .seccion {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column; }
-    .seccion .seccion__preguntas {
-      background-color: #141414;
-      width: 100%;
-      text-align: center;
-      font-size: 1rem;
-      /**/
-      border-right: none;
-      /**/
-      margin-top: 40px;
-      /**/
-      border-bottom: 3px solid #1c8e3e; }
-      .seccion .seccion__preguntas li {
-        padding: 0px;
-        /**/ }
-      .seccion .seccion__preguntas a {
-        text-decoration: none;
-        font-weight: bold;
-        color: rgba(255, 255, 255, 0.9);
-        padding: 20px auto; }
-    .seccion .seccion__respuestas {
-      width: 100%;
-      /**/
-      text-align: center;
-      overflow: auto; }
-      .seccion .seccion__respuestas h1 {
-        margin: 30px auto;
-        letter-spacing: 1px;
-        /**/
-        color: rgba(255, 255, 255, 0.9);
-        display: none; }
-      .seccion .seccion__respuestas h2 {
-        margin: 20px auto;
-        letter-spacing: 1px;
-        /**/
-        color: #1c8e3e;
-        /**/ }
-      .seccion .seccion__respuestas p {
-        width: 100%;
-        margin: auto;
-        height: auto;
-        font-size: 1rem; }
-      .seccion .seccion__respuestas span {
-        font-weight: bold; }
-      .seccion .seccion__respuestas a {
-        text-decoration: none;
-        color: #1c8e3e; } }
-
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-@media (min-width: 577px) and (max-width: 830px) {
-  .header {
-    display: flex;
+    margin: 10px 0px 50px 0px; }
+  /* planes.HTML */
+  .boxPlanes {
+    margin: 0px auto 100px auto; }
+    .boxPlanes h1 {
+      font-size: 2rem;
+      margin: 10px; }
+    .boxPlanes .container-planes {
+      margin: auto auto 10px auto;
+      display: flex;
+      flex-direction: column; }
+  /* appcoder.HTML */
+  .boxApps {
+    margin-top: 10px;
+    padding: 10px;
     flex-direction: column;
     justify-content: center; }
-    .header a {
-      display: block;
-      margin: auto; }
-    .header .secciones {
+    .boxApps .boxMarca {
+      width: 50%;
+      flex-direction: column;
+      margin: 20px auto; }
+  /* cuenta.HTML */
+  .boxAyudaLogin {
+    margin-top: 0px; }
+    .boxAyudaLogin .boxBotonesLogin {
       width: 100%;
-      margin: 0px;
-      padding: 0px;
-      display: flex;
-      flex-wrap: wrap; }
-      .header .secciones .listItem {
-        list-style: none;
-        transition: font-size 0.2s ease-in-out;
-        padding: 15px;
-        margin: auto; }
-        .header .secciones .listItem a {
-          text-decoration: none;
-          color: #cecbcb;
-          font-family: 'Lato', sans-serif; }
-        .header .secciones .listItem a:hover {
-          color: #1c8e3e; }
-      .header .secciones li {
-        margin: auto;
-        list-style: none; }
-        .header .secciones li .barraBusqueda {
-          display: flex;
-          flex-direction: row;
-          padding: 2px;
-          justify-content: center; }
-          .header .secciones li .barraBusqueda .campoBusqueda {
-            border: none;
-            background-color: #fff;
-            border-radius: 2px;
-            width: 40%;
-            margin-left: 20px;
-            padding-left: 8px;
-            outline: none;
-            color: #000;
-            font-weight: bold;
-            letter-spacing: 1px; }
-          .header .secciones li .barraBusqueda .buttonSearch {
-            border: none;
-            margin-left: 5px;
-            margin-right: 8px;
-            font-size: 1rem;
-            padding: 5px;
-            background-color: rgba(0, 0, 0, 0);
-            color: rgba(255, 255, 255, 0.9); }
-  .img-principal .descripcionMovie {
-    max-width: 100%; }
-  .containerIndex,
-  .containerSeriesMovies {
-    width: 100%;
-    margin-top: 25px; }
-    .containerIndex .subtitle,
-    .containerSeriesMovies .subtitle {
-      font-size: 1.5rem; }
-    .containerIndex .box,
-    .containerSeriesMovies .box {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 0px; }
-      .containerIndex .box .foto,
-      .containerSeriesMovies .box .foto {
-        width: 20%;
-        height: 20%;
-        margin: 20px 40px;
-        border: none; }
-    .containerIndex .boxDestacados .fotoDestacada,
-    .containerSeriesMovies .boxDestacados .fotoDestacada {
-      width: 40%;
-      height: 40%;
-      margin: 20px; }
-  /************************AYUDA.HTML****************************************/
-  .containerHelp {
-    margin: auto;
-    text-align: center;
-    padding: 30px; }
-    .containerHelp h1 {
-      padding-top: 30px;
-      font-size: 2rem;
-      text-transform: uppercase;
-      color: #1c8e3e; }
-    .containerHelp .boxHelp .itemsHelp {
-      width: 80%; }
-      .containerHelp .boxHelp .itemsHelp li a {
-        font-size: 1.5rem;
-        text-transform: uppercase; }
-    .containerHelp .containerButtons {
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      align-items: center; }
-      .containerHelp .containerButtons div {
-        display: flex;
-        flex-direction: column;
+      text-align: center; }
+      .boxAyudaLogin .boxBotonesLogin button {
+        padding: 10px 25px; }
+    .boxAyudaLogin .campoDeAyuda {
+      width: 100%; }
+      .boxAyudaLogin .campoDeAyuda input {
+        width: 80%; }
+    .boxAyudaLogin .boxAyudaTemas {
+      padding-bottom: 40px;
+      flex-direction: column; }
+      .boxAyudaLogin .boxAyudaTemas .itemBox {
+        padding: 10px;
         margin: 10px;
-        align-items: center;
-        background-color: #1c8e3e;
-        border: 3px solid rgba(255, 255, 255, 0.9);
-        border-radius: 10px; }
-        .containerHelp .containerButtons div .buttonsHelp {
-          margin: 0px;
-          padding: 0px 10px 10px 10px;
-          border: none;
-          font-size: 1rem;
-          color: rgba(255, 255, 255, 0.9);
-          background-color: #1c8e3e;
-          font-weight: normal;
-          letter-spacing: 2px; }
-        .containerHelp .containerButtons div i {
-          padding: 10px;
-          color: rgba(255, 255, 255, 0.9);
-          border: none; }
-  /************************planes.HTML****************************************/
-  .boxPlanes h1 {
-    font-size: 1.7rem;
-    text-transform: uppercase; }
-  .boxPlanes .container-planes {
-    margin: 0px;
-    display: block;
-    flex-direction: column;
-    justify-content: center; }
-    .boxPlanes .container-planes .boxPlan {
-      margin: 20px;
-      border: none;
-      border-bottom: 2px solid #1c8e3e;
-      border-radius: 0px;
-      background-color: #141414; }
-      .boxPlanes .container-planes .boxPlan h2 {
-        color: #22b14c;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 1.5rem; }
-      .boxPlanes .container-planes .boxPlan ul {
-        text-align: center;
-        margin: auto;
-        letter-spacing: 1px; }
-        .boxPlanes .container-planes .boxPlan ul li {
-          padding: 15px;
-          text-align: center;
-          color: rgba(255, 255, 255, 0.9);
-          font-size: 1.2rem; }
-      .boxPlanes .container-planes .boxPlan .getPlan {
-        margin: 20px auto 20px auto;
-        padding: 10px 30px 10px 30px;
-        cursor: pointer;
-        border-radius: 0px;
-        letter-spacing: 2px;
-        font-weight: bold; }
-  /*************login.html***************/
-  .containerLogin {
-    width: 100%;
-    margin: 40px auto 30px auto;
-    display: flex;
-    flex-direction: column; }
-    .containerLogin .titleLogin {
-      width: 30%;
-      font-size: 1.5rem;
-      border-bottom: 3px solid #1c8e3e; }
-    .containerLogin .recuadroDatosUser {
-      margin: 5px; }
-      .containerLogin .recuadroDatosUser i {
-        color: rgba(255, 255, 255, 0.9);
-        margin-right: 10px; }
-      .containerLogin .recuadroDatosUser .boxDatosUser {
-        padding: 10px;
-        border-bottom: 1px solid #1c8e3e; }
-      .containerLogin .recuadroDatosUser #send {
-        font-size: 1rem; }
-    .containerLogin .notLogin {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0);
-      align-items: center;
-      font-size: 1rem;
-      margin-top: 15px; }
-  /**********************new-user.html******************/
-  .recuadroDatos {
-    width: 100%;
-    margin: 30px auto auto auto;
-    color: #22b14c;
-    font-size: 1rem; }
-    .recuadroDatos h1 {
-      margin: auto;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.9);
-      width: 80%; }
-    .recuadroDatos .campoDatos {
-      text-align: center;
-      margin-top: 30px;
-      padding-bottom: 30px; }
-      .recuadroDatos .campoDatos legend {
-        margin-bottom: 20px;
-        font-size: 1.5rem; }
-      .recuadroDatos .campoDatos div {
-        margin: 10px; }
-      .recuadroDatos .campoDatos input {
-        border-radius: 0px;
-        font-size: 1.2rem; }
-      .recuadroDatos .campoDatos select {
-        font-size: 1rem;
-        border-radius: 0px;
-        padding-left: 5px; }
-      .recuadroDatos .campoDatos .cuadroDeDatos div {
-        display: inline; }
-    .recuadroDatos .termsConditions {
-      width: 100%;
-      font-size: 1.2rem; }
-      .recuadroDatos .termsConditions h2 {
-        font-size: 1.2rem;
-        margin-bottom: 20px; }
-    .recuadroDatos .cuadroBotones .botonNewUser {
-      border-radius: 0px;
-      padding: 10px 20px 10px 20px; }
-  /*********************reestablecerpw**************/
-  .recuadroForgot {
-    width: 100%;
-    margin: 100px auto 100px auto;
-    color: #22b14c;
-    font-size: 1rem;
-    text-align: center; }
-    .recuadroForgot div {
-      font-size: 1.2rem; }
-    .recuadroForgot .sendCode {
-      border-radius: 5px; }
-    .recuadroForgot .fieldMail {
-      border-radius: 0px;
-      padding: 5px 0px 5px 5px;
-      text-align: left;
-      font-size: 1.2rem; }
-  /*************preguntas-frecuentes.html***************/
+        text-align: center; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox h2 {
+          color: #1c8e3e;
+          font-size: 2rem; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox ul li {
+          font-size: 1.2rem;
+          list-style: none;
+          text-decoration: underline; }
+  /* preguntasFrecuentes.HTML */
   .seccion {
     width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column; }
-    .seccion .seccion__preguntas {
-      background-color: #141414;
-      width: 100%;
-      text-align: center;
-      font-size: 1rem;
-      /**/
-      border-right: none;
-      /**/
-      margin-top: 40px;
-      /**/
-      border-bottom: 3px solid #1c8e3e; }
-      .seccion .seccion__preguntas li {
-        padding: 0px;
-        /**/ }
-      .seccion .seccion__preguntas a {
-        text-decoration: none;
-        font-weight: bold;
-        color: rgba(255, 255, 255, 0.9);
-        padding: 20px auto; }
+    margin: 0px auto; }
     .seccion .seccion__respuestas {
-      width: 100%;
-      /**/
-      text-align: center;
-      overflow: auto; }
+      width: 100%; }
       .seccion .seccion__respuestas h1 {
-        margin: 30px auto;
-        letter-spacing: 1px;
-        /**/
-        color: rgba(255, 255, 255, 0.9);
-        display: none; }
-      .seccion .seccion__respuestas h2 {
+        margin: 30px auto; }
+      .seccion .seccion__respuestas .pregunta {
         margin: 20px auto;
-        letter-spacing: 1px;
-        /**/
-        color: #1c8e3e;
-        /**/ }
+        font-size: 1.5rem; }
       .seccion .seccion__respuestas p {
-        width: 100%;
-        margin: auto;
-        height: auto;
-        font-size: 1rem; }
-      .seccion .seccion__respuestas span {
-        font-weight: bold; }
-      .seccion .seccion__respuestas a {
-        text-decoration: none;
-        color: #1c8e3e; } }
+        width: 90%;
+        font-size: 1.2rem; } }
 
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-/************************************************************************************************************/
-@media (min-width: 831px) and (max-width: 1200px) {
+@media (min-width: 425px) and (max-width: 576px) {
   .header {
     width: 100%;
+    flex-direction: column;
+    position: static; }
+    .header .containerLogo {
+      width: 100%;
+      text-align: center; }
+      .header .containerLogo a img {
+        width: 80%; }
+    .header .containerSecciones {
+      width: 100%;
+      margin: auto;
+      display: block;
+      padding: 0px; }
+      .header .containerSecciones .secciones {
+        display: flex;
+        font-size: 1.5rem;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: center; }
+        .header .containerSecciones .secciones .listItem {
+          text-align: center;
+          padding: 10px; }
+          .header .containerSecciones .secciones .listItem a {
+            margin: 20px auto; }
+          .header .containerSecciones .secciones .listItem a:hover {
+            color: #1c8e3e;
+            margin-left: 0px; }
+          .header .containerSecciones .secciones .listItem .campoBusqueda {
+            margin: 0px;
+            width: 100%;
+            border-radius: 0px; }
+          .header .containerSecciones .secciones .listItem i {
+            background-color: #fff; }
+      .header .containerSecciones .buttonNav {
+        visibility: visible; }
+  .img-principal {
+    margin-top: 20px; }
+    .img-principal .contenedorImg {
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    .img-principal .descripcionMovie {
+      font-size: 1.2em;
+      max-width: 100%; }
+  .containerIndex .subtitle,
+  .containerSeriesMovies .subtitle {
+    text-align: center;
+    font-size: 2rem; }
+  .containerIndex .destacadosKids,
+  .containerSeriesMovies .destacadosKids {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px auto; }
+    .containerIndex .destacadosKids .boxDestacadoKids,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids {
+      width: 240px;
+      transition: all 0.3s ease-in-out; }
+      .containerIndex .destacadosKids .boxDestacadoKids img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids img {
+        width: 240px;
+        height: 240px;
+        border-radius: 150px;
+        cursor: pointer; }
+      .containerIndex .destacadosKids .boxDestacadoKids p,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids p {
+        text-align: center;
+        color: #fff;
+        margin-top: 15px;
+        font-weight: bold;
+        letter-spacing: 1px; }
+    .containerIndex .destacadosKids .boxDestacadoKids:hover,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover {
+      transform: scale(1.1); }
+      .containerIndex .destacadosKids .boxDestacadoKids:hover img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover img {
+        box-shadow: 0px 0px 30px #22b14c; }
+  .containerIndex .boxDestacados .fotoDestacada,
+  .containerSeriesMovies .boxDestacados .fotoDestacada {
+    width: 200px;
+    height: 290px;
+    margin: 15px; }
+  .containerCards .card {
+    width: 100%;
+    margin: 0px;
+    transition: all 0.3s ease-in-out; }
+    .containerCards .card .cover .img__back {
+      border-radius: 0px; }
+    .containerCards .card .descripcion {
+      border-radius: 0px;
+      font-size: 1.2rem; }
+      .containerCards .card .descripcion h2 {
+        font-size: 1.5rem; }
+  .containerFirstMovie {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+    .containerFirstMovie .portadaMovie {
+      width: 100%; }
+      .containerFirstMovie .portadaMovie img {
+        width: 100%;
+        margin: auto; }
+    .containerFirstMovie .descripcionMovie {
+      font-size: 1.2rem; }
+  .footerF {
+    font-size: 1.2rem; }
+    .footerF span {
+      display: block; }
+    .footerF a img {
+      width: 40%; }
+  /* LOGIN.HTML */
+  .containerLogin {
+    width: 100%;
+    margin: 20px auto 100px auto; }
+    .containerLogin a {
+      font-size: 1.3rem; }
+  /* NEW-USER.HTML */
+  .recuadroDatos {
+    width: 100%; }
+    .recuadroDatos .cuadroBotones {
+      width: 100%; }
+      .recuadroDatos .cuadroBotones .botonNewUser {
+        width: 40%;
+        display: block;
+        margin: 10px auto; }
+  /* ayuda.HTML */
+  .containerHelp {
+    margin: 20px auto;
+    margin-top: 0px;
+    width: 100%; }
+    .containerHelp h1 {
+      padding: 20px;
+      font-size: 2.2rem; }
+    .containerHelp .boxHelp .itemsHelp {
+      width: 100%; }
+      .containerHelp .boxHelp .itemsHelp li a {
+        font-size: 1.8rem; }
+    .containerHelp .boxHelp .itemsHelp li a:hover {
+      color: #22b14c; }
+    .containerHelp .containerButtons div {
+      width: 40%; }
+  /* reestablecer-pw.HTML */
+  .recuadroForgot {
+    width: 100%;
+    margin: 10px 0px 50px 0px; }
+  /* planes.HTML */
+  .boxPlanes {
+    margin: 0px auto 100px auto; }
+    .boxPlanes h1 {
+      font-size: 2rem;
+      margin: 10px; }
+    .boxPlanes .container-planes {
+      margin: auto auto 10px auto;
+      display: flex;
+      flex-direction: column; }
+  /* appcoder.HTML */
+  .boxApps {
+    margin-top: 10px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center; }
+    .boxApps .boxMarca {
+      width: 50%;
+      flex-direction: column;
+      margin: 20px auto; }
+  /* cuenta.HTML */
+  .boxAyudaLogin {
+    margin-top: 0px; }
+    .boxAyudaLogin .boxBotonesLogin {
+      width: 100%;
+      text-align: center; }
+      .boxAyudaLogin .boxBotonesLogin button {
+        padding: 10px 25px; }
+    .boxAyudaLogin .campoDeAyuda {
+      width: 100%; }
+      .boxAyudaLogin .campoDeAyuda input {
+        width: 80%; }
+    .boxAyudaLogin .boxAyudaTemas {
+      padding-bottom: 40px;
+      flex-direction: column; }
+      .boxAyudaLogin .boxAyudaTemas .itemBox {
+        padding: 10px;
+        margin: 10px;
+        text-align: center; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox h2 {
+          color: #1c8e3e;
+          font-size: 2rem; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox ul li {
+          font-size: 1.2rem;
+          list-style: none;
+          text-decoration: underline; }
+  /* preguntasFrecuentes.HTML */
+  .seccion {
+    width: 100%;
+    margin: 0px auto; }
+    .seccion .seccion__respuestas {
+      width: 100%; }
+      .seccion .seccion__respuestas h1 {
+        margin: 30px auto; }
+      .seccion .seccion__respuestas .pregunta {
+        margin: 20px auto;
+        font-size: 1.5rem; }
+      .seccion .seccion__respuestas p {
+        width: 90%;
+        font-size: 1.2rem; } }
+
+@media (min-width: 577px) and (max-width: 630px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+    position: static; }
+    .header .containerLogo {
+      width: 100%;
+      text-align: center; }
+      .header .containerLogo a img {
+        width: 40%; }
+    .header .containerSecciones {
+      width: 100%;
+      margin: auto;
+      display: block;
+      padding: 0px; }
+      .header .containerSecciones .secciones {
+        display: flex;
+        font-size: 1.5rem;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: center; }
+        .header .containerSecciones .secciones .listItem {
+          text-align: center;
+          padding: 10px; }
+          .header .containerSecciones .secciones .listItem a {
+            margin: 20px auto; }
+          .header .containerSecciones .secciones .listItem a:hover {
+            color: #1c8e3e;
+            margin-left: 0px; }
+          .header .containerSecciones .secciones .listItem .campoBusqueda {
+            margin: 0px;
+            width: 100%;
+            border-radius: 0px; }
+          .header .containerSecciones .secciones .listItem i {
+            background-color: #fff; }
+      .header .containerSecciones .buttonNav {
+        visibility: visible; }
+  .img-principal {
+    margin-top: 20px; }
+    .img-principal .contenedorImg {
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    .img-principal .descripcionMovie {
+      font-size: 1.2em;
+      max-width: 100%; }
+  .containerIndex .subtitle,
+  .containerSeriesMovies .subtitle {
+    text-align: center;
+    font-size: 2rem; }
+  .containerIndex .destacadosKids,
+  .containerSeriesMovies .destacadosKids {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px auto; }
+    .containerIndex .destacadosKids .boxDestacadoKids,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids {
+      width: 240px;
+      transition: all 0.3s ease-in-out; }
+      .containerIndex .destacadosKids .boxDestacadoKids img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids img {
+        width: 240px;
+        height: 240px;
+        border-radius: 150px;
+        cursor: pointer; }
+      .containerIndex .destacadosKids .boxDestacadoKids p,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids p {
+        text-align: center;
+        color: #fff;
+        margin-top: 15px;
+        font-weight: bold;
+        letter-spacing: 1px; }
+    .containerIndex .destacadosKids .boxDestacadoKids:hover,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover {
+      transform: scale(1.1); }
+      .containerIndex .destacadosKids .boxDestacadoKids:hover img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover img {
+        box-shadow: 0px 0px 30px #22b14c; }
+  .containerIndex .boxDestacados .fotoDestacada,
+  .containerSeriesMovies .boxDestacados .fotoDestacada {
+    width: 220px;
+    height: 310px;
+    margin: 10px; }
+  .containerCards .card {
+    width: 45%;
+    margin: 10px;
+    transition: all 0.3s ease-in-out; }
+    .containerCards .card .cover .img__back {
+      border-radius: 0px; }
+    .containerCards .card .descripcion {
+      border-radius: 0px;
+      font-size: 1.2rem; }
+      .containerCards .card .descripcion h2 {
+        font-size: 1.5rem; }
+  .containerFirstMovie {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+    .containerFirstMovie .portadaMovie {
+      width: 100%; }
+      .containerFirstMovie .portadaMovie img {
+        width: 100%;
+        margin: auto; }
+    .containerFirstMovie .descripcionMovie {
+      font-size: 1.2rem; }
+  .footerF {
+    font-size: 1rem; }
+    .footerF span {
+      display: inline; }
+    .footerF span:last-of-type {
+      display: block; }
+    .footerF a img {
+      width: 40%; }
+  /* LOGIN.HTML */
+  .containerLogin {
+    width: 100%;
+    margin: 20px auto 100px auto; }
+    .containerLogin a {
+      font-size: 1.3rem; }
+  /* NEW-USER.HTML */
+  .recuadroDatos {
+    width: 100%; }
+    .recuadroDatos .cuadroBotones {
+      width: 100%; }
+      .recuadroDatos .cuadroBotones .botonNewUser {
+        width: 40%;
+        display: block;
+        margin: 10px auto; }
+  /* ayuda.HTML */
+  .containerHelp {
+    margin: 20px auto;
+    margin-top: 0px;
+    width: 100%; }
+    .containerHelp h1 {
+      padding: 20px;
+      font-size: 2.2rem; }
+    .containerHelp .boxHelp .itemsHelp {
+      width: 100%; }
+      .containerHelp .boxHelp .itemsHelp li a {
+        font-size: 1.8rem; }
+    .containerHelp .boxHelp .itemsHelp li a:hover {
+      color: #22b14c; }
+    .containerHelp .containerButtons div {
+      width: 40%; }
+  /* reestablecer-pw.HTML */
+  .recuadroForgot {
+    width: 100%;
+    margin: 40px 0px 130px 0px; }
+  /* planes.HTML */
+  .boxPlanes {
+    margin: 0px auto 100px auto; }
+    .boxPlanes h1 {
+      font-size: 2rem;
+      margin: 10px; }
+    .boxPlanes .container-planes {
+      margin: auto auto 10px auto;
+      display: flex;
+      flex-direction: column; }
+  /* appcoder.HTML */
+  .boxApps {
+    margin-top: 10px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center; }
+    .boxApps .boxMarca {
+      width: 50%;
+      flex-direction: column;
+      margin: 20px auto; }
+  /* cuenta.HTML */
+  .boxAyudaLogin {
+    margin-top: 0px; }
+    .boxAyudaLogin .boxBotonesLogin {
+      width: 100%;
+      text-align: center; }
+      .boxAyudaLogin .boxBotonesLogin button {
+        padding: 10px 25px; }
+    .boxAyudaLogin .campoDeAyuda {
+      width: 100%; }
+      .boxAyudaLogin .campoDeAyuda input {
+        width: 80%; }
+    .boxAyudaLogin .boxAyudaTemas {
+      padding-bottom: 40px;
+      flex-direction: column; }
+      .boxAyudaLogin .boxAyudaTemas .itemBox {
+        padding: 10px;
+        margin: 10px;
+        text-align: center; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox h2 {
+          color: #1c8e3e;
+          font-size: 2rem; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox ul li {
+          font-size: 1.2rem;
+          list-style: none;
+          text-decoration: underline; }
+  /* preguntasFrecuentes.HTML */
+  .seccion {
+    width: 100%;
+    margin: 0px auto; }
+    .seccion .seccion__respuestas {
+      width: 100%; }
+      .seccion .seccion__respuestas h1 {
+        margin: 30px auto; }
+      .seccion .seccion__respuestas .pregunta {
+        margin: 20px auto;
+        font-size: 1.5rem; }
+      .seccion .seccion__respuestas p {
+        width: 90%;
+        font-size: 1.2rem; } }
+
+@media (min-width: 631px) and (max-width: 800px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+    position: static; }
+    .header .containerLogo {
+      width: 100%;
+      text-align: center; }
+      .header .containerLogo a img {
+        width: 40%; }
+    .header .containerSecciones {
+      width: 100%;
+      margin: auto;
+      display: block;
+      padding: 0px; }
+      .header .containerSecciones .secciones {
+        display: flex;
+        font-size: 1.5rem;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: center; }
+        .header .containerSecciones .secciones .listItem {
+          text-align: center;
+          padding: 10px; }
+          .header .containerSecciones .secciones .listItem a {
+            margin: 20px auto; }
+          .header .containerSecciones .secciones .listItem a:hover {
+            color: #1c8e3e;
+            margin-left: 0px; }
+          .header .containerSecciones .secciones .listItem .campoBusqueda {
+            margin: 0px;
+            width: 100%;
+            border-radius: 0px; }
+          .header .containerSecciones .secciones .listItem i {
+            background-color: #fff; }
+      .header .containerSecciones .buttonNav {
+        visibility: visible; }
+  .img-principal {
+    margin-top: 20px; }
+    .img-principal .contenedorImg {
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    .img-principal .descripcionMovie {
+      font-size: 1.2em;
+      max-width: 100%; }
+  .containerIndex .subtitle,
+  .containerSeriesMovies .subtitle {
+    text-align: center;
+    font-size: 2rem; }
+  .containerIndex .box,
+  .containerSeriesMovies .box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .containerIndex .box .contenedorImg,
+    .containerSeriesMovies .box .contenedorImg {
+      width: 180px;
+      transition: all 0.3s ease-in-out;
+      margin: 20px; }
+      .containerIndex .box .contenedorImg p,
+      .containerSeriesMovies .box .contenedorImg p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: rgba(0, 0, 0, 0);
+        text-align: center;
+        letter-spacing: 1px;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out; }
+      .containerIndex .box .contenedorImg .foto,
+      .containerSeriesMovies .box .contenedorImg .foto {
+        width: 180px;
+        height: 220px;
+        margin-top: 30px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.9);
+        transition: all 0.3s ease-in-out; }
+      .containerIndex .box .contenedorImg .foto:hover,
+      .containerSeriesMovies .box .contenedorImg .foto:hover {
+        box-shadow: 1px 1px 20px #22b14c; }
+    .containerIndex .box .contenedorImg:hover,
+    .containerSeriesMovies .box .contenedorImg:hover {
+      transform: scale(1.15); }
+      .containerIndex .box .contenedorImg:hover p,
+      .containerSeriesMovies .box .contenedorImg:hover p {
+        visibility: visible;
+        color: rgba(255, 255, 255, 0.9); }
+  .containerIndex .destacadosKids,
+  .containerSeriesMovies .destacadosKids {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px auto; }
+    .containerIndex .destacadosKids .boxDestacadoKids,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids {
+      width: 240px;
+      transition: all 0.3s ease-in-out; }
+      .containerIndex .destacadosKids .boxDestacadoKids img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids img {
+        width: 240px;
+        height: 240px;
+        border-radius: 150px;
+        cursor: pointer; }
+      .containerIndex .destacadosKids .boxDestacadoKids p,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids p {
+        text-align: center;
+        color: #fff;
+        margin-top: 15px;
+        font-weight: bold;
+        letter-spacing: 1px; }
+    .containerIndex .destacadosKids .boxDestacadoKids:hover,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover {
+      transform: scale(1.1); }
+      .containerIndex .destacadosKids .boxDestacadoKids:hover img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover img {
+        box-shadow: 0px 0px 30px #22b14c; }
+  .containerIndex .boxDestacados .fotoDestacada,
+  .containerSeriesMovies .boxDestacados .fotoDestacada {
+    width: 220px;
+    height: 310px;
+    margin: 10px; }
+  .containerCards .card {
+    width: 45%;
+    margin: 10px;
+    transition: all 0.3s ease-in-out; }
+    .containerCards .card .cover .img__back {
+      border-radius: 0px; }
+    .containerCards .card .descripcion {
+      border-radius: 0px;
+      font-size: 1.2rem; }
+      .containerCards .card .descripcion h2 {
+        font-size: 1.5rem; }
+  .containerFirstMovie {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+    .containerFirstMovie .portadaMovie {
+      width: 100%; }
+      .containerFirstMovie .portadaMovie img {
+        width: 100%;
+        margin: auto; }
+    .containerFirstMovie .descripcionMovie {
+      font-size: 1.2rem; }
+  .footerF {
+    font-size: 1rem; }
+    .footerF span {
+      display: inline; }
+    .footerF span:last-of-type {
+      display: block; }
+    .footerF a img {
+      width: 20%; }
+  /* LOGIN.HTML */
+  .containerLogin {
+    width: 100%;
+    margin: 20px auto 100px auto; }
+    .containerLogin a {
+      font-size: 1.3rem; }
+  /* NEW-USER.HTML */
+  .recuadroDatos {
+    width: 100%; }
+    .recuadroDatos .cuadroBotones {
+      width: 100%; }
+      .recuadroDatos .cuadroBotones .botonNewUser {
+        width: 40%;
+        display: block;
+        margin: 10px auto; }
+  /* ayuda.HTML */
+  .containerHelp {
+    margin: 20px auto;
+    margin-top: 0px;
+    width: 100%; }
+    .containerHelp h1 {
+      padding: 20px;
+      font-size: 2.2rem; }
+    .containerHelp .boxHelp .itemsHelp {
+      width: 100%; }
+      .containerHelp .boxHelp .itemsHelp li a {
+        font-size: 1.8rem; }
+    .containerHelp .boxHelp .itemsHelp li a:hover {
+      color: #22b14c; }
+    .containerHelp .containerButtons div {
+      width: 20%; }
+  /* reestablecer-pw.HTML */
+  .recuadroForgot {
+    width: 100%;
+    margin: 40px 0px 130px 0px; }
+  /* planes.HTML */
+  .boxPlanes {
+    margin: 0px auto 100px auto; }
+    .boxPlanes h1 {
+      font-size: 2rem;
+      margin: 10px; }
+    .boxPlanes .container-planes {
+      margin: auto auto 10px auto;
+      display: flex;
+      flex-direction: column; }
+  /* appcoder.HTML */
+  .boxApps {
+    margin-top: 10px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center; }
+    .boxApps .boxMarca {
+      width: 50%;
+      flex-direction: column;
+      margin: 20px auto; }
+  /* cuenta.HTML */
+  .boxAyudaLogin {
+    margin-top: 0px; }
+    .boxAyudaLogin .boxBotonesLogin {
+      width: 100%;
+      text-align: center; }
+      .boxAyudaLogin .boxBotonesLogin button {
+        padding: 10px 25px;
+        font-size: 1.2rem; }
+    .boxAyudaLogin .campoDeAyuda {
+      width: 100%; }
+      .boxAyudaLogin .campoDeAyuda input {
+        width: 80%; }
+    .boxAyudaLogin .boxAyudaTemas {
+      padding-bottom: 40px;
+      flex-direction: column; }
+      .boxAyudaLogin .boxAyudaTemas .itemBox {
+        padding: 10px;
+        margin: 10px;
+        text-align: center; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox h2 {
+          color: #1c8e3e;
+          font-size: 2.2rem; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox ul li {
+          font-size: 1.4rem;
+          list-style: none;
+          text-decoration: underline; }
+  /* preguntasFrecuentes.HTML */
+  .seccion {
+    width: 100%;
+    margin: 0px auto; }
+    .seccion .seccion__respuestas {
+      width: 100%; }
+      .seccion .seccion__respuestas h1 {
+        margin: 30px auto; }
+      .seccion .seccion__respuestas .pregunta {
+        margin: 20px auto;
+        font-size: 1.5rem; }
+      .seccion .seccion__respuestas p {
+        width: 90%;
+        font-size: 1.2rem; } }
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  .header {
+    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end; }
-    .header a {
-      display: block;
-      margin: auto; }
-    .header .secciones {
-      width: 100%;
-      margin: 0px;
-      padding: 0px;
-      display: flex;
-      flex-wrap: wrap; }
-      .header .secciones .listItem {
-        list-style: none;
-        transition: font-size 0.2s ease-in-out;
-        padding: 15px;
+    position: static; }
+    .header .containerLogo {
+      width: 50%;
+      text-align: left; }
+      .header .containerLogo a img {
+        width: 70%;
         margin: auto; }
-        .header .secciones .listItem a {
-          text-decoration: none;
-          color: #cecbcb;
-          font-family: 'Lato', sans-serif; }
-        .header .secciones .listItem a:hover {
-          color: #1c8e3e; }
-      .header .secciones li {
-        margin: auto;
-        list-style: none; }
-        .header .secciones li .barraBusqueda {
-          display: flex;
-          flex-direction: row;
-          padding: 2px;
-          justify-content: center; }
-          .header .secciones li .barraBusqueda .campoBusqueda {
-            border: none;
-            background-color: #fff;
-            border-radius: 2px;
-            width: 40%;
-            margin-left: 20px;
-            padding-left: 8px;
-            outline: none;
-            color: #000;
-            font-weight: bold;
-            letter-spacing: 1px; }
-          .header .secciones li .barraBusqueda .buttonSearch {
-            border: none;
-            margin-left: 5px;
-            margin-right: 8px;
-            font-size: 1rem;
-            padding: 5px;
-            background-color: rgba(0, 0, 0, 0);
-            color: rgba(255, 255, 255, 0.9); }
-  .img-principal .descripcionMovie {
-    max-width: 100%; }
-  .containerIndex,
-  .containerSeriesMovies {
-    width: 100%;
-    margin-top: 25px; }
-    .containerIndex .subtitle,
-    .containerSeriesMovies .subtitle {
-      font-size: 1.5rem; }
-    .containerIndex .box,
-    .containerSeriesMovies .box {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 0px; }
-      .containerIndex .box .foto,
-      .containerSeriesMovies .box .foto {
-        width: 20%;
-        height: 20%;
-        margin: 20px 40px;
-        border: none; }
-    .containerIndex .boxDestacados .fotoDestacada,
-    .containerSeriesMovies .boxDestacados .fotoDestacada {
-      width: 40%;
-      height: 40%;
-      margin: 20px; }
-  /************************AYUDA.HTML****************************************/
-  .containerHelp {
-    margin: auto;
-    text-align: center;
-    padding: 30px; }
-    .containerHelp h1 {
-      padding-top: 30px;
-      font-size: 2rem;
-      text-transform: uppercase;
-      color: #1c8e3e; }
-    .containerHelp .boxHelp .itemsHelp {
-      width: 80%; }
-      .containerHelp .boxHelp .itemsHelp li a {
-        font-size: 1.5rem;
-        text-transform: uppercase; }
-    .containerHelp .containerButtons {
+    .header .containerSecciones {
+      width: 50%;
       margin: auto;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      align-items: center; }
-      .containerHelp .containerButtons div {
+      display: block;
+      padding: 0px; }
+      .header .containerSecciones .secciones {
         display: flex;
-        flex-direction: column;
-        margin: 10px;
-        align-items: center;
-        background-color: #1c8e3e;
-        border: 3px solid rgba(255, 255, 255, 0.9);
-        border-radius: 10px; }
-        .containerHelp .containerButtons div .buttonsHelp {
-          margin: 0px;
-          padding: 0px 10px 10px 10px;
-          border: none;
-          font-size: 1rem;
-          color: rgba(255, 255, 255, 0.9);
-          background-color: #1c8e3e;
-          font-weight: normal;
-          letter-spacing: 2px; }
-        .containerHelp .containerButtons div i {
-          padding: 10px;
-          color: rgba(255, 255, 255, 0.9);
-          border: none; }
-  /************************planes.HTML****************************************/
-  .boxPlanes h1 {
-    font-size: 1.7rem;
-    text-transform: uppercase; }
-  .boxPlanes .container-planes {
-    margin: 0px;
-    display: block;
-    flex-direction: column;
-    justify-content: center; }
-    .boxPlanes .container-planes .boxPlan {
-      margin: 20px;
-      border: none;
-      border-bottom: 2px solid #1c8e3e;
-      border-radius: 0px;
-      background-color: #141414; }
-      .boxPlanes .container-planes .boxPlan h2 {
-        color: #22b14c;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        font-size: 1.5rem; }
-      .boxPlanes .container-planes .boxPlan ul {
-        text-align: center;
-        margin: auto;
-        letter-spacing: 1px; }
-        .boxPlanes .container-planes .boxPlan ul li {
-          padding: 15px;
+        font-size: 1rem;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: center; }
+        .header .containerSecciones .secciones .listItem {
           text-align: center;
-          color: rgba(255, 255, 255, 0.9);
-          font-size: 1.2rem; }
-      .boxPlanes .container-planes .boxPlan .getPlan {
-        margin: 20px auto 20px auto;
-        padding: 10px 30px 10px 30px;
+          padding: 10px; }
+          .header .containerSecciones .secciones .listItem a {
+            margin: 20px auto; }
+          .header .containerSecciones .secciones .listItem a:hover {
+            color: #1c8e3e;
+            margin-left: 0px; }
+          .header .containerSecciones .secciones .listItem .campoBusqueda {
+            margin: 0px;
+            width: 100%;
+            border-radius: 0px; }
+          .header .containerSecciones .secciones .listItem i {
+            background-color: #fff; }
+      .header .containerSecciones .buttonNav {
+        visibility: visible; }
+  .img-principal {
+    margin-top: 20px; }
+    .img-principal .contenedorImg {
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    .img-principal .descripcionMovie {
+      font-size: 1.2em;
+      max-width: 100%; }
+  .containerIndex .subtitle,
+  .containerSeriesMovies .subtitle {
+    text-align: center;
+    font-size: 2rem; }
+  .containerIndex .box,
+  .containerSeriesMovies .box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .containerIndex .box .contenedorImg,
+    .containerSeriesMovies .box .contenedorImg {
+      width: 180px;
+      transition: all 0.3s ease-in-out;
+      margin: auto 40px; }
+      .containerIndex .box .contenedorImg p,
+      .containerSeriesMovies .box .contenedorImg p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: rgba(0, 0, 0, 0);
+        text-align: center;
+        letter-spacing: 1px;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out; }
+      .containerIndex .box .contenedorImg .foto,
+      .containerSeriesMovies .box .contenedorImg .foto {
+        width: 180px;
+        height: 220px;
+        margin-top: 30px;
         cursor: pointer;
-        border-radius: 0px;
-        letter-spacing: 2px;
-        font-weight: bold; }
-  /*************login.html***************/
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.9);
+        transition: all 0.3s ease-in-out; }
+      .containerIndex .box .contenedorImg .foto:hover,
+      .containerSeriesMovies .box .contenedorImg .foto:hover {
+        box-shadow: 1px 1px 20px #22b14c; }
+    .containerIndex .box .contenedorImg:hover,
+    .containerSeriesMovies .box .contenedorImg:hover {
+      transform: scale(1.15); }
+      .containerIndex .box .contenedorImg:hover p,
+      .containerSeriesMovies .box .contenedorImg:hover p {
+        visibility: visible;
+        color: rgba(255, 255, 255, 0.9); }
+  .containerIndex .destacadosKids,
+  .containerSeriesMovies .destacadosKids {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px auto; }
+    .containerIndex .destacadosKids .boxDestacadoKids,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids {
+      width: 240px;
+      transition: all 0.3s ease-in-out; }
+      .containerIndex .destacadosKids .boxDestacadoKids img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids img {
+        width: 240px;
+        height: 240px;
+        border-radius: 150px;
+        cursor: pointer; }
+      .containerIndex .destacadosKids .boxDestacadoKids p,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids p {
+        text-align: center;
+        color: #fff;
+        margin-top: 15px;
+        font-weight: bold;
+        letter-spacing: 1px; }
+    .containerIndex .destacadosKids .boxDestacadoKids:hover,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover {
+      transform: scale(1.1); }
+      .containerIndex .destacadosKids .boxDestacadoKids:hover img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover img {
+        box-shadow: 0px 0px 30px #22b14c; }
+  .containerIndex .boxDestacados .fotoDestacada,
+  .containerSeriesMovies .boxDestacados .fotoDestacada {
+    width: 260px;
+    height: 350px;
+    margin: 10px; }
+  .containerCards .card {
+    width: 45%;
+    margin: 10px;
+    transition: all 0.3s ease-in-out; }
+    .containerCards .card .cover .img__back {
+      border-radius: 0px; }
+    .containerCards .card .descripcion {
+      border-radius: 0px;
+      font-size: 1.2rem; }
+      .containerCards .card .descripcion h2 {
+        font-size: 1.5rem; }
+  .containerFirstMovie {
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+    .containerFirstMovie .portadaMovie {
+      width: 100%; }
+      .containerFirstMovie .portadaMovie img {
+        width: 100%;
+        margin: auto; }
+    .containerFirstMovie .descripcionMovie {
+      font-size: 1.2rem; }
+  .footerF {
+    font-size: 1rem; }
+    .footerF span {
+      display: inline; }
+    .footerF span:last-of-type {
+      display: block; }
+    .footerF a img {
+      width: 20%; }
+  /* LOGIN.HTML */
   .containerLogin {
     width: 100%;
-    margin: 40px auto 30px auto;
-    display: flex;
-    flex-direction: column; }
-    .containerLogin .titleLogin {
-      width: 30%;
-      font-size: 1.5rem;
-      border-bottom: 3px solid #1c8e3e; }
-    .containerLogin .recuadroDatosUser {
-      margin: 5px; }
-      .containerLogin .recuadroDatosUser i {
-        color: rgba(255, 255, 255, 0.9);
-        margin-right: 10px; }
-      .containerLogin .recuadroDatosUser .boxDatosUser {
-        padding: 10px;
-        border-bottom: 1px solid #1c8e3e; }
-      .containerLogin .recuadroDatosUser #send {
-        font-size: 1rem; }
-    .containerLogin .notLogin {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0);
-      align-items: center;
-      font-size: 1rem;
-      margin-top: 15px; }
-  /**********************new-user.html******************/
+    margin: 20px auto 100px auto; }
+    .containerLogin a {
+      font-size: 1.3rem; }
+  /* NEW-USER.HTML */
   .recuadroDatos {
-    width: 100%;
-    margin: 30px auto auto auto;
-    color: #22b14c;
-    font-size: 1rem; }
-    .recuadroDatos h1 {
-      margin: auto;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.9);
-      width: 80%; }
-    .recuadroDatos .campoDatos {
-      text-align: center;
-      margin-top: 30px;
-      padding-bottom: 30px; }
-      .recuadroDatos .campoDatos legend {
-        margin-bottom: 20px;
-        font-size: 1.5rem; }
-      .recuadroDatos .campoDatos div {
-        margin: 10px; }
-      .recuadroDatos .campoDatos input {
-        border-radius: 0px;
-        font-size: 1.2rem; }
-      .recuadroDatos .campoDatos select {
-        font-size: 1rem;
-        border-radius: 0px;
-        padding-left: 5px; }
-      .recuadroDatos .campoDatos .cuadroDeDatos div {
-        display: inline; }
-    .recuadroDatos .termsConditions {
-      width: 100%;
-      font-size: 1.2rem; }
-      .recuadroDatos .termsConditions h2 {
-        font-size: 1.2rem;
-        margin-bottom: 20px; }
-    .recuadroDatos .cuadroBotones .botonNewUser {
-      border-radius: 0px;
-      padding: 10px 20px 10px 20px; }
-  /*********************reestablecerpw**************/
+    width: 100%; }
+    .recuadroDatos .cuadroBotones {
+      width: 100%; }
+      .recuadroDatos .cuadroBotones .botonNewUser {
+        width: 40%;
+        display: block;
+        margin: 10px auto; }
+  /* ayuda.HTML */
+  .containerHelp {
+    margin: 20px auto;
+    margin-top: 0px;
+    width: 100%; }
+    .containerHelp h1 {
+      padding: 20px;
+      font-size: 2.2rem; }
+    .containerHelp .boxHelp .itemsHelp {
+      width: 100%; }
+      .containerHelp .boxHelp .itemsHelp li a {
+        font-size: 1.8rem; }
+    .containerHelp .boxHelp .itemsHelp li a:hover {
+      color: #22b14c; }
+    .containerHelp .containerButtons div {
+      width: 20%; }
+  /* reestablecer-pw.HTML */
   .recuadroForgot {
     width: 100%;
-    margin: 100px auto 100px auto;
-    color: #22b14c;
-    font-size: 1rem;
-    text-align: center; }
-    .recuadroForgot div {
-      font-size: 1.2rem; }
-    .recuadroForgot .sendCode {
-      border-radius: 5px; }
-    .recuadroForgot .fieldMail {
-      border-radius: 0px;
-      padding: 5px 0px 5px 5px;
-      text-align: left;
-      font-size: 1.2rem; }
-  /*************preguntas-frecuentes.html***************/
+    margin: 40px 0px 130px 0px; }
+  /* planes.HTML */
+  .boxPlanes {
+    margin: 0px auto 100px auto; }
+    .boxPlanes h1 {
+      font-size: 2rem;
+      margin: 10px; }
+    .boxPlanes .container-planes {
+      margin: auto auto 10px auto;
+      display: flex;
+      flex-direction: row; }
+  /* appcoder.HTML */
+  .boxApps {
+    margin-top: 10px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center; }
+    .boxApps .boxMarca {
+      width: 50%;
+      flex-direction: column;
+      margin: 20px auto; }
+  /* cuenta.HTML */
+  .boxAyudaLogin {
+    margin-top: 0px; }
+    .boxAyudaLogin .boxBotonesLogin {
+      width: 100%;
+      text-align: center; }
+      .boxAyudaLogin .boxBotonesLogin button {
+        padding: 10px 25px;
+        font-size: 1.2rem; }
+    .boxAyudaLogin .campoDeAyuda {
+      width: 100%; }
+      .boxAyudaLogin .campoDeAyuda input {
+        width: 80%; }
+    .boxAyudaLogin .boxAyudaTemas {
+      padding-bottom: 40px;
+      flex-direction: column; }
+      .boxAyudaLogin .boxAyudaTemas .itemBox {
+        padding: 10px;
+        margin: 10px;
+        text-align: center; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox h2 {
+          color: #1c8e3e;
+          font-size: 2.2rem; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox ul li {
+          font-size: 1.4rem;
+          list-style: none;
+          text-decoration: underline; }
+  /* preguntasFrecuentes.HTML */
   .seccion {
     width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column; }
-    .seccion .seccion__preguntas {
-      background-color: #141414;
-      width: 100%;
-      text-align: center;
-      font-size: 1rem;
-      /**/
-      border-right: none;
-      /**/
-      margin-top: 40px;
-      /**/
-      border-bottom: 3px solid #1c8e3e; }
-      .seccion .seccion__preguntas li {
-        padding: 0px;
-        /**/ }
-      .seccion .seccion__preguntas a {
-        text-decoration: none;
-        font-weight: bold;
-        color: rgba(255, 255, 255, 0.9);
-        padding: 20px auto; }
+    margin: 0px auto; }
     .seccion .seccion__respuestas {
-      width: 100%;
-      /**/
-      text-align: center;
-      overflow: auto; }
+      width: 100%; }
       .seccion .seccion__respuestas h1 {
-        margin: 30px auto;
-        letter-spacing: 1px;
-        /**/
-        color: rgba(255, 255, 255, 0.9);
-        display: none; }
-      .seccion .seccion__respuestas h2 {
+        margin: 30px auto; }
+      .seccion .seccion__respuestas .pregunta {
         margin: 20px auto;
-        letter-spacing: 1px;
-        /**/
-        color: #1c8e3e;
-        /**/ }
+        font-size: 1.5rem; }
       .seccion .seccion__respuestas p {
+        width: 90%;
+        font-size: 1.2rem; } }
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .header {
+    width: 100%;
+    flex-direction: row;
+    position: static; }
+    .header .containerLogo {
+      width: 40%;
+      text-align: left; }
+      .header .containerLogo a img {
+        width: 50%;
+        margin: auto; }
+    .header .containerSecciones {
+      width: 60%;
+      margin: auto;
+      display: block;
+      padding: 0px; }
+      .header .containerSecciones .secciones {
+        display: flex;
+        font-size: 1rem;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: center; }
+        .header .containerSecciones .secciones .listItem {
+          text-align: center;
+          padding: 10px; }
+          .header .containerSecciones .secciones .listItem a {
+            margin: 20px auto; }
+          .header .containerSecciones .secciones .listItem a:hover {
+            color: #1c8e3e;
+            margin-left: 0px; }
+          .header .containerSecciones .secciones .listItem .campoBusqueda {
+            margin: 0px;
+            width: 100%;
+            border-radius: 0px; }
+          .header .containerSecciones .secciones .listItem i {
+            background-color: #fff; }
+      .header .containerSecciones .buttonNav {
+        visibility: hidden; }
+  .img-principal {
+    margin-top: 20px; }
+    .img-principal .contenedorImg {
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    .img-principal .descripcionMovie {
+      font-size: 1.2em;
+      max-width: 60%; }
+  .containerIndex .subtitle,
+  .containerSeriesMovies .subtitle {
+    text-align: center;
+    font-size: 2rem; }
+  .containerIndex .box,
+  .containerSeriesMovies .box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .containerIndex .box .contenedorImg,
+    .containerSeriesMovies .box .contenedorImg {
+      width: 180px;
+      transition: all 0.3s ease-in-out;
+      margin: auto 60px; }
+      .containerIndex .box .contenedorImg p,
+      .containerSeriesMovies .box .contenedorImg p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: rgba(0, 0, 0, 0);
+        text-align: center;
+        letter-spacing: 1px;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out; }
+      .containerIndex .box .contenedorImg .foto,
+      .containerSeriesMovies .box .contenedorImg .foto {
+        width: 180px;
+        height: 220px;
+        margin-top: 30px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.9);
+        transition: all 0.3s ease-in-out; }
+      .containerIndex .box .contenedorImg .foto:hover,
+      .containerSeriesMovies .box .contenedorImg .foto:hover {
+        box-shadow: 1px 1px 20px #22b14c; }
+    .containerIndex .box .contenedorImg:hover,
+    .containerSeriesMovies .box .contenedorImg:hover {
+      transform: scale(1.15); }
+      .containerIndex .box .contenedorImg:hover p,
+      .containerSeriesMovies .box .contenedorImg:hover p {
+        visibility: visible;
+        color: rgba(255, 255, 255, 0.9); }
+  .containerIndex .destacadosKids,
+  .containerSeriesMovies .destacadosKids {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px auto; }
+    .containerIndex .destacadosKids .boxDestacadoKids,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids {
+      width: 240px;
+      transition: all 0.3s ease-in-out; }
+      .containerIndex .destacadosKids .boxDestacadoKids img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids img {
+        width: 240px;
+        height: 240px;
+        border-radius: 150px;
+        cursor: pointer; }
+      .containerIndex .destacadosKids .boxDestacadoKids p,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids p {
+        text-align: center;
+        color: #fff;
+        margin-top: 15px;
+        font-weight: bold;
+        letter-spacing: 1px; }
+    .containerIndex .destacadosKids .boxDestacadoKids:hover,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover {
+      transform: scale(1.1); }
+      .containerIndex .destacadosKids .boxDestacadoKids:hover img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover img {
+        box-shadow: 0px 0px 30px #22b14c; }
+  .containerIndex .boxDestacados .fotoDestacada,
+  .containerSeriesMovies .boxDestacados .fotoDestacada {
+    width: 260px;
+    height: 350px;
+    margin: 10px; }
+  .containerCards .card {
+    width: 45%;
+    margin: 10px;
+    transition: all 0.3s ease-in-out; }
+    .containerCards .card .cover .img__back {
+      border-radius: 0px; }
+    .containerCards .card .descripcion {
+      border-radius: 0px;
+      font-size: 1.2rem; }
+      .containerCards .card .descripcion h2 {
+        font-size: 1.5rem; }
+  .containerFirstMovie {
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+    .containerFirstMovie .portadaMovie {
+      width: 100%; }
+      .containerFirstMovie .portadaMovie img {
         width: 100%;
-        margin: auto;
-        height: auto;
-        font-size: 1rem; }
-      .seccion .seccion__respuestas span {
-        font-weight: bold; }
-      .seccion .seccion__respuestas a {
-        text-decoration: none;
-        color: #1c8e3e; } }
+        margin: auto; }
+    .containerFirstMovie .descripcionMovie {
+      font-size: 1.2rem; }
+  .footerF {
+    font-size: 1rem; }
+    .footerF span {
+      display: inline; }
+    .footerF span:last-of-type {
+      display: block; }
+    .footerF a img {
+      width: 20%; }
+  /* LOGIN.HTML */
+  .containerLogin {
+    width: 100%;
+    margin: 20px auto 100px auto; }
+    .containerLogin a {
+      font-size: 1.3rem; }
+  /* NEW-USER.HTML */
+  .recuadroDatos {
+    width: 60%; }
+    .recuadroDatos .cuadroBotones {
+      width: 100%; }
+      .recuadroDatos .cuadroBotones .botonNewUser {
+        width: 40%;
+        display: block;
+        margin: 10px auto; }
+  /* ayuda.HTML */
+  .containerHelp {
+    margin: 20px auto;
+    margin-top: 0px;
+    width: 100%; }
+    .containerHelp h1 {
+      padding: 20px;
+      font-size: 2.2rem; }
+    .containerHelp .boxHelp .itemsHelp {
+      width: 100%; }
+      .containerHelp .boxHelp .itemsHelp li a {
+        font-size: 1.8rem; }
+    .containerHelp .boxHelp .itemsHelp li a:hover {
+      color: #22b14c; }
+    .containerHelp .containerButtons div {
+      width: 20%; }
+  /* reestablecer-pw.HTML */
+  .recuadroForgot {
+    width: 60%;
+    margin: 120px auto 140px auto; }
+  /* planes.HTML */
+  .boxPlanes {
+    margin: 0px auto 100px auto; }
+    .boxPlanes h1 {
+      font-size: 2rem;
+      margin: 10px; }
+    .boxPlanes .container-planes {
+      margin: auto auto 10px auto;
+      display: flex;
+      flex-direction: row; }
+  /* appcoder.HTML */
+  .boxApps {
+    margin-top: 10px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center; }
+    .boxApps .boxMarca {
+      width: 30%;
+      flex-direction: column;
+      margin: 20px auto; }
+  /* cuenta.HTML */
+  .boxAyudaLogin {
+    margin-top: 0px; }
+    .boxAyudaLogin .boxBotonesLogin {
+      width: 100%;
+      text-align: center; }
+      .boxAyudaLogin .boxBotonesLogin button {
+        padding: 10px 25px;
+        font-size: 1.2rem; }
+    .boxAyudaLogin .campoDeAyuda {
+      width: 100%; }
+      .boxAyudaLogin .campoDeAyuda input {
+        width: 80%; }
+    .boxAyudaLogin .boxAyudaTemas {
+      padding-bottom: 40px;
+      flex-direction: column; }
+      .boxAyudaLogin .boxAyudaTemas .itemBox {
+        padding: 10px;
+        margin: 10px;
+        text-align: center; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox h2 {
+          color: #1c8e3e;
+          font-size: 2.2rem; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox ul li {
+          font-size: 1.4rem;
+          list-style: none;
+          text-decoration: underline; }
+  /* preguntasFrecuentes.HTML */
+  .seccion {
+    width: 70%;
+    margin: 0px auto; }
+    .seccion .seccion__respuestas {
+      width: 100%; }
+      .seccion .seccion__respuestas h1 {
+        margin: 30px auto; }
+      .seccion .seccion__respuestas .pregunta {
+        margin: 20px auto;
+        font-size: 1.5rem; }
+      .seccion .seccion__respuestas p {
+        width: 90%;
+        font-size: 1.2rem; } }
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .header {
+    width: 100%;
+    flex-direction: row;
+    position: static; }
+    .header .containerLogo {
+      width: 40%;
+      text-align: left; }
+      .header .containerLogo a img {
+        width: 50%;
+        margin: auto; }
+    .header .containerSecciones {
+      width: 60%;
+      margin: auto;
+      display: block;
+      padding: 0px; }
+      .header .containerSecciones .secciones {
+        display: flex;
+        font-size: 1rem;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: center; }
+        .header .containerSecciones .secciones .listItem {
+          text-align: center;
+          padding: 10px; }
+          .header .containerSecciones .secciones .listItem a {
+            margin: 20px auto; }
+          .header .containerSecciones .secciones .listItem a:hover {
+            color: #1c8e3e;
+            margin-left: 0px; }
+          .header .containerSecciones .secciones .listItem .campoBusqueda {
+            margin: 0px;
+            width: 100%;
+            border-radius: 0px; }
+          .header .containerSecciones .secciones .listItem i {
+            background-color: #fff; }
+      .header .containerSecciones .buttonNav {
+        visibility: hidden; }
+  .img-principal {
+    margin-top: 20px; }
+    .img-principal .contenedorImg {
+      margin: 0 auto;
+      margin-bottom: 30px; }
+    .img-principal .descripcionMovie {
+      font-size: 1.2em;
+      max-width: 60%; }
+  .containerIndex .subtitle,
+  .containerSeriesMovies .subtitle {
+    text-align: center;
+    font-size: 2rem; }
+  .containerIndex .box,
+  .containerSeriesMovies .box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .containerIndex .box .contenedorImg,
+    .containerSeriesMovies .box .contenedorImg {
+      width: 160px;
+      transition: all 0.3s ease-in-out;
+      margin: auto 0px; }
+      .containerIndex .box .contenedorImg p,
+      .containerSeriesMovies .box .contenedorImg p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: rgba(0, 0, 0, 0);
+        text-align: center;
+        letter-spacing: 1px;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out; }
+      .containerIndex .box .contenedorImg .foto,
+      .containerSeriesMovies .box .contenedorImg .foto {
+        width: 160px;
+        height: 200px;
+        margin-top: 30px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.9);
+        transition: all 0.3s ease-in-out; }
+      .containerIndex .box .contenedorImg .foto:hover,
+      .containerSeriesMovies .box .contenedorImg .foto:hover {
+        box-shadow: 1px 1px 20px #22b14c; }
+    .containerIndex .box .contenedorImg:hover,
+    .containerSeriesMovies .box .contenedorImg:hover {
+      transform: scale(1.15); }
+      .containerIndex .box .contenedorImg:hover p,
+      .containerSeriesMovies .box .contenedorImg:hover p {
+        visibility: visible;
+        color: rgba(255, 255, 255, 0.9); }
+  .containerIndex .destacadosKids,
+  .containerSeriesMovies .destacadosKids {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px auto; }
+    .containerIndex .destacadosKids .boxDestacadoKids,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids {
+      width: 240px;
+      transition: all 0.3s ease-in-out; }
+      .containerIndex .destacadosKids .boxDestacadoKids img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids img {
+        width: 240px;
+        height: 240px;
+        border-radius: 150px;
+        cursor: pointer; }
+      .containerIndex .destacadosKids .boxDestacadoKids p,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids p {
+        text-align: center;
+        color: #fff;
+        margin-top: 15px;
+        font-weight: bold;
+        letter-spacing: 1px; }
+    .containerIndex .destacadosKids .boxDestacadoKids:hover,
+    .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover {
+      transform: scale(1.1); }
+      .containerIndex .destacadosKids .boxDestacadoKids:hover img,
+      .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover img {
+        box-shadow: 0px 0px 30px #22b14c; }
+  .containerIndex .boxDestacados .fotoDestacada,
+  .containerSeriesMovies .boxDestacados .fotoDestacada {
+    width: 260px;
+    height: 350px;
+    margin: 10px; }
+  .containerCards .card {
+    width: 20%;
+    margin: 10px;
+    transition: all 0.3s ease-in-out; }
+    .containerCards .card .cover .img__back {
+      border-radius: 0px; }
+    .containerCards .card .descripcion {
+      border-radius: 0px;
+      font-size: 1rem; }
+      .containerCards .card .descripcion h2 {
+        font-size: 1.5rem; }
+  .containerFirstMovie {
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+    .containerFirstMovie .portadaMovie {
+      width: 100%; }
+      .containerFirstMovie .portadaMovie img {
+        width: 100%;
+        margin: auto; }
+    .containerFirstMovie .descripcionMovie {
+      font-size: 1.2rem; }
+  .footerF {
+    font-size: 1rem; }
+    .footerF span {
+      display: inline; }
+    .footerF span:last-of-type {
+      display: block; }
+    .footerF a img {
+      width: 20%; }
+  /* LOGIN.HTML */
+  .containerLogin {
+    width: 50%;
+    margin: 20px auto 100px auto; }
+    .containerLogin a {
+      font-size: 1.3rem; }
+  /* NEW-USER.HTML */
+  .recuadroDatos {
+    width: 60%; }
+    .recuadroDatos .cuadroBotones {
+      width: 100%; }
+      .recuadroDatos .cuadroBotones .botonNewUser {
+        width: 40%;
+        display: block;
+        margin: 10px auto; }
+  /* ayuda.HTML */
+  .containerHelp {
+    margin: 20px auto;
+    margin-top: 0px;
+    width: 100%; }
+    .containerHelp h1 {
+      padding: 20px;
+      font-size: 2.2rem; }
+    .containerHelp .boxHelp .itemsHelp {
+      width: 100%; }
+      .containerHelp .boxHelp .itemsHelp li a {
+        font-size: 1.8rem; }
+    .containerHelp .boxHelp .itemsHelp li a:hover {
+      color: #22b14c; }
+    .containerHelp .containerButtons div {
+      width: 10%; }
+  /* reestablecer-pw.HTML */
+  .recuadroForgot {
+    width: 60%;
+    margin: 120px auto 140px auto; }
+  /* planes.HTML */
+  .boxPlanes {
+    margin: 0px auto 100px auto; }
+    .boxPlanes h1 {
+      font-size: 2rem;
+      margin: 10px; }
+    .boxPlanes .container-planes {
+      margin: auto auto 10px auto;
+      display: flex;
+      flex-direction: row; }
+  /* appcoder.HTML */
+  .boxApps {
+    margin-top: 10px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center; }
+    .boxApps .boxMarca {
+      width: 30%;
+      flex-direction: column;
+      margin: 20px auto; }
+  /* cuenta.HTML */
+  .boxAyudaLogin {
+    margin-top: 0px; }
+    .boxAyudaLogin .boxBotonesLogin {
+      width: 100%;
+      text-align: center; }
+      .boxAyudaLogin .boxBotonesLogin button {
+        padding: 10px 25px;
+        font-size: 1.2rem; }
+    .boxAyudaLogin .campoDeAyuda {
+      width: 50%;
+      margin: auto; }
+      .boxAyudaLogin .campoDeAyuda input {
+        width: 80%; }
+    .boxAyudaLogin .boxAyudaTemas {
+      padding-bottom: 40px;
+      flex-direction: column; }
+      .boxAyudaLogin .boxAyudaTemas .itemBox {
+        padding: 10px;
+        margin: 10px;
+        text-align: center; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox h2 {
+          color: #1c8e3e;
+          font-size: 2rem; }
+        .boxAyudaLogin .boxAyudaTemas .itemBox ul li {
+          font-size: 1.2rem;
+          list-style: none;
+          text-decoration: underline; }
+  /* preguntasFrecuentes.HTML */
+  .seccion {
+    width: 70%;
+    margin: 0px auto; }
+    .seccion .seccion__respuestas {
+      width: 100%; }
+      .seccion .seccion__respuestas h1 {
+        margin: 30px auto; }
+      .seccion .seccion__respuestas .pregunta {
+        margin: 20px auto;
+        font-size: 1.5rem; }
+      .seccion .seccion__respuestas p {
+        width: 90%;
+        font-size: 1.2rem; } }

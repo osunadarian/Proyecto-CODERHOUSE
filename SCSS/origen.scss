@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import "colores";
 
-// Variables //
-// SCSS //
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Lato', sans-serif;
 }
 
 body{
@@ -25,12 +22,22 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-
-
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 2;
+    background: linear-gradient(90deg, rgba(0,33,16,1) 0%, rgba(0,0,0,1) 50%, rgba(0,33,16,1) 100%);
 
     .containerLogo{
 
         width: 50%;
+
+        a img{
+
+            width: 25%;
+
+        }
 
     }
 
@@ -53,6 +60,7 @@ body{
 
                 list-style: none;
                 transition: all 0.1s ease-in-out;
+                margin: auto;
 
                 a{
 
@@ -67,83 +75,42 @@ body{
 
                 a:hover{
 
-<<<<<<< HEAD
-                    border: none;
+                    color: $verdeCoder;
+
+                }
+
+                .campoBusqueda{
+
+                    border: 2px solid white;
                     background-color: #fff;
-                    border-radius: 2px;
-                    width: 40%;
-                    margin-left: 20px;
-                    padding-left: 8px;
+                    margin-left: 15px;
                     outline: none;
                     color: #000;
                     font-weight: bold;
                     letter-spacing: 1px;
-
-                    transition: all 0.3s ease;
-
-                }
-
-                .campoBusqueda:focus{
-
-                    background-color: $verdeClaroCoder;
-                    color: #fff;
-
-                }
-
-                ::placeholder{
-
-                    color: #000;
-
-                    transition: color 0.3s ease;
-
-                }
-
-                ::placeholder:focus{
-
-                    color: #fff;
-
-                }
-=======
-                    color: $verdeCoder;
-                    margin-left: 10px;
->>>>>>> rama
-
-
-<<<<<<< HEAD
-                    border: none;
-                    margin-left: 5px;
-                    margin-right: 8px;
-                    padding: 5px;
-                    background-color: $trasparente; /*trasparente*/
-                    color: $blancoCoder;
+                    padding: 4px 4px 4px 15px;
                     font-family: 'Lato', sans-serif;
-                    cursor: pointer;
                     
-=======
->>>>>>> rama
                 }
+    
+                i{
 
+                    color: $verdeCoder;
+                    font-size: 1.3rem;
+                    padding: 4px;
+                    cursor: pointer;
+                    background-color: #fff;
+
+                }
+            }
+
+            .listItem:last-of-type{
+
+                display: flex;
+        
             }
             
-            .campoBusqueda{
 
-                border: 2px solid white;
-                background-color: #fff;
-                border-radius: 20px;
-                margin-left: 15px;
-                outline: none;
-                color: #000;
-                font-weight: bold;
-                letter-spacing: 1px;
-                padding: 2px 2px 2px 15px;
-                
-            }
-
-            .campoBusqueda:focus{
-
-                border: 2px solid $verdeCoder;
-
-            }
         }
 
         .buttonNav{
@@ -192,10 +159,10 @@ body{
     font-size: 16px;
     min-height: 31.25em;
     color: $blancoCoder;
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0,0,0, .50) 100%), url(../image/Highlights/theoffice.png);
-    background-position: center 30%;
+    background: linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0,0,0, 0.5) 100%), url(../image/Highlights/theoffice.png);
+    background-position: center 12%;
     background-size: cover;
-    margin-top: 0;
+    margin-top: 70px;
     margin-bottom: 3.12em;
     display: flex;
     align-items: flex-end;
@@ -207,7 +174,7 @@ body{
     
     }
 
-    .movie{
+    .firstMovie{
 
         font-weight: bold;
         font-family: 'Lato', sans-serif;
@@ -260,7 +227,7 @@ body{
 .containerSeriesMovies{
 
     width: 100%;
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: left;
     font-size: 1.2rem;
     display: flex;
@@ -277,7 +244,6 @@ body{
 
     }
 
-    
     .title{
 
         text-align: center;
@@ -287,7 +253,6 @@ body{
 
     }
 
-
     .box{
 
         width: 100%;
@@ -295,34 +260,110 @@ body{
         flex-wrap: wrap;
         justify-content: space-evenly;
         
-        
-
-        .foto{
+        .contenedorImg{
 
             width: 180px;
-            height: 220px;
-            margin-top: 30px;
-            cursor: pointer;
-            border: none;
-            border-radius: 10px;
-            box-shadow: 1px 1px 10px $blancoCoder;
-        
             transition: all 0.3s ease-in-out;
 
-        }
+            p{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                color: rgba(0,0,0,0);
+                text-align: center;
+                letter-spacing: 1px;
+                visibility: hidden;
 
-        .foto:hover{
+                transition: all 0.3s ease-in-out;
 
-<<<<<<< HEAD
-            border: 2px solid $verdeCoder;
-            transform: scale(1.1);
-=======
-            transform: scale(1.15);
-            box-shadow: 1px 1px 20px $verdeClaroCoder;
->>>>>>> rama
-        
-        }
+            }
+
+            .foto{
+
+                width: 180px;
+                height: 220px;
+                margin-top: 30px;
+                cursor: pointer;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 1px 1px 10px $blancoCoder;
+
+                transition: all 0.3s ease-in-out;
+            }
     
+            
+            .foto:hover{
+    
+                box-shadow: 1px 1px 20px $verdeClaroCoder;
+                
+            }
+            
+        }
+
+        .contenedorImg:hover{
+
+            transform: scale(1.15);
+            
+            p{
+
+                visibility: visible;
+                color: $blancoCoder;
+
+            }
+
+        }
+    }
+
+    .destacadosKids{
+
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        margin: 50px auto;
+
+        .boxDestacadoKids{
+            width: 240px;
+
+            img{
+
+                width: 240px;
+                height: 240px;
+                border-radius: 150px;
+                cursor: pointer
+
+            }
+
+            p{
+                text-align: center;
+                color: #fff;
+                margin-top: 15px;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+            transition: all 0.3s ease-in-out;
+
+
+        }
+
+        .boxDestacadoKids:hover{
+
+            transform: scale(1.1);
+
+            img{
+                box-shadow: 0px 0px 30px $verdeClaroCoder;
+            }
+        }
+    }
+
+    .titleDestacado{
+
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 10px $verdeClaroCoder;
+        text-transform: uppercase;
+
     }
 
     .boxDestacados{
@@ -369,7 +410,6 @@ body{
         width: 300px;
         margin: 30px;
         transition: all 0.3s ease-in-out;
-
 
         .cover{
 
@@ -488,53 +528,110 @@ body{
 
     }
 
-
-
 }
 
+.containerFirstMovie{
 
-.footerF{
+    width: 50%;
+    margin: 10px auto;
+    margin-top: 100px;
+    box-shadow: 1px 1px 10px #fff;
 
-    margin-top: 20px;
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-    font-size: 1.5rem;
-    color: $blancoCoder;
-    text-align: center;
-    border-top: 2px solid $blancoCoder;
-    background-color: $blancoCoder;
-    display: flex;
-    flex-direction: column;    
-    background-color: $negroCoder;
+    .portadaMovie{
 
-    span{
+        width: 100%;
+        background-color: #fff;
+        
+        transition: all 0.4s ease-in-out;
 
-        margin: 10px;
-    
+        img{
+
+            width: 100%;
+            margin: auto;
+            
+
+        }
+    }
+
+
+    .descripcionMovie{
+
+        background-color: #fff;
+        font-size: 1.1rem;
+        text-align: center;
+
+        h1{
+
+            font-size: 2rem;
+            margin-bottom: 20px;
+
+        }
+
+        p{
+
+            width: 80%;
+            margin: auto;
+            letter-spacing: 1px;
+
+        }
+
+        input{
+
+            padding: 10px 40px;
+            margin: 30px 10px 30px 10px;
+            border: none;
+            background-color: $verdeCoder;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 8px;
+
+            transition: all 300ms;
+        }
+
+        input:hover{
+
+            background-color: $verdeClaroCoder;
+        }
     }
 
 }
 
-.footerInc{
+.footerF{
 
     margin-top: 20px;
-    position: absolute;
     bottom: 0px;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: $blancoCoder;
     text-align: center;
     border-top: 2px solid $blancoCoder;
-    background-color: $blancoCoder;
-    display: flex;
-    flex-direction: column;    
-    background-color: $negroCoder;
+    margin-bottom: 30px;
+    display: block;
+    flex-direction: row;  
 
     span{
 
+        display: inline;
         margin: 10px;
-    
+        cursor: pointer;
+    }
+
+    a{
+
+        display: flex;
+        flex-direction: column;
+
+        img{
+            margin: auto;
+            width: 10%;
+        }
+    }
+
+    i{
+        font-size: 1.1rem;
+        margin: auto 5px;
+        cursor: pointer;
     }
 
 }
@@ -544,7 +641,7 @@ body{
 .containerLogin{
 
     width: 40%;
-    margin: 40px auto 100px auto;
+    margin: 140px auto 150px auto;
     display: flex;
     flex-direction: column;
 
@@ -598,13 +695,18 @@ body{
         
         }
 
+        .boxDatosUser:focus{
+
+            border-bottom: 3px solid $verdeClaroCoder;
+
+        }
+
         #send{
 
             border: 4px solid $blancoCoder;
             font-size: 1.5rem;
-            background-color: $verdeCoder;
+            background-color: $trasparente;
             color: $blancoCoder;
-            border-radius: 2px;
             padding: 15px;
             margin-top: 30px;
             cursor: pointer;
@@ -633,8 +735,9 @@ body{
 /* NEW-USER.HTML *////////////////////////////////////////
 .recuadroDatos{
 
+
     width: 50%;
-    margin: 30px auto auto auto;
+    margin: 100px auto auto auto;
     color: $verdeClaroCoder;
     font-size: 1.5rem;
 
@@ -657,19 +760,27 @@ body{
             border: none;
             border-radius: 8px;
             outline: none;
-            font-size: 1.5rem;
-            text-align: center;
+            font-size: 1.2rem;
+            text-align: left;
+            padding-left: 10px;
         
+        }
+
+        input:focus{
+
+            box-shadow: 1px 1px 10px $verdeClaroCoder;
+
         }
 
         select{
 
             margin: 5px;
             font-family: 'Lato', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             outline: none;
             border: none;
             border-radius: 8px;
+            padding: 5px 15px;
         
         }
 
@@ -725,27 +836,22 @@ body{
 
         width: 100%;
         margin-top: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 80px;
         text-align: center;
 
         .botonNewUser{
 
-            background-color: $blancoCoder;
+            background-color: $verdeCoder;
+            color: $blancoCoder;
             cursor: pointer;
-            border: 1px solid $negroCoder;
+            border: none;
             border-radius: 10px;
             padding: 10px;
-            font-weight: bold;
-        
-            transition: background-color 0.3s ease-in-out;
+            font-weight: normal;
+            width: 20%;
 
         }
 
-        .botonNewUser:hover{
-
-            background-color: $grisClaro;
-        
-        }
     }
 
 }
@@ -755,9 +861,9 @@ body{
 .containerHelp{ 
 
     margin: 40px auto;
+    margin-top: 120px;
     text-align: center;
-    width: 40%;
-    border: 2px solid #fff; 
+    width: 40%; 
 
     h1{
 
@@ -768,6 +874,7 @@ body{
     }
 
     .boxHelp{
+        
 
         .itemsHelp{
 
@@ -814,22 +921,24 @@ body{
             display: flex;
             flex-direction: column;
             margin: 30px;
-            align-items: center;
             background-color: $verdeCoder;
             border: 3px solid $blancoCoder;
             border-radius: 10px;
+            width: 20%;
+            transition: all 0.3s ease-in-out;
 
             .buttonsHelp{
 
-                padding: 10px 20px;
-                margin: 0px 15px;
                 background-color: $verdeCoder;
                 cursor: pointer;
                 border: none;
-                font-size: 1.5rem;
-                letter-spacing: 2px;
+                font-size: 1rem;
+                letter-spacing: 1px;
                 font-weight: normal;
                 color: $blancoCoder;
+                margin-top: 5px;
+                margin-bottom: 3px;
+
             }
     
             i{
@@ -842,6 +951,13 @@ body{
 
         }
 
+        div:hover{
+
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px $verdeClaroCoder;
+
+        }
+
 
     }
 }
@@ -851,7 +967,7 @@ body{
 .recuadroForgot{
 
     width: 50%;
-    margin: 100px auto 150px auto;
+    margin: 250px auto 350px auto;
     color: $verdeClaroCoder;
     font-size: 1.5rem;
     text-align: center;
@@ -919,7 +1035,7 @@ body{
 
 .boxPlanes{
 
-    margin: auto auto 150px auto;
+    margin: 150px auto 160px auto;
     text-align: center;
 
     h1{
@@ -940,9 +1056,8 @@ body{
         .boxPlan{
 
             margin: 20px;
-            border: 2px solid $verdeClaroCoder;
+            box-shadow: 1px 1px 10px $verdeClaroCoder;
             border-radius: 10px;
-            background-color: $negroCoder;
         
             ul{
 
@@ -971,17 +1086,13 @@ body{
 
             .getPlan{
 
-
-                padding: 5px 10px;
-                margin: 15px;
-                background-color: $verdeCoder;
+                margin: 20px auto 20px auto;
+                padding: 10px;
                 cursor: pointer;
-                border: 1px solid #fff;
-                font-size: 1rem;
-                letter-spacing: 1px;
-                font-weight: normal;
-                color: $blancoCoder;
-                border-radius: 3px;
+                border-radius: 10px;
+                border: none;
+                font-weight: bold;
+                text-align: center;
             
                 transition: background-color 0.3s ease-in-out;
             
@@ -993,47 +1104,195 @@ body{
             
             }
         }
+
+        .boxPlan:nth-of-type(3){
+
+            animation-name: destacar;
+            animation-duration: 0.3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+
+        }
+
+        @keyframes destacar{
+
+            from {
+
+                box-shadow: 1px 1px 10px $verdeClaroCoder;
+
+            }
+            to{
+
+                box-shadow: 1px 1px 30px $verdeCoder;
+
+            }
+
+        }
+
     }
 }
 
 /* appcoder.HTML *////////////////////////////////////////
 
-.recuadroApps{
+.boxApps{
 
-    h1{
+    margin-top: 100px;
+    width: 100%;
+    padding: 180px;
+    display: flex;
+    justify-content: space-around;
 
+    
+
+    .boxMarca{
+
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        border: 10px solid rgba(251, 251, 251, 0.5);
+        border-radius: 15px;
+        padding: 80px 20px;
+
+        transition: 0.3s all ease-in-out;
+
+        i{
+
+            font-size: 100px;
+            text-align: center;
+            padding-bottom: 30px;
+
+        }
+
+        ul li{
+
+            font-weight: bold;
+            
+
+        }
+
+        a{
+
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+
+        }
+
+    }
+
+    .boxMarca:hover{
+
+        background-color: white;
+        color: #000;
+        transform: scale(1.1);
+
+        a{
+
+            color: #000;
+
+        }
+
+    }
+
+}
+
+/* cuenta.HTML *//////////////////////////////////////////
+
+.boxAyudaLogin{
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 100px;
+
+    .boxBotonesLogin{
+
+        width: 100%;
         text-align: center;
-        margin-top: 50px;
-        color: $verdeClaroCoder;
-        animation-name: sizeSubtitle;
-        animation-duration: 2s;
-        animation-direction: alternate-reverse;
-        animation-iteration-count: infinite;
-    
-    }
 
-    @keyframes sizeSubtitle{
+        h1{
 
-        from{
-            letter-spacing: 0.5px;
+            color: #fff;
+            font-size: 1.2rem;
+            text-align: center;
+            padding-top: 30px;
+
         }
-        to{
-            letter-spacing: 1px;
+
+        button{
+
+            outline: none;
+            border: none;
+            background-color: $verdeCoder;
+
+            padding: 5px 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
         }
-    
     }
 
-    .accordionNews{
+    .campoDeAyuda{
 
-        margin: 10px auto 180px auto;
-    
+        width: 100%;
+        padding: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        i{
+
+            color: #000;
+            background-color: #fff;
+            padding: 4px;
+            padding-left: 8px;
+            margin-right: 0px;
+            border-radius: 50px 0px 0px 50px;
+
+        }
+
+        input{
+
+            width: 50%;
+            outline: none;
+            border: none;
+            padding-left: 5px;
+            margin-left: 0px;
+            border-radius: 0px 50px 50px 0px;
+
+        }
+
     }
 
-    .systemApp{
-    
-        margin-left: 5px;
-        font-weight: bold;
-    
+    .boxAyudaTemas{
+
+        display: flex;
+        padding-bottom: 240px;
+
+        .itemBox{
+
+            padding: 10px;
+            color: #fff;
+            margin: 0px auto;
+
+            h2{
+
+                font-size: 1.5rem;
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 15px;
+            } 
+
+            ul li{
+
+                margin: 15px;
+                padding-left: 0px;
+                cursor: pointer;
+            }
+        }
     }
 }
 
@@ -1045,44 +1304,14 @@ body{
     margin: 100px auto;
     display: flex;
     flex-direction: row;
-    height: 700px;
 
-    .seccion__preguntas{
-
-        background-color: $negroCoder;
-        width: 30%;
-        text-align: center;
-        border-right: 5px solid $verdeCoder;
-
-        ul{
-
-            list-style: none;
-            text-align: left;
-        
-        }
-
-        li{
-
-            padding: 10px 30px;
-        
-        }
-
-        a{
-
-            text-decoration: none;
-            font-weight: bold;
-            color: $blancoCoder;
-            padding: 20px auto;
-        
-        }
-        
-    }
 
     .seccion__respuestas{
 
         width: 70%;
         text-align: center;
         overflow: auto;
+        margin: auto;
 
         h1{
 
@@ -1092,11 +1321,12 @@ body{
         
         }
 
-        h2{
+        .pregunta{
 
             margin: 20px auto;
             letter-spacing: 2px;
             color: $verdeCoder;
+            font-size: 1.5rem;
         
         }
 
