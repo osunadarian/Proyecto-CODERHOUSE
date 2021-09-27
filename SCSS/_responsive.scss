@@ -143,11 +143,28 @@
         width: 100%;
         margin: 20px auto 100px auto;
 
+        .titleLogin{
+
+            width: 40%;
+            font-size: 2rem;
+
+        }
+
         a{
             font-size: 1.3rem;
         }
 
+        .recuadroDatosUser{
+            
+            .boxDatosUser{
+
+                width: 80%;
+
+            }
+
+        }
     }
+
 
     /* NEW-USER.HTML *////////////////////////////////////////
 
@@ -260,12 +277,17 @@
         flex-direction: column;
         justify-content: center;
 
-    
         .boxMarca{
 
-            width: 50%;
+            width: 100%;
             flex-direction: column;
             margin: 20px auto;
+
+        }
+
+        .boxMarca:hover{
+
+            transform: scale(1.0);
 
         }
 
@@ -729,15 +751,13 @@
     
         .boxMarca{
 
-            width: 50%;
+            width: 80%;
             flex-direction: column;
             margin: 20px auto;
 
         }
 
-
     }
-
 
     /* cuenta.HTML *//////////////////////////////////////////
 

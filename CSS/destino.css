@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif; }
+  box-sizing: border-box; }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -675,13 +674,16 @@ body {
     border: 10px solid rgba(251, 251, 251, 0.5);
     border-radius: 15px;
     padding: 80px 20px;
+    color: #fff;
     transition: 0.3s all ease-in-out; }
     .boxApps .boxMarca i {
       font-size: 100px;
       text-align: center;
       padding-bottom: 30px; }
     .boxApps .boxMarca ul li {
-      font-weight: bold; }
+      font-weight: bold;
+      list-style: none;
+      text-align: center; }
     .boxApps .boxMarca a {
       color: #fff;
       font-size: 1.1rem;
@@ -775,7 +777,8 @@ body {
       font-size: 1.5rem; }
     .seccion .seccion__respuestas p {
       width: 60%;
-      margin: auto; }
+      margin: auto;
+      color: #fff; }
     .seccion .seccion__respuestas span {
       font-weight: bold; }
     .seccion .seccion__respuestas a {
@@ -845,8 +848,13 @@ body {
   .containerLogin {
     width: 100%;
     margin: 20px auto 100px auto; }
+    .containerLogin .titleLogin {
+      width: 40%;
+      font-size: 2rem; }
     .containerLogin a {
       font-size: 1.3rem; }
+    .containerLogin .recuadroDatosUser .boxDatosUser {
+      width: 80%; }
   /* NEW-USER.HTML */
   .recuadroDatos {
     width: 100%; }
@@ -895,9 +903,11 @@ body {
     flex-direction: column;
     justify-content: center; }
     .boxApps .boxMarca {
-      width: 50%;
+      width: 100%;
       flex-direction: column;
       margin: 20px auto; }
+    .boxApps .boxMarca:hover {
+      transform: scale(1); }
   /* cuenta.HTML */
   .boxAyudaLogin {
     margin-top: 0px; }
@@ -1103,7 +1113,7 @@ body {
     flex-direction: column;
     justify-content: center; }
     .boxApps .boxMarca {
-      width: 50%;
+      width: 80%;
       flex-direction: column;
       margin: 20px auto; }
   /* cuenta.HTML */

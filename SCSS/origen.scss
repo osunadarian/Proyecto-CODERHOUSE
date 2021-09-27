@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 }
 
 body{
@@ -389,11 +388,8 @@ body{
         .fotoDestacada:hover{
 
             transform: scale(1.1);
-
         }
-    
     }
-
 }
 
 .containerCards{
@@ -404,7 +400,6 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     
-
     .card{
 
         width: 300px;
@@ -490,14 +485,12 @@ body{
         }
     }
 
-    
     .card:hover{
 
         transform: scale(1.1);
 
     }
     
-
     .card:hover .cover img{
 
         transform: scale(1.2);
@@ -1142,8 +1135,6 @@ body{
     display: flex;
     justify-content: space-around;
 
-    
-
     .boxMarca{
 
         width: 20%;
@@ -1152,6 +1143,7 @@ body{
         border: 10px solid rgba(251, 251, 251, 0.5);
         border-radius: 15px;
         padding: 80px 20px;
+        color: #fff;
 
         transition: 0.3s all ease-in-out;
 
@@ -1166,7 +1158,8 @@ body{
         ul li{
 
             font-weight: bold;
-            
+            list-style: none;
+            text-align: center;
 
         }
 
@@ -1334,6 +1327,7 @@ body{
 
             width: 60%;
             margin: auto;
+            color: #fff;
         
         }
 
