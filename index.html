@@ -7,6 +7,7 @@
     <meta name="keywords" content="Coderflix, peliculas online, series online, the office">
     <link rel="shortcut icon" href="image/iconoLogo/coder.ico">
     <link rel="stylesheet" href="CSS/destino.css">
+
 </head>
 <body>
 
@@ -39,184 +40,20 @@
         </div>
     </header>
 
-    <!-- foto principal del html -->
-    <section class="img-principal">
-        <div class="contenedorImg">
-
-            <h1 class="firstMovie">The Office</h1>
-            <p class="descripcionMovie">Sigue el dia a dia en la vida de unos excentricos trabajadores de la empresa Dunder Mifflin, de forma fresca y divertida, y con apariencia de pseudo-documental. Adaptacion por parte de Grez Daniela ('Los Simpson') de la serie britanica del mismo nombre, 'The Office' parodia la cultura americana a traves de las vivencias de sus protagonistas.
-            </p>
-
-            <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
-            <button role="button" class="boton"><i class="fas fa-info-circle"></i>Mas informacion</button>
-        </div>
-    </section>
+    <main id="mensajeLogin"></main>
 
     <!-- catalogo coderflix -->
-    <section class="containerIndex">
+    <section class="containerIndex" id="contenedorMovies">
 
         <h2 class="subtitle">Seleccion Coderflix</h2>
 
-        <div class="box">
-            <div class="contenedorImg">
-                <img src="image/index/bbad.png" alt="portada breaking bad" class="foto">
-                <p>Breaking Bad</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/walle.png" alt="portada walle" class="foto">
-                <p>Wall-E</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/shrek.png" alt="portada shrek" class="foto">
-                <p>Shrek 1</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/fragmentado.png" alt="portada fragmentado" class="foto">
-                <p>Fragmentado</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/silenceinocentes.png" alt="portada silencio de los inocentes" class="foto">
-                <p>El silencio de los Inocentes</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/toy.png" alt="portada toy story" class="foto">
-                <p>Toy Story 4</p>
-            </div>
-            
-        </div>
+        <div class="box" id="oneMovie"></div>
 
-        <h2 class="subtitle">Top Rankeadas</h2>
-        <div class="box">
-
-            <div class="contenedorImg">
-                <img src="image/index/twd.png" alt="portada the walking dead" class="foto">
-                <p>The Walking Dead</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/peaky.png" alt="portada peaky blinders" class="foto">
-                <p>Peaky Blinders</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/modern.png" alt="portada modern family" class="foto">
-                <p>Modern Family</p>
-            </div>   
-            <div class="contenedorImg">
-                <img src="image/index/marginal.png" alt="portada el marginal" class="foto">
-                <p>El Marginal</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/merli.png" alt="portada merli" class="foto">
-                <p>Merli</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/handsmail tale.png" alt="portada handsmail tale" class="foto">
-                <p>The handmail's Tale</p>
-            </div>
-
-        </div>
-
-        <h2 class="subtitle">Exitos Mundiales</h2>
-        <div class="box">
-            <div class="contenedorImg">
-                <img src="image/index/elorigen.png" alt="portada el origen" class="foto">
-                <p>El Origen</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/sextosentido.png" alt="portada sexto sentido" class="foto">
-                <p>Sexto Sentido</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/fightclub.png" alt="portada el club de la pelea" class="foto">
-                <p>El club de la Pelea</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/endgame.png" alt="portada avengers endgame" class="foto">
-                <p>Avengers: Endgame</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/infinity.png" alt="portada avengers infinity war" class="foto">
-                <p>Avengers: Infinity War</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/fragmentado.png" alt="portada fragmentado" class="foto">
-                <p>Fragmentado</p>
-            </div>
-
-        </div>
-
-        <h2 class="subtitle">Ultimas novedades</h2>
-        <div class="box">
-
-            <div class="contenedorImg">
-                <img src="image/index/dexter.png" alt="portada dexter" class="foto">
-                <p>Dexter</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/bates.png" alt="portada bates motel" class="foto">  
-                <p>Bates Motel</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/handsmail tale.png" alt="portada handsmail tale" class="foto">
-                <p>The handmail's Tale</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/gooddcotor.png" alt="portada the good doctor" class="foto">
-                <p>The Good Doctor</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/hp.png" alt="portada harry potter" class="foto">
-                <p>Harry Potter y las reliquias de la Muerte (P1)</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/esdla.png" alt="portada señor de los anillos" class="foto">
-                <p>ESDLA: La comunidad del Anillo</p>
-            </div>
-            
-        </div>
-
-        <h2 class="subtitle">Para toda la familia</h2>
-        <div class="box">
-            <div class="contenedorImg">
-                <img src="image/index/nemo.png" alt="portada buscando a nemo" class="foto">
-                <p>Buscando a Nemo</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/toy.png" alt="portada toy story" class="foto">
-                <p>Toy Story</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/coco.png" alt="portada coco" class="foto">
-                <p>Coco</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/shrek.png" alt="portada shrek" class="foto">
-                <p>Shrek</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/up.png" alt="portada up" class="foto">
-                <p>Up</p>
-            </div>
-            <div class="contenedorImg">
-                <img src="image/index/walle.png" alt="portada wallE" class="foto">
-                <p>Wall-E</p>
-            </div>
-        </div>
 
     </section>
 
-    <!-- portadas destacadas final de pagina -->
-    <section class="containerIndex">
-        <h2 class="subtitle titleDestacado">Exclusivo Coderflix</h2>
-        <div class="boxDestacados">
-            <img src="image/destacadosIndex/dbz.png" alt="portada dragon ball z" class="fotoDestacada">
-            <img src="image/destacadosIndex/spd.png" alt="portada spiderman" class="fotoDestacada">
-            <img src="image/destacadosIndex/peaky.png" alt="portada peaky blinders" class="fotoDestacada">
-            <img src="image/destacadosIndex/simpson.png" alt="portada los simpsons" class="fotoDestacada">
-        </div>
-    </section>
-    
     <!-- footer -->
-    <footer class="footerF">
+    <footer class="footerF" id="footerId">
         <a href="index.html"><img src="image/iconoLogo/coderflix-logo.png" alt="banner-coderflix" class="logo"></a>
         <span>Terminos y Aviso de privacidad</span>
         <span>Ayuda</span>
@@ -225,5 +62,6 @@
     </footer>
     
     <script src="https://kit.fontawesome.com/15784ea8d5.js" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

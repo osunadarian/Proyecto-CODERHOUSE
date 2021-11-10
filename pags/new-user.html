@@ -39,145 +39,37 @@
         </div>
     </header>
 
-    <section class="recuadroDatos">
+    <section class="recuadroDatos" id="datos">
         <h1>Completa los siguientes datos para registrarte en CODERFLIX</h1>
-        <form action="">
+        <form id="form">
 
             <fieldset class="campoDatos">
                 <legend>Datos Personales</legend>
 
                 <div>
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre">
+                    <input type="text" name="nombre" id="nombre">
                 </div>
 
                 <div>
                     <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido">
-                </div>
-
-                <div>
-                <label for="edad">Edad</label>
-                <input type="number" name="edad">
-                </div>
-
-                <div>
-                    <label>Nacionalidad</label>
-                    <select name="pais">
-                    <option value="Argentina">Argentina</option>
-                    <option value="Peru">Peru</option>
-                    <option value="Colombia">Colombia</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Venezuela">Venezuela</option>
-                    <option value="Ecuador">Ecuador</option>
-                    <option value="Bolivia">Bolivia</option>
-                    <option value="Brasil">Brasil</option>
-                    <option value="Uruguay">Uruguay</option>
-                    <option value="Paraguay">Paraguay</option>
-                    </select>
+                    <input type="text" name="apellido" id="apellido">
                 </div>
 
                 <div>
                     <label for="email">Correo electronico</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" id="correo">
                 </div>
 
                 <div>
                     <label for="password">Introduzca un password</label>
-                    <input type="password" name="password">
-                </div>
-
-                <div>
-                    <label for="password">Re-introduzca su password</label>
-                    <input type="password" name="password">
-                </div>
-            </fieldset>
-
-            <fieldset class="campoDatos">
-                <legend>Datos Complementarios</legend>
-
-                <label>¿Como nos conociste?</label>
-                <select name="conocer">
-                <option value="Instagram">Instagram</option>
-                <option value="Twitter">Twitter</option>
-                <option value="Facebook">Facebook</option>
-                <option value="Google">Google</option>
-                <option value="Amigo">Por un conocido</option>
-                <option value="Otro">Otro</option>
-                </select>
-
-                <div class="cuadroDeDatos">
-                    <label>Selecciona tus estilos de peliculas y/o series favoritos</label><br><br>
-        
-                    <div>
-                        <input type="checkbox" name="favourite-movies" id="option-suspenso">
-                        <label for="option-suspenso"
-                        >Suspenso</label>
-                    </div>
-
-                    <div>
-                        <input type="checkbox" name="favourite-movies" id="option-drama">
-                        <label for="option-drama"
-                        >Drama</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="favourite-movies" id="option-animadas">
-                        <label for="option-animadas"
-                        >Animadas</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="favourite-movies" id="option-comicas">
-                        <label for="option-comicas"
-                        >Comicas</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="favourite-movies" id="option-thriller">
-                        <label for="option-Thriller"
-                        >Thriller</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="favourite-movies" id="option-documentales">
-                        <label for="option-documentales"
-                        >Documentales</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="favourite-movies" id="option-terror">
-                        <label for="option-terror"
-                        >Terror</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="favourite-movies" id="option-romanticas">
-                        <label for="option-romanticas"
-                        >Romanticas</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="favourite-movies" id="option-belicas">
-                        <label for="option-belicas"
-                        >Belicas</label>
-                    </div>
+                    <input type="password" name="password" id="password">
                 </div>
 
             </fieldset>
-
-            <fieldset class="termsConditions">
-                <div>
-                    <h2>Acepto terminos y condiciones de CODERFLIX</h2>
-
-                    <span class="term">
-                        <input type="radio" name="Terminos" id="option-yes">
-                        <label for="option-yes">SI</label>
-                    </span>
-
-                    <span class="term">
-                        <input type="radio" name="Terminos" id="option-no">
-                        <label for="option-no">NO</label>
-                    </span>
-                </div>
-            </fieldset>
-
 
             <div class="cuadroBotones">
-                <input type="submit" value="REGISTRARME" class="botonNewUser">
+                <input type="submit" class="botonNewUser">
                 <input type="reset" value="RESETEAR CAMPOS" class="botonNewUser"> 
             </div>
         </form>
@@ -198,5 +90,6 @@
     </footer>
     
     <script src="https://kit.fontawesome.com/15784ea8d5.js" crossorigin="anonymous"></script>
+    <script src="../scripts/newUser.js"></script>
 </body>
 </html>

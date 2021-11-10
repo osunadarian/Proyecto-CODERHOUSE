@@ -443,7 +443,7 @@ body {
 /* NEW-USER.HTML */
 .recuadroDatos {
   width: 50%;
-  margin: 100px auto auto auto;
+  margin: 250px auto;
   color: #22b14c;
   font-size: 1.5rem; }
   .recuadroDatos h1 {
@@ -784,6 +784,44 @@ body {
     .seccion .seccion__respuestas a {
       text-decoration: none;
       color: #1c8e3e; }
+
+/**********************************************************************/
+.info-mensaje {
+  margin: 350px auto;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  width: 50%; }
+  .info-mensaje a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin: 50px;
+    font-size: 2.5rem; }
+
+.info-cliente {
+  margin: 130px auto;
+  font-size: 2rem;
+  text-align: center; }
+  .info-cliente h2 {
+    color: white;
+    margin-bottom: 20px; }
+  .info-cliente p {
+    display: block; }
+    .info-cliente p span {
+      color: white;
+      font-weight: bold; }
+
+.mensajeError {
+  width: 50%;
+  margin: auto;
+  color: red; }
+  .mensajeError .error {
+    display: block;
+    font-size: 1.8rem;
+    text-align: center; }
+  .mensajeError p {
+    text-align: center; }
 
 @media (max-width: 424px) {
   .header {
