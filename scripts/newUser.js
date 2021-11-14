@@ -31,12 +31,7 @@ function validarFormulario(e){
     if( (nombre=="") || (apellido=="") || (correo=="") || (password=="") )
     {
 
-        datosIncompletos = document.createElement("div");
-        datosIncompletos.innerHTML = `<p class="error">Error</p><p>Debes completar todos los datos para poder registrarte en el sitior</p>`;
-        document.getElementById("datos").append(datosIncompletos);
-    
-        datosIncompletos.className = "mensajeError";
-        datosIncompletos.setAttribute("id","idMsjError");
+        $("#enviarInfo").prop('disabled', true);
 
 
     }else

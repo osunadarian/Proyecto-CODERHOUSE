@@ -1395,26 +1395,142 @@ body{
 
 }
 
-.mensajeError{
+/*////////////////////////SERIES.HTML JS//////////////////////////////*/
 
-    width: 50%;
-    margin: auto;
+.bloqueado{
+
     color: red;
 
-    .error{
+}
 
-        display: block;
-        font-size: 1.8rem;
+.containerGeneroSerie{
+
+
+    h2{
+
+        color: white;
         text-align: center;
 
     }
+    
+    .carrouselSeries{
 
-    p{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
 
-        text-align: center;
+        #flechaIzquierda2,
+        #flechaDerecha2,
+        #flechaIzquierda,
+        #flechaDerecha{
+
+            position: absolute;
+            border: none;
+            height: 20%;
+            font-size: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            margin: auto;
+            width: 50px;
+            color: white;
+            cursor: pointer;
+            z-index: 500;
+
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        #flechaIzquierda2,
+        #flechaIzquierda{
+            left: 0;
+        }
+
+        #flechaDerecha2,
+        #flechaDerecha{
+            right: 0;
+        }
+
+        #flechaIzquierda2:hover,
+        #flechaIzquierda:hover{
+            background: white;
+            color: black;
+        }
+
+        #flechaDerecha2:hover,
+        #flechaDerecha:hover{
+            background: white;
+            color: black;
+
+        }
+
+        .boxSerie2,
+        .boxSerie{
+
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            width: 100%;
+            padding: 0px 0px 20px 0px;
+            overflow: hidden;
+            scroll-behavior: smooth;
+
+
+            .contenidoSerie{
+
+                display: flex;
+                flex-direction: column;
+                margin: 5px;
+                min-width: 10%;
+                transition: all 0.3s ease-in-out;
+                flex-wrap: nowrap;
+                
+
+                .fotoPortada{
+
+                    height: 220px;
+                    margin-top: 30px;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 10px $blancoCoder;
+
+                }
+
+                .nombreSerie{
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: rgba(0,0,0,0);
+                    text-align: center;
+                    letter-spacing: 1px;
+                    visibility: hidden;
+
+                    transition: all 0.3s ease-in-out;
+
+                }
+
+            }
+
+        }
+
+        .contenidoSerie:hover{
+
+            transform: scale(1.15);
+            transform-origin: center;
+
+            .nombreSerie{
+
+                visibility: visible;
+                color: $blancoCoder;
+
+            }
+
+        }
+
 
     }
+
 
 }
+
 
 @import "responsive";

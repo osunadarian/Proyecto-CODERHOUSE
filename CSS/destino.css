@@ -812,16 +812,88 @@ body {
       color: white;
       font-weight: bold; }
 
-.mensajeError {
-  width: 50%;
-  margin: auto;
+/*////////////////////////SERIES.HTML JS//////////////////////////////*/
+.bloqueado {
   color: red; }
-  .mensajeError .error {
-    display: block;
-    font-size: 1.8rem;
-    text-align: center; }
-  .mensajeError p {
-    text-align: center; }
+
+.containerGeneroSerie h2 {
+  color: white;
+  text-align: center; }
+
+.containerGeneroSerie .carrouselSeries {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%; }
+  .containerGeneroSerie .carrouselSeries #flechaIzquierda2,
+  .containerGeneroSerie .carrouselSeries #flechaDerecha2,
+  .containerGeneroSerie .carrouselSeries #flechaIzquierda,
+  .containerGeneroSerie .carrouselSeries #flechaDerecha {
+    position: absolute;
+    border: none;
+    height: 20%;
+    font-size: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 500;
+    transition: all 0.3s ease-in-out; }
+  .containerGeneroSerie .carrouselSeries #flechaIzquierda2,
+  .containerGeneroSerie .carrouselSeries #flechaIzquierda {
+    left: 0; }
+  .containerGeneroSerie .carrouselSeries #flechaDerecha2,
+  .containerGeneroSerie .carrouselSeries #flechaDerecha {
+    right: 0; }
+  .containerGeneroSerie .carrouselSeries #flechaIzquierda2:hover,
+  .containerGeneroSerie .carrouselSeries #flechaIzquierda:hover {
+    background: white;
+    color: black; }
+  .containerGeneroSerie .carrouselSeries #flechaDerecha2:hover,
+  .containerGeneroSerie .carrouselSeries #flechaDerecha:hover {
+    background: white;
+    color: black; }
+  .containerGeneroSerie .carrouselSeries .boxSerie2,
+  .containerGeneroSerie .carrouselSeries .boxSerie {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+    overflow: hidden;
+    scroll-behavior: smooth; }
+    .containerGeneroSerie .carrouselSeries .boxSerie2 .contenidoSerie,
+    .containerGeneroSerie .carrouselSeries .boxSerie .contenidoSerie {
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      min-width: 10%;
+      transition: all 0.3s ease-in-out;
+      flex-wrap: nowrap; }
+      .containerGeneroSerie .carrouselSeries .boxSerie2 .contenidoSerie .fotoPortada,
+      .containerGeneroSerie .carrouselSeries .boxSerie .contenidoSerie .fotoPortada {
+        height: 220px;
+        margin-top: 30px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.9); }
+      .containerGeneroSerie .carrouselSeries .boxSerie2 .contenidoSerie .nombreSerie,
+      .containerGeneroSerie .carrouselSeries .boxSerie .contenidoSerie .nombreSerie {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: rgba(0, 0, 0, 0);
+        text-align: center;
+        letter-spacing: 1px;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out; }
+  .containerGeneroSerie .carrouselSeries .contenidoSerie:hover {
+    transform: scale(1.15);
+    transform-origin: center; }
+    .containerGeneroSerie .carrouselSeries .contenidoSerie:hover .nombreSerie {
+      visibility: visible;
+      color: rgba(255, 255, 255, 0.9); }
 
 @media (max-width: 424px) {
   .header {
