@@ -328,7 +328,7 @@ body{
                 width: 240px;
                 height: 240px;
                 border-radius: 150px;
-                cursor: pointer
+                cursor: pointer;
 
             }
 
@@ -345,14 +345,6 @@ body{
 
         }
 
-        .boxDestacadoKids:hover{
-
-            transform: scale(1.1);
-
-            img{
-                box-shadow: 0px 0px 30px $verdeClaroCoder;
-            }
-        }
     }
 
     .titleDestacado{
@@ -545,7 +537,6 @@ body{
 
         }
     }
-
 
     .descripcionMovie{
 
@@ -1314,12 +1305,40 @@ body{
         
         }
 
+        .caja1{
+
+            width: 80%;
+            margin: auto;
+
+        }
+
+
+        #ocultar4,
+        #ocultar3,
+        #ocultar2,
+        #mostrar3,
+        #mostrar2,
+        #mostrar4,
+        #ocultar1,
+        #mostrar1{
+
+            font-size: 1rem;
+            padding: 10px;
+            border: 2px solid $verdeClaroCoder;
+            border-radius: 50px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            margin: 5px;
+            cursor: pointer;
+        }
+
         .pregunta{
 
             margin: 20px auto;
             letter-spacing: 2px;
             color: $verdeCoder;
             font-size: 1.5rem;
+            font-weight: bold;
         
         }
 
@@ -1525,6 +1544,69 @@ body{
             }
 
         }
+
+
+    }
+
+
+}
+
+
+.seriesPrincipales{
+
+    width: 50%;
+    margin: auto;
+
+    .cajaPrincipal{
+
+        margin-bottom: 40px;
+        text-align: center;
+
+
+        h3{
+
+            color: white;
+            margin: auto;
+            text-align: center;
+            font-size: 3rem;
+
+        }
+    
+        
+    #nombreSeriePortada{
+
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        margin-bottom: 15px;
+
+    }
+  
+    #imagenPortada1{
+
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    #infoLost{
+
+        visibility: hidden;
+        color:rgba(0, 0, 0, 0);
+
+    }
+
+    #botonDescripcion{
+
+        padding: 15px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid $verdeCoder;
+        border-radius: 50px;
+        cursor: pointer;
+        text-align: center;
+
+
+    }
 
 
     }

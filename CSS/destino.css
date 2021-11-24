@@ -217,12 +217,6 @@ body {
         margin-top: 15px;
         font-weight: bold;
         letter-spacing: 1px; }
-    .containerIndex .destacadosKids .boxDestacadoKids:hover,
-    .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover {
-      transform: scale(1.1); }
-      .containerIndex .destacadosKids .boxDestacadoKids:hover img,
-      .containerSeriesMovies .destacadosKids .boxDestacadoKids:hover img {
-        box-shadow: 0px 0px 30px #22b14c; }
   .containerIndex .titleDestacado,
   .containerSeriesMovies .titleDestacado {
     font-size: 2rem;
@@ -770,11 +764,31 @@ body {
       margin: 30px auto;
       letter-spacing: 3px;
       color: rgba(255, 255, 255, 0.9); }
+    .seccion .seccion__respuestas .caja1 {
+      width: 80%;
+      margin: auto; }
+    .seccion .seccion__respuestas #ocultar4,
+    .seccion .seccion__respuestas #ocultar3,
+    .seccion .seccion__respuestas #ocultar2,
+    .seccion .seccion__respuestas #mostrar3,
+    .seccion .seccion__respuestas #mostrar2,
+    .seccion .seccion__respuestas #mostrar4,
+    .seccion .seccion__respuestas #ocultar1,
+    .seccion .seccion__respuestas #mostrar1 {
+      font-size: 1rem;
+      padding: 10px;
+      border: 2px solid #22b14c;
+      border-radius: 50px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      margin: 5px;
+      cursor: pointer; }
     .seccion .seccion__respuestas .pregunta {
       margin: 20px auto;
       letter-spacing: 2px;
       color: #1c8e3e;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      font-weight: bold; }
     .seccion .seccion__respuestas p {
       width: 60%;
       margin: auto;
@@ -894,6 +908,37 @@ body {
     .containerGeneroSerie .carrouselSeries .contenidoSerie:hover .nombreSerie {
       visibility: visible;
       color: rgba(255, 255, 255, 0.9); }
+
+.seriesPrincipales {
+  width: 50%;
+  margin: auto; }
+  .seriesPrincipales .cajaPrincipal {
+    margin-bottom: 40px;
+    text-align: center; }
+    .seriesPrincipales .cajaPrincipal h3 {
+      color: white;
+      margin: auto;
+      text-align: center;
+      font-size: 3rem; }
+    .seriesPrincipales .cajaPrincipal #nombreSeriePortada {
+      font-size: 3rem;
+      color: white;
+      text-align: center;
+      margin-bottom: 15px; }
+    .seriesPrincipales .cajaPrincipal #imagenPortada1 {
+      width: 100%;
+      border-radius: 30px; }
+    .seriesPrincipales .cajaPrincipal #infoLost {
+      visibility: hidden;
+      color: rgba(0, 0, 0, 0); }
+    .seriesPrincipales .cajaPrincipal #botonDescripcion {
+      padding: 15px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0);
+      border: 1px solid #1c8e3e;
+      border-radius: 50px;
+      cursor: pointer;
+      text-align: center; }
 
 @media (max-width: 424px) {
   .header {

@@ -90,4 +90,16 @@ $(document).ready(function()
 
     })
 
+
+    $("#botonDescripcion").click( () => {
+
+        $("#infoLost").toggle("slow")
+        .css("font-size","1.5rem")
+        .css("color","white")
+        .css("visibility","initial");
+
+    })
+
+
+
 });
